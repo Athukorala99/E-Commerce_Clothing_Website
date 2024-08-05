@@ -1,0 +1,17 @@
+.ct-demo-content {
+
+	.ct-demo-erase {
+		align-items: flex-start;
+		text-align: start;
+		padding-top: 20px;
+		border-top: 1px dashed rgba(179, 189, 201, 0.3);
+
+		i {
+			display: block;
+			margin-top: 10px;
+			font-size: 13px;
+			font-weight: 400;
+			font-style: normal;
+		}
+	}
+}

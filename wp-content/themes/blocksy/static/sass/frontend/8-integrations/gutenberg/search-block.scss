@@ -1,0 +1,19 @@
+.wp-block-search {
+
+	.wp-element-button {
+		padding: 5px 20px;
+	}
+
+	// button inside
+	&.wp-block-search__button-inside {
+
+		.wp-block-search__inside-wrapper {
+			border-radius: var(--theme-form-field-border-radius, 3px);
+			border-color: var(--theme-form-field-border-initial-color);
+
+			.wp-block-search__input {
+				border: none;
+			}
+		}
+	}
+}

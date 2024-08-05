@@ -1,0 +1,35 @@
+/* Builder Plugin */
+#tr_page_type_toggle {
+    text-align: center;
+    clear: both;
+    padding: 15px 12px 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#tr_page_type_toggle:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#tr_page_type_toggle a {
+    text-decoration: none;
+    width: 50%;
+    vertical-align: middle;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#tr_page_type_toggle a:first-child {
+    border-radius: 3px 0 0 3px;
+}
+
+#tr_page_type_toggle a:last-child {
+    border-radius: 0 3px 3px 0;
+    border-left: none;
+}
+
+#builderSelectRadio {
+    display: none;
+}

@@ -1,0 +1,15 @@
+.ct-drawer-canvas {
+
+	&[data-location="end"] {
+		height: calc(var(--shortcuts-bar-parent-height, var(--shortcuts-bar-height, 0px)) + var(--floating-bar-parent-height, var(--floating-bar-height, 0px)) + var(--compare-bar-height, 0px));
+
+		.ct-drawer-inner {
+			position: fixed;
+			z-index: 100;
+			inset-inline: var(--theme-frame-size, 0px) calc(var(--theme-frame-size, 0px) + var(--scrollbar-width, 0px));
+			bottom: var(--theme-frame-size, 0px);
+			height: calc(var(--shortcuts-bar-parent-height, var(--shortcuts-bar-height, 0px)) + var(--floating-bar-parent-height, var(--floating-bar-height, 0px)) + var(--compare-bar-height, 0px));
+			transition: transform 0.2s ease;
+		}
+	}
+}

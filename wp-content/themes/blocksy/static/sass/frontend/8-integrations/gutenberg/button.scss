@@ -1,0 +1,16 @@
+.wp-block-buttons .wp-block-button {
+
+	.wp-block-button__link.is-style-outline,
+	&.is-style-outline > .wp-block-button__link {
+		padding: var(--theme-button-padding);
+	}
+}
+
+
+// inherit font weight from button options
+.wp-block-button[style*="font-weight"] {
+
+	.wp-block-button__link {
+		font-weight: inherit;
+	}
+}

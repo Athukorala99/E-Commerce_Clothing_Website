@@ -1,0 +1,98 @@
+[data-content="normal"] .woocommerce-Reviews {
+	@include media-breakpoint-up (lg) {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 5%;
+	}
+}
+
+.entry-summary .woocommerce-Reviews {
+	grid-template-columns: auto;
+}
+
+.woocommerce-Reviews {
+	display: grid;
+	row-gap: 40px;
+
+	h2,
+	.comment-reply-title {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	.comment-notes,
+	.woocommerce-noreviews {
+		font-size: 13px;
+	}
+
+	.commentlist {
+		border-top: 1px solid var(--theme-border-color);
+
+		li {
+			margin-bottom: 0;
+
+			&:not(:last-child) {
+				.comment_container {
+					padding-bottom: 40px;
+					border-bottom: 1px solid var(--theme-border-color);
+				}
+			}
+		}
+	}
+
+	.comment_container {
+		display: grid;
+		gap: 25px;
+		padding-top: 40px;
+	}
+
+	.ct-has-avatar .comment_container {
+		@include media-breakpoint-up (sm) {
+			grid-template-columns: 45px 1fr;
+		}
+	}
+
+	.avatar {
+		max-width: 45px;
+		border-radius: 100%;
+	}
+
+	.comment-text {
+
+		.description > * {
+			margin: 20px 0 0 0;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+
+	.star-rating {
+		@include media-breakpoint-down (xs) {
+			margin-bottom: 7px;
+		}
+
+		@include media-breakpoint-up (sm) {
+			float: right;
+			margin-top: 3px;
+		}
+	}
+
+	.meta {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		line-height: 20px;
+
+		:is(em, time, span) {
+			font-size: 11px;
+			font-weight: 500;
+			text-transform: uppercase;
+			margin-inline-start: 0.7em;
+		}
+	}
+
+	> .clear {
+		display: none;
+	}
+}

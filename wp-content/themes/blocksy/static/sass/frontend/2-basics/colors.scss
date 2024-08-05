@@ -1,0 +1,40 @@
+body {
+	color: var(--theme-text-color);
+
+	::selection {
+		color: var(--theme-selection-text-color);
+		background-color: var(--theme-selection-background-color);
+	}
+}
+
+
+// headings
+h1 {
+	color: var(--theme-heading-color, var(--theme-heading-1-color, var(--theme-headings-color)));
+}
+
+h2 {
+	color: var(--theme-heading-color, var(--theme-heading-2-color, var(--theme-headings-color)));
+}
+
+h3 {
+	color: var(--theme-heading-color, var(--theme-heading-3-color, var(--theme-headings-color)));
+}
+
+h4 {
+	color: var(--theme-heading-color, var(--theme-heading-4-color, var(--theme-headings-color)));
+}
+
+h5 {
+	color: var(--theme-heading-color, var(--theme-heading-5-color, var(--theme-headings-color)));
+}
+
+h6 {
+	color: var(--theme-heading-color, var(--theme-heading-6-color, var(--theme-headings-color)));
+}
+
+
+// hr line
+hr {
+	background-color: var(--theme-form-field-border-initial-color);
+}

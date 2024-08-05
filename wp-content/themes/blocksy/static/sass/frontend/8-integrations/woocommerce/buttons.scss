@@ -1,0 +1,14 @@
+[class*="add_to_cart_button"].loading {	
+	position: relative;
+	gap: 0.5em;
+
+	&:after {
+		content: '';
+		width: 16px;
+		height: 16px;
+		background-color: currentColor;
+		animation: spin 1s linear infinite;
+
+		-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' opacity='0.2' fill='none' stroke='currentColor' stroke-miterlimit='10' stroke-width='2.5'/%3E%3Cpath d='m12,2c5.52,0,10,4.48,10,10' fill='none' stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5'/%3E%3C/svg%3E") center no-repeat;
+	}
+}

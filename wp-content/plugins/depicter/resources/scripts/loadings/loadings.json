@@ -1,0 +1,66 @@
+{
+   "audio": {
+      "darkMarkup": "audio/dark.html",
+      "lightMarkup": "audio/light.html"
+   },
+   "ballTriangle": {
+      "darkMarkup": "ballTriangle/dark.html",
+      "lightMarkup": "ballTriangle/light.html"
+   },
+   "bars": {
+      "darkMarkup": "bars/dark.html",
+      "lightMarkup": "bars/light.html"
+   },
+   "circles": {
+      "darkMarkup": "circles/dark.html",
+      "lightMarkup": "circles/light.html"
+   },
+   "dotFlashing": {
+      "darkMarkup": "dotFlashing/dark.html",
+      "lightMarkup": "dotFlashing/light.html"
+   },
+   "dotReplacing": {
+      "darkMarkup": "dotReplacing/dark.html",
+      "lightMarkup": "dotReplacing/light.html"
+   },
+   "dotStraightSwing": {
+      "darkMarkup": "dotStraightSwing/dark.html",
+      "lightMarkup": "dotStraightSwing/light.html"
+   },
+   "dotSwing": {
+      "darkMarkup": "dotSwing/dark.html",
+      "lightMarkup": "dotSwing/light.html"
+   },
+   "grid": {
+      "darkMarkup": "grid/dark.html",
+      "lightMarkup": "grid/light.html"
+   },
+   "hearts": {
+      "darkMarkup": "hearts/dark.html",
+      "lightMarkup": "hearts/light.html"
+   },
+   "oval": {
+      "darkMarkup": "oval/dark.html",
+      "lightMarkup": "oval/light.html"
+   },
+   "puff": {
+      "darkMarkup": "puff/dark.html",
+      "lightMarkup": "puff/light.html"
+   },
+   "rings": {
+      "darkMarkup": "rings/dark.html",
+      "lightMarkup": "rings/light.html"
+   },
+   "spinningCircles": {
+      "darkMarkup": "spinningCircles/dark.html",
+      "lightMarkup": "spinningCircles/light.html"
+   },
+   "tailSpin": {
+      "darkMarkup": "tailSpin/dark.html",
+      "lightMarkup": "tailSpin/light.html"
+   },
+   "threeDots": {
+      "darkMarkup": "threeDots/dark.html",
+      "lightMarkup": "threeDots/light.html"
+   }
+}

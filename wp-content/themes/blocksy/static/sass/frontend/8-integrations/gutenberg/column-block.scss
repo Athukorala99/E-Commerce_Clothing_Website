@@ -1,0 +1,10 @@
+.wp-block-columns {
+	row-gap: var(--wp--style--block-gap, 2em);
+	
+	.wp-block-column {
+		
+		> *:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

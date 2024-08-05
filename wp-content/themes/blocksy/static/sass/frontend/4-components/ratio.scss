@@ -1,0 +1,34 @@
+[class*='ct-media-container'] {
+	display: inline-flex;
+	overflow: hidden;
+	isolation: isolate;
+	vertical-align: middle;
+	// -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.ct-media-container {
+	position: relative;
+	width: 100%;
+
+	img,
+	video,
+	picture {
+		width: inherit;
+		border-radius: inherit;
+		object-fit: var(--theme-object-fit, cover);
+	}
+
+	iframe {
+		height: auto;
+	}
+
+	picture {
+		display: inline-flex;
+	}
+}
+
+.ct-media-container-static {
+	img {
+		aspect-ratio: 1/1;
+	}
+}

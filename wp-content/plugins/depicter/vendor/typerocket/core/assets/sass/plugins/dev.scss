@@ -1,0 +1,39 @@
+/* Dev Page
+----------------------------------------------------------------------- */
+#dev-icon-search {
+    width: 100%;
+    max-width: 100%;
+}
+
+#debug-icon-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 20px 0 0;
+    padding: 0;
+
+    .tr-debug-icon {
+        height: auto;
+        width: auto;
+    }
+
+    strong, em {
+        margin: 6px 0;
+        display: block;
+    }
+
+    li {
+        list-style: none;
+        border: solid $gray_border 1px;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 12px;
+        padding: 10px;
+
+        i:before {
+            font-size: 42px;
+            display: block;
+        }
+    }
+}

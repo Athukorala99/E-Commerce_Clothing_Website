@@ -1,0 +1,51 @@
+.ct-recommended-plugins-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	margin: 0;
+
+	--spacing: 25px;
+
+	li {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 25px;
+		border-radius: 3px;
+		border: 1px solid rgba(226, 230, 235, 0.7);
+		box-shadow: 0 2px 5px rgba(143, 163, 184, 0.12);
+	}
+}
+
+.ct-plugin-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	svg {
+		opacity: 0.7;
+	}
+}
+
+.ct-plugin-description {
+	font-size: 14px;
+	line-height: 1.7;
+	margin-bottom: 20px;
+}
+
+.ct-plugin-actions {
+	display: flex;
+	align-items: center;
+	margin-top: auto;
+	padding: 17px 25px;
+	margin: auto -25px -25px -25px;
+	border-top: 1px solid rgba(226, 230, 235, 0.5);
+	background: rgba(245, 247, 249, 0.6);
+
+	[class*="ct-button"] {
+		--buttonHeight: 32px;
+		--buttonPadding: 12px;
+		min-width: 92px;
+	}
+}

@@ -1,0 +1,10 @@
+import './breadcrumbs'
+import './query'
+import './post-template/index'
+import './about-me'
+import './contact-info'
+import './socials'
+import './share-box'
+import './dynamic-data'
+
+import './search'

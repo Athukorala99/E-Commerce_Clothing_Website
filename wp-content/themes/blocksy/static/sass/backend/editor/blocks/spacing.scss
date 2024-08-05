@@ -1,0 +1,35 @@
+.is-layout-flow,
+.is-layout-constrained {
+
+	> * {
+		margin-block-start: 0;
+		margin-block-end: var(--theme-content-spacing);
+
+		&:last-child {
+			margin-block-end: 0;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-block-start: var(--theme-content-spacing);
+		margin-block-end: calc(var(--has-theme-content-spacing, 1) * (0.3em + 10px));
+
+		&:first-child {
+			margin-block-start: 0;
+		}
+	}
+
+
+	// for widgets
+	&[data-widget-area-id] > .block-editor-block-list__layout {
+
+		h1, h2, h3, h4, h5, h6 {
+			margin-block-start: var(--theme-content-spacing);
+			margin-block-end: calc(var(--has-theme-content-spacing, 1) * (0.3em + 10px));
+
+			&:first-child {
+				margin-block-start: 0;
+			}
+		}
+	}
+}

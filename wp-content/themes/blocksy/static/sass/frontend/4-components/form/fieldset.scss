@@ -1,0 +1,11 @@
+fieldset {
+	padding: 30px;
+	border: 1px dashed var(--theme-border-color);
+}
+
+legend {
+	font-size: 14px;
+	font-weight: 600;
+	padding: 0 15px;
+	margin-left: -15px;
+}

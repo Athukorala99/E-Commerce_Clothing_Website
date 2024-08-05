@@ -1,0 +1,10 @@
+.product[class*='gallery'] .entry-summary-items {
+
+	> * {
+		margin-bottom: var(--product-element-spacing, 10px);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

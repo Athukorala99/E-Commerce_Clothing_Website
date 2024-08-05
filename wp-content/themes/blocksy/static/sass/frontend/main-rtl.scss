@@ -1,0 +1,143 @@
+// 1 - HELPERS
+@import '1-helpers/mixins';
+@import '1-helpers/functions';
+@import '1-helpers/variables';
+
+
+.rtl {
+
+	// menu type
+	[data-menu="type-2:left"] > ul > li {
+		--menu-indicator-right: calc(var(--menu-items-spacing, 25px) / 2);
+	}
+
+
+	// off canvas panel
+	[data-behaviour*='right-side'] .ct-panel-inner {
+		--theme-panel-reveal-right: -20%;
+	}
+
+	[data-behaviour*='left-side'] .ct-panel-inner {
+		--theme-panel-reveal-left: 20%;
+	}
+
+
+	// entry button
+	.entry-button svg {
+		transform: rotate(180deg);
+	}
+
+
+	// trending block
+	.ct-trending-block {
+
+		.ct-arrow-left:before {
+			transform: rotate(135deg)
+		}
+
+		.ct-arrow-right:before {
+			transform: rotate(-45deg);
+		}
+	}
+
+
+	// posts nav
+	.post-navigation {
+		.nav-item-prev svg {
+			transform: rotate(-180deg);
+		}
+
+		.nav-item-next svg {
+			transform: rotate(-180deg);
+		}
+	}
+
+
+	// quote widget
+	.ct-quote-widget:before {
+		transform: rotate(0deg);
+	}
+
+
+	// select
+	select {
+		background-position: left 10px top 50%, 0 0;
+	}
+	
+
+	// breadcrumbs
+	.ct-breadcrumbs svg.separator {
+		transform: rotate(180deg);
+	}
+
+
+	// pagination
+	.ct-pagination {
+		.next svg {
+			transform: rotate(180deg);
+		}
+
+		.prev svg {
+			transform: rotate(180deg);
+		}
+	}
+
+	.ct-pagination[data-type="next_prev"] .next {
+		float: left;
+	}
+
+
+	// WooCommerce
+	.flexy-items,
+	.flexy-pills [data-flexy] {
+		direction: ltr;
+	}
+
+
+	// reviews
+	.star-rating {
+		text-indent: -0.4em;
+	}
+
+	.woocommerce-Reviews {
+		.star-rating {
+			@include media-breakpoint-up (sm) {
+				float: left;
+			}
+		}
+	}
+
+
+	// shop table
+	@include media-breakpoint-up (md) {
+		.form-row-first {
+			float: right;
+		}
+
+		.form-row-last {
+			float: left;
+		}
+	}
+
+	// responsive table
+	table.shop_table_responsive {
+		tbody td:before {
+			float: right;
+		}
+	}
+
+	dl.variation dt {
+		float: right;
+	}
+
+
+	.woocommerce-info .showcoupon {
+		float: left;
+	}
+
+
+	// widgets
+	.widget_product_categories li .count {
+		float: left;
+	}
+}

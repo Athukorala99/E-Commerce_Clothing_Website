@@ -1,0 +1,83 @@
+.ct-condition-relation {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 40px;
+
+	&:before {
+		position: absolute;
+		content: '';
+		width: 1px;
+		height: 100%;
+		background: var(--optionBorderColor);
+		transition: width var(--condition-ui-transition, 0.1s ease),
+					background var(--condition-ui-transition, 0.1s ease);
+	}
+
+	ul {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		z-index: 1;
+		overflow: clip;
+		font-size: 9px;
+		font-weight: 700;
+		line-height: 1;
+		margin: 0;
+		background: #fff;
+		border-radius: 20px;
+		box-shadow: 0px 0px 0px 1px var(--optionBorderColor);
+		transition: box-shadow var(--condition-ui-transition, 0.1s ease),
+					background var(--condition-ui-transition, 0.1s ease);
+
+		li {
+			margin: 0;
+			padding: 3px;
+
+			span {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 18px;
+				padding: 0 8px;
+				cursor: pointer;
+				border-radius: 20px;
+				background: rgba(240, 240, 240, 0.8);
+				transition: color var(--condition-ui-transition, 0.1s ease),
+							opacity var(--condition-ui-transition, 0.1s ease),
+							background var(--condition-ui-transition, 0.1s ease);
+			}
+
+			&:not(.active) span {
+				opacity: 0.5;
+				background: transparent;
+			}
+		}
+	}
+}
+
+
+.ct-add-and-relation {
+	height: 33px;
+	align-items: flex-end;
+
+	span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+		width: 23px;
+		height: 23px;
+		cursor: pointer;
+		border-radius: 100%;
+		background: #fff;
+		border: 1px solid var(--optionBorderColor);
+		transition: all 0.15s ease;
+
+		&:hover {
+			color: #fff;
+			background: var(--ui-accent-color);
+			border-color: var(--ui-accent-color);
+		}
+	}
+}

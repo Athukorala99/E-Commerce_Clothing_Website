@@ -1,0 +1,94 @@
+.ct-gutenberg-color-picker {
+
+	.components-color-picker {
+		width: 100%;
+		box-sizing: border-box;
+		padding-block: var(--cpm-pv);
+		padding-inline: var(--cpm-ph);
+
+		.react-colorful {
+			width: 100%;
+			overflow: initial;
+
+			+ div {
+				display: none; // do not remove
+			}
+
+			// dragg pointer
+			.react-colorful__pointer {
+				width: 14px;
+				height: 14px;
+				background: transparent;
+			}
+
+			.react-colorful__pointer-fill {
+				box-shadow: inset 0px 0px 0px 2px rgba(255, 255, 255, 1);
+			}
+
+			// sliders
+			.react-colorful__saturation {
+				height: 147px;
+				border-radius: 5px;
+				margin-bottom: 20px;
+			}
+
+			.react-colorful__hue,
+			.react-colorful__alpha {
+				width: 100%;
+				height: 18px;
+				margin-bottom: 10px;
+
+				.react-colorful__interactive {
+					width: calc(100% - 18px);
+					margin-inline-start: 9px;
+				}
+			}
+
+			.react-colorful__alpha {
+				margin-bottom: 0;
+				background-size: 10px 10px;
+				background-image: url('data:image/webp;base64,UklGRjIAAABXRUJQVlA4TCUAAAAvE8AEAA9w7/97/9/7f/7jAYraNmI6AJQ/1xvvMojof2BSvVEBAA==');
+			}
+		}
+
+		// color mode picker
+		> * {
+
+			&:last-child {
+				margin: 20px calc(var(--cpm-ph) * -1) 0 calc(var(--cpm-ph) * -1);
+				padding: 20px var(--cpm-ph) 1px var(--cpm-ph);
+				border-top: 1px solid #eee;
+			}
+		}
+	}
+
+	.ct-option-color-value,
+	.ct-option-color-variable {
+		display: flex;
+		position: relative;
+		border-top: 1px solid #eee;
+		padding: var(--cpm-pv) var(--cpm-ph);
+
+		input {
+			padding-inline-end: 30px !important;
+		}
+
+		.ct-copy-color {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			inset-inline-end: calc(var(--cpm-ph));
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+		}
+	}
+
+	.ct-option-color-variable {
+
+		input {
+			cursor: initial;
+		}
+	}
+}

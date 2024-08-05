@@ -1,0 +1,14 @@
+.ct-header-text {
+	color: var(--theme-text-color);
+	text-align: var(--horizontal-alignment);
+	// --theme-heading-color: var(--theme-text-color);
+
+	&[data-width="stretch"] {
+		width: 100%;
+		max-width: var(--max-width);
+	}
+
+	.entry-content {
+		width: 100%;
+	}
+}

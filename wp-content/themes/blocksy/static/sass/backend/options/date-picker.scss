@@ -1,0 +1,90 @@
+.ct-date-time-picker-dropdown,
+.ct-recurring-scheduling-dropdown {
+	max-height: 400px;
+
+	.components-datetime__time-wrapper {
+		gap: 5px;
+		justify-content: initial;
+
+		> div:is(:empty),
+		.components-datetime__timezone {
+			display: none;
+		}
+	}
+}
+
+
+// range date/time picker dropdown
+.ct-date-time-picker-dropdown {
+
+	.ct-start-end-date-switcher {
+		position: sticky;
+		top: 0;
+		z-index: 2;
+		display: flex;
+		width: 100%;
+		padding: 20px;
+		box-sizing: border-box;
+		border-bottom: 1px solid #efefef;
+		background: #fff;
+
+		button {
+			flex: 1;
+			justify-content: center;
+		}
+	}
+
+	.ct-date-time-picker {
+		padding: 20px;
+
+		.components-datetime__time {
+			display: grid;
+			grid-template-columns: 1fr auto;
+			gap: 15px;
+
+			> * {
+				margin: 0;
+				
+				&:first-child {
+					order: 2;
+				}
+			}
+		}
+	}
+}
+
+
+// recurring scheduling dropdown
+.ct-recurring-scheduling-dropdown {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	padding: 20px;
+
+	.ct-label {
+		font-size: 11px;
+		font-weight: 500;
+		line-height: 1.4;
+		text-transform: uppercase;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+}
+
+.ct-recurring-scheduling-time {
+
+	.components-datetime__time {
+
+		fieldset {
+			margin-bottom: 30px;
+
+			legend {
+				display: none;
+			}
+
+			&:nth-child(2) {
+				display: none;
+			}
+		}
+	}
+}

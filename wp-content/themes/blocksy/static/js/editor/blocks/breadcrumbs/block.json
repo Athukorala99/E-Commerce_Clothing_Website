@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocksy/breadcrumbs",
+	"category": "blocksy-blocks",
+	"attributes": {
+		"textColor": {
+			"type": "string"
+		},
+		"customTextColor": {
+			"type": "string"
+		},
+		"linkColor": {
+			"type": "string"
+		},
+		"customLinkColor": {
+			"type": "string"
+		},
+		"linkHoverColor": {
+			"type": "string"
+		},
+		"customLinkHoverColor": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"className": false,
+		"spacing": {
+			"margin": true,
+			"__experimentalDefaultControls": {
+				"margin": true
+			}
+		}
+	},
+	"providesContext": {
+		"textColor": "textColor",
+		"linkColor": "linkColor",
+		"linkHoverColor": "linkHoverColor"
+	}
+}

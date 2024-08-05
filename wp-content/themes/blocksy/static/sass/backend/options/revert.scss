@@ -1,0 +1,73 @@
+.ct-revert {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	pointer-events: auto;
+	top: calc(50% - var(--revert-button-size, 15px) / 2 - 1px);
+	inset-inline-start: calc(var(--revert-button-offset, 20px) * -1);
+	width: var(--revert-button-size, 15px);
+	height: var(--revert-button-size, 15px);
+	padding: 0;
+	border: none;
+	color: var(--ui-accent-color);
+	background: transparent;
+	-webkit-font-smoothing: antialiased;
+
+	&:focus {
+		outline: none;
+	}
+
+	svg {
+		width: var(--revert-icon-size, 10px);
+		height: var(--revert-icon-size, 10px);
+
+		path,
+		polygon {
+			opacity: 0;
+			transform-origin: center;
+			transition: opacity 0.15s ease, 
+						transform 0.15s ease;
+		}
+
+		path {
+			transform: scale(1.0);
+		}
+
+		polygon {
+			transform: scale(0.5);
+		}
+	}
+
+	&:not([disabled]) {
+		cursor: pointer;
+
+		svg {
+			path {
+				opacity: 1;
+			}
+		}
+
+		&:hover {
+
+			svg {
+				path {
+					opacity: 0;
+					transform: scale(0.5);
+				}
+
+				polygon {
+					opacity: 1;
+					transform: scale(1.0);
+				}
+			}
+		}
+	}
+}
+
+
+// revert button in different locations
+.ct-layer-content .ct-revert {
+	--revert-icon-size: 8px;
+	--revert-button-offset: 16px;
+}

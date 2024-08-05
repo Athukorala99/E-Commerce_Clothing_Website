@@ -1,0 +1,31 @@
+{
+    "name": "typerocket/core",
+    "description": "The TypeRocket Pro Core.",
+    "keywords": ["framework", "typerocket", "wordpress"],
+    "license": "GPL-3.0-or-later",
+    "homepage": "https://typerocket.com",
+    "authors": [
+        {
+            "name": "Robojuice",
+            "homepage": "https://robojuice.com",
+            "role": "Creator"
+        }
+    ],
+    "support": {
+        "docs": "https://typerocket.com/docs/v5/"
+    },
+    "require" : {
+        "php": ">=7.2.5",
+        "symfony/console": "5.1.*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "8.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "TypeRocket\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

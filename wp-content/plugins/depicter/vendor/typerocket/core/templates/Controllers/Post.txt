@@ -1,0 +1,10 @@
+<?php
+namespace {{namespace}};
+
+use {{app}}\Models\{{model}};
+use TypeRocket\Controllers\WPPostController;
+
+class {{controller}} extends WPPostController
+{
+    protected $modelClass = {{mc}}::class;
+}

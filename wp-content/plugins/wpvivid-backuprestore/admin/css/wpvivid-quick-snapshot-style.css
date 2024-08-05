@@ -1,0 +1,26 @@
+
+
+
+
+.wpvivid-span-progress {
+    display:block;
+    width:100%;
+    height:1.5em;
+    background-color:#9d9fa5;
+    border-radius:0;
+    color: #fff;
+
+}
+
+.wpvivid-span-processed-progress {
+    display:block;
+    height:1.5em;
+    background-color:#8bc34a;
+    border-radius:0;
+    color: #fff;
+    padding-left:0.5em;
+}
+
+.wpvivid-dashicons-green {
+    color:#8bc34a;
+}

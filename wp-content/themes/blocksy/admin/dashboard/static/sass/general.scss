@@ -1,0 +1,40 @@
+.toplevel_page_ct-dashboard,
+.appearance_page_ct-dashboard {
+	background: #fff;
+
+	#wpcontent {
+		padding-inline-start: 0;
+	}
+}
+
+#ct-dashboard {
+	font-size: 15px;
+	// color: #687c93;
+	color: #4f5a68;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #1e1e1e;
+		margin-block: 0 1.3em;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 15px;
+		line-height: 1.6;
+		margin: 0;
+	}
+}
+
+
+// loading state
+.ct-loading-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}

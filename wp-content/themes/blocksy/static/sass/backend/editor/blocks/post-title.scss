@@ -1,0 +1,11 @@
+.edit-post-visual-editor__post-title-wrapper {
+	margin-top: var(--has-wide, 4rem) !important;
+	margin-bottom: var(--wp--style--block-gap);
+
+	.editor-post-title {
+		font-size: 2.44em;
+		font-weight: 700;
+		line-height: 1.4;
+		margin: 0;
+	}
+}

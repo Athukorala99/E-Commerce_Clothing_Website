@@ -1,0 +1,35 @@
+// builder panel
+$panel-height: 302px;
+$panel-bar-height: 46px;
+$panel-placement-height: $panel-height - $panel-bar-height;
+
+// builder items
+$builder-item-width: 120px;
+$builder-item-height: 37px;
+$builder-items-spacing: 8px;
+
+@import 'builder-sidebar';
+@import 'panels-manager';
+
+@import 'panels';
+@import 'view-switch';
+@import 'builder-rows';
+@import 'builder-columns';
+@import 'builder-items';
+@import 'available-items';
+@import 'builder-offcanvas';
+@import 'builder-pointers';
+@import 'item-buttons';
+@import 'footer';
+
+[data-builder='header'] {
+	.ct-builder-footer {
+		display: none;
+	}
+}
+
+[data-builder='footer'] {
+	.ct-builder-header {
+		display: none;
+	}
+}

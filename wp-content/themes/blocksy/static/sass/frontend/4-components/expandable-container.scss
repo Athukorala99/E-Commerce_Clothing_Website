@@ -1,0 +1,11 @@
+[data-behaviour='drop-down'] {
+	
+	&[aria-hidden='true'] {
+		height: 0;
+		overflow-y: clip;
+	}
+
+	&.is-animating {
+		transition: height 0.2s ease, opacity 0.2s ease;
+	}
+}

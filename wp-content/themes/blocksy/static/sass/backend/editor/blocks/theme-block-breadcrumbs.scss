@@ -1,0 +1,26 @@
+.ct-breadcrumbs {
+
+	> span {
+		display: inline-flex;
+		align-items: center;
+		vertical-align: middle;
+		cursor: default;
+
+		> span {
+			color: var(--theme-link-initial-color);
+			transition: color 0.2s ease;
+
+			&:hover {
+				color: var(--theme-link-hover-color);
+			}
+		}
+
+		.separator {
+			margin: 0 8px;
+		}
+	}
+
+	svg {
+		fill: currentColor;
+	}
+}

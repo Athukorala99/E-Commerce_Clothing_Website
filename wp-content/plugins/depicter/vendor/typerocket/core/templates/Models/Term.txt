@@ -1,0 +1,9 @@
+<?php
+namespace {{namespace}};
+
+use TypeRocket\Models\WPTerm;
+
+class {{model}} extends WPTerm
+{
+    public const TAXONOMY = '{{id}}';
+}

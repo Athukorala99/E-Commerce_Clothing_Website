@@ -1,0 +1,40 @@
+.ct-featured-image {
+	margin-left: auto;
+	margin-right: auto;
+
+	.ct-media-container {
+		border-radius: var(--theme-border-radius);
+	}
+
+
+	// image alignment
+	&:not(.alignfull) {
+		width: var(--theme-block-width);
+	}
+
+	&:not(.alignwide):not(.alignfull) {
+		max-width: var(--theme-block-max-width);
+	}
+
+	&.alignwide {
+		max-width: var(--theme-block-wide-max-width);
+	}
+
+
+	// image spacing
+	@include media-breakpoint-down(md) {
+		padding-bottom: 30px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 50px;
+	}
+
+
+	// image figcaption
+	figcaption {
+		font-size: 14px;
+		text-align: center;
+		margin-top: 5px;
+	}
+}

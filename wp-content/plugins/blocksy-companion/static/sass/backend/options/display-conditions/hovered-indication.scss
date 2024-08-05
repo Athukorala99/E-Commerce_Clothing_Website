@@ -1,0 +1,37 @@
+.ct-relation-group .ct-hovered {
+
+	&.ct-condition-group,
+	&.ct-relation-group[data-relation=AND] {
+		border-color: var(--ui-accent-color);
+		box-shadow: inset 0px 0px 0px 1px var(--ui-accent-color);
+	}
+
+	&.ct-condition-relation {
+
+		&:before {
+			width: 2px;
+			background: var(--ui-accent-color);
+		}
+
+		ul {
+			background: var(--ui-accent-color);
+			box-shadow: 0px 0px 0px 1px var(--ui-accent-color);
+
+			li {
+
+				&.active span {
+					background: #fff;
+				}
+
+				&:not(.active) {
+					color: #fff;
+
+					&:hover span {
+						opacity: 0.85;
+					}
+				}
+			}
+
+		}
+	}
+}

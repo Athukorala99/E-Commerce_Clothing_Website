@@ -1,0 +1,48 @@
+
+.depicter-revert .depicter-1-section-1 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+.depicter-revert .depicter-1-section-21 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+.depicter-revert .depicter-1-section-40 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+.depicter-revert .depicter-1-section-72 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+.depicter-revert .depicter-1-section-74 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+.depicter-revert .depicter-1-section-76 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+
+/***** Tablet *****/
+@media screen and (max-width: 1024px){
+
+.depicter-revert .depicter-1-section-1 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+.depicter-revert .depicter-1-section-21 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+.depicter-revert .depicter-1-section-40 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+
+}
+/***** Mobile *****/
+@media screen and (max-width: 767px){
+
+.depicter-revert .depicter-1-section-1 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+.depicter-revert .depicter-1-section-21 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+.depicter-revert .depicter-1-section-40 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+
+}

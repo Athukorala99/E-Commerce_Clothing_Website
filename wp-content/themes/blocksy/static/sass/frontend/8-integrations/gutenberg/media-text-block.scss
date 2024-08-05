@@ -1,0 +1,18 @@
+.wp-block-media-text {
+	.wp-block-media-text__content {
+		@media (max-width: 600px) {
+			padding: var(--theme-content-spacing);
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&:not(.has-background) .wp-block-media-text__content {
+		@media (max-width: 600px) {
+			padding-inline: 0;
+			padding-bottom: 0;
+		}
+	}
+}

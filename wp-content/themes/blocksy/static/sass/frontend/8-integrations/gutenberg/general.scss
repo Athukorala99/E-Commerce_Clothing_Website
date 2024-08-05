@@ -1,0 +1,26 @@
+article > .entry-content {
+
+	> * {
+		margin-inline: var(--theme-default-editor, auto);
+
+		&.alignwide {
+			max-width: var(--theme-default-editor, var(--theme-block-wide-max-width));
+		}
+
+		&:not(.alignfull):not(.alignwide):not(.alignleft):not(.alignright) {
+			max-width: var(--theme-default-editor, var(--theme-block-max-width));
+		}
+
+		&:not(.alignfull):not(.alignleft):not(.alignright) {
+			width: var(--theme-default-editor, var(--theme-block-width));
+		}
+	}
+}
+
+
+body .is-layout-constrained {
+
+	> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+		width: var(--theme-default-editor, var(--theme-block-width));
+	}
+}

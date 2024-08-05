@@ -1,0 +1,24 @@
+:root {
+	
+	// default values
+	--theme-default-editor: var(--true);
+	--theme-border: none;
+	--theme-transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+
+	// lists
+	--theme-list-indent: 2.5em;
+
+
+	// conditions
+	--true: initial;
+	--false: "";
+	--has-link-decoration: var(--true);
+	--has-transparent-header: 0;
+
+
+
+	// container width
+	--theme-container-width: #{'min(100%, var(--theme-container-width-base))'};
+	--theme-container-width-base: calc(var(--theme-container-edge-spacing, 90vw) - var(--theme-frame-size, 0px) * 2);
+}

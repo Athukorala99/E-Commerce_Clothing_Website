@@ -1,0 +1,30 @@
+#adminmenu #toplevel_page_ct-dashboard {
+	.wp-menu-image {
+		&.svg {
+			background-size: 18px auto;
+		}
+
+		img {
+			max-width: 18px;
+			height: auto;
+			padding: 8px 0 0 0;
+		}
+	}
+}
+
+
+
+#fs_account {
+	tr.fs-field-plan form.button-group {
+		input.button {
+			border-radius: 3px;
+		}
+	}
+}
+
+.fs-field-beta_program,
+[data-slug='blocksy-companion'] .upgrade,
+#fs_account tr.fs-field-plan form.button-group .fs-change-plan,
+#adminmenu #toplevel_page_ct-dashboard a[href*=ct-dashboard-pricing]{
+	display: none;
+}

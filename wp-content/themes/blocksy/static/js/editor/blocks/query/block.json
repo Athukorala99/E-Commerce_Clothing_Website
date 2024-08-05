@@ -1,0 +1,160 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocksy/query",
+	"category": "blocksy-blocks",
+	"attributes": {
+		"uniqueId": {
+			"type": "string",
+			"default": ""
+		},
+
+		"type": "// post | product -- in the future this will be populated",
+		"type": {
+			"type": "string",
+			"default": "post"
+		},
+
+		"post_type": {
+			"type": "string",
+			"default": "post"
+		},
+
+		"limit": {
+			"type": "number",
+			"default": 5
+		},
+
+		"include_term_ids": {
+			"type": "object",
+			"default": {}
+		},
+
+		"exclude_term_ids": {
+			"type": "object",
+			"default": {}
+		},
+
+		"include_post_ids": {
+			"type": "object",
+			"default": {
+				"ids": [],
+				"current_post": false
+			}
+		},
+
+		"exclude_post_ids": {
+			"type": "object",
+			"default": {
+				"ids": [],
+				"current_post": false
+			}
+		},
+
+		"order": {
+			"type": "string",
+			"default": "desc"
+		},
+
+		"orderby": {
+			"type": "string",
+			"default": "post_date"
+		},
+
+		"orderby_custom": {
+			"type": "string",
+			"default": ""
+		},
+
+		"offset": {
+			"type": "number",
+			"default": 0
+		},
+
+		"design": {
+			"type": "string",
+			"default": ""
+		},
+
+		"has_pagination": {
+			"type": "string",
+			"default": "no"
+		},
+
+		"textColor": {
+			"type": "string"
+		},
+		"customTextColor": {
+			"type": "string"
+		},
+		"linkColor": {
+			"type": "string"
+		},
+		"customLinkColor": {
+			"type": "string"
+		},
+		"linkHoverColor": {
+			"type": "string"
+		},
+		"customLinkHoverColor": {
+			"type": "string"
+		},
+
+		"sticky_posts": {
+			"type": "string",
+			"default": "// include | exclude | only",
+			"default": "include"
+		}
+	},
+
+	"supports": {
+		"align": ["wide", "full"],
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"__experimentalDefaultControls": {
+				"margin": false,
+				"padding": false
+			}
+		},
+
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"width": true,
+			"__experimentalDefaultControls": {
+				"color": true,
+				"radius": true,
+				"width": true
+			},
+			"__experimentalSelector": "img, .block-editor-media-placeholder, .wp-block-post-featured-image__overlay",
+			"__experimentalSkipSerialization": true
+		},
+
+		"color": {
+			"gradients": true,
+			"link": false,
+			"__experimentalDefaultControls": {
+				"text": false,
+				"background": true,
+				"link": false
+			}
+		}
+	},
+
+	"usesContext": ["postId", "postType"],
+	"providesContext": {
+		"post_type": "post_type",
+		"limit": "limit",
+		"order": "order",
+		"orderby": "orderby",
+		"sticky_posts": "sticky_posts",
+		"orderby_custom": "orderby_custom",
+		"offset": "offset",
+		"has_pagination": "has_pagination",
+
+		"include_term_ids": "include_term_ids",
+		"exclude_term_ids": "exclude_term_ids"
+	}
+}

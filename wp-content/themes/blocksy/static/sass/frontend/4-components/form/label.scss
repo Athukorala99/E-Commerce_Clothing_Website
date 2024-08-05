@@ -1,0 +1,23 @@
+label {
+	font-size: 15px;
+	line-height: inherit;
+	cursor: pointer;
+	margin: 0 0 0.5em 0;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+// speciffic
+$selector: 
+	'.gdpr-confirm-policy',
+	'.comment-form-cookies-consent'
+;
+
+#{$selector} {
+	label {
+		font-size: 13px;
+	}
+}

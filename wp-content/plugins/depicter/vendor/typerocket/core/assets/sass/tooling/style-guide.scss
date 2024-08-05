@@ -1,0 +1,106 @@
+/* WordPress Style Guide
+----------------------------------------------------------------------- */
+.typerocket-wp-style-table {
+    margin: .5em auto;
+    width: 100%;
+    clear: both;
+
+    > {
+        .tr-divide + .tr-divide {
+            box-shadow: none;
+        }
+
+        @media screen and (max-width: 782px) {
+            .tr-control-section, .tr-control-row {
+                padding: 8px 0;
+
+                > .tr-control-label {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 783px) {
+        display: table;
+        border-collapse: collapse;
+
+        .tr-dev-field-helper .nav {
+            max-width: 120px;
+        }
+
+        > {
+            .tr-control-section {
+                display: table-row;
+
+                > .tr-control-label {
+                    color: #333;
+                    display: table-cell;
+                    font-size: 14px;
+                    height: auto;
+                    vertical-align: top;
+                    text-align: left;
+                    padding: 20px 10px 20px 0;
+                    width: 200px;
+                    line-height: 1.3;
+                    font-weight: 600;
+                }
+
+                > .control,
+                > .controls {
+                    margin-bottom: 9px;
+                    padding: 15px 10px;
+                    line-height: 1.3;
+                    font-size: 14px;
+                    vertical-align: middle;
+                    display: table-cell;
+                }
+
+                > .controls {
+                    vertical-align: top;
+                }
+
+                &.tr-repeater > .tr-dev-field-helper {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* WordPress Style Guide - Widgets
+----------------------------------------------------------------------- */
+.typerocket-wp-style-subtle {
+
+    div.tr-control-label {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    > {
+        .tr-control-section, .tr-control-row {
+            padding: 8px 0;
+        }
+
+        .tr-divide + .tr-divide {
+            box-shadow: none;
+        }
+    }
+}
+
+.tr-menu-container {
+    padding-right: 10px;
+    clear: both;
+
+    div.tr-control-label {
+        font-style: italic;
+        color: #666;
+        padding-bottom: 0;
+    }
+}
+
+.tr-taxonomy-add-container {
+    padding-right: 5%;
+}

@@ -1,0 +1,79 @@
+/* Conrol Icons
+----------------------------------------------------------------------- */
+@mixin tr-dash-icon {
+    font-family: dashicons;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 18px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    color: $gray_icon;
+    text-align: center;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &:hover {
+        color: #333;
+    }
+}
+
+.tr-control-icon {
+    @include tr-dash-icon;
+}
+
+.tr-control-icon-remove:before {
+    content: "\f335";
+}
+
+.tr-control-icon-clone {
+    &:before {
+        content: "\f316";
+    }
+
+    &:hover {
+        color: $wp_button_hover;
+        color: var(--tr-profile-color);
+    }
+}
+
+.tr-control-icon-remove {
+
+    &:hover {
+        color: $delete_hover;
+    }
+
+    &:focus {
+        color: $delete_hover;
+        outline: none;
+        box-shadow: none;
+        text-shadow: 0 0 7px $delete;
+    }
+}
+
+.tr-control-icon-move:before {
+    content: "\f333";
+    cursor: move;
+}
+
+.tr-control-icon-collapse:before {
+    content: '\f142';
+}
+
+.tr-control-icon-collapse-up:before {
+    content: '\f140';
+}
+
+.tr-dev-field-helper, .tab-icon {
+    .dashicons {
+        height: auto;
+        width: auto;
+        font-size: inherit;
+    }
+}

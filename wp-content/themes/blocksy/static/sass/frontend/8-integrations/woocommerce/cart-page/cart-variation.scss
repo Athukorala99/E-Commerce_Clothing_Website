@@ -1,0 +1,17 @@
+dl.variation {
+	margin-top: 0.5em;
+	--theme-description-list-indent: 0;
+	--theme-description-list-spacing: 0;
+
+
+	&:not(:last-child) {
+		margin-bottom: 0.5em;
+	}
+
+	dt {
+		display: inline-block;
+		margin-inline-end: 0.25em;
+		float: left;
+		clear: both;
+	}
+}

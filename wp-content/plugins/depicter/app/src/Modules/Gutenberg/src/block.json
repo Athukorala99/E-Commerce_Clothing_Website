@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "depicter/slider",
+	"version": "0.1.0",
+	"title": "Depicter",
+	"category": "widgets",
+	"icon": "embed-photo",
+	"description": "Add depicter sliders to the contents.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"id": {
+			"type": "integer",
+			"default": 0
+		}
+	},
+	"textdomain": "depicter",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

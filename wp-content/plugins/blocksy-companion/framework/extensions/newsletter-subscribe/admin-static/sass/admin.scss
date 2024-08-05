@@ -1,0 +1,58 @@
+@import "../../static/sass/main.scss";
+
+.ct-newsletter-subscribe-block {
+
+	form {
+
+		// input[type="text"],
+		// input[type="email"] {
+		// 	height: var(--theme-form-field-height, 40px);
+		// 	font-size: var(--theme-form-font-size, 16px);
+		// 	color: var(--theme-form-text-initial-color, var(--theme-text-color));
+		// 	padding: var(--has-classic-forms, var(--theme-form-field-padding, 0 12px));
+		// 	margin-inline: 0;
+		// 	border-width: var(--theme-form-field-border-width, 1px);
+		// 	border-style: var(--theme-form-field-border-style, solid);
+		// 	border-color: var(--theme-form-field-border-initial-color);
+		// 	border-radius: var(--has-classic-forms, var(--theme-form-field-border-radius, 3px));
+		// 	background-color: var(--has-classic-forms, var(--theme-form-field-background-initial-color));
+
+		// 	&::placeholder {
+		// 		opacity: 0.6;
+		// 		color: inherit;
+		// 	}
+
+		// 	&:focus {
+		// 		outline: none;
+		// 		box-shadow: none;
+		// 		color: var(--theme-form-text-focus-color, var(--theme-text-color));
+		// 		border-color: var(--theme-form-field-border-focus-color);
+		// 		background-color: var(--has-classic-forms, var(--theme-form-field-background-focus-color));
+		// 	}
+		// }
+
+		// input[type="checkbox"] {
+		// 	margin: 0;
+		// 	margin-inline-end: 0.7em;
+		// 	box-shadow: none;
+		// 	background: transparent;
+		// 	border-width: var(--form-selection-control-border-width, var(--theme-form-field-border-width, 1px));
+		// 	border-style: solid;
+		// 	border-color: var(--theme-form-selection-field-initial-color);
+		// 	border-radius: var(--theme-form-checkbox-border-radius, 3px);
+		// }
+
+		.wp-element-button {
+			border: none;
+			box-sizing: border-box;
+		}
+	}
+
+	.gdpr-confirm-policy {
+		pointer-events: none;
+
+		label {
+			font-size: 13px;
+		}
+	}
+}

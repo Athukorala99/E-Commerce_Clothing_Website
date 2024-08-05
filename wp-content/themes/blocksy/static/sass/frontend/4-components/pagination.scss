@@ -1,0 +1,129 @@
+.ct-pagination {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: var(--spacing, 60px);
+
+	&[data-divider] {
+		padding-top: var(--spacing, 60px);
+		border-top: var(--pagination-divider, none);
+	}
+}
+
+// simple & prev next type
+[data-pagination="simple"],
+[data-pagination="next_prev"] {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--theme-text-color);
+	--theme-link-initial-color: var(--theme-text-color);
+
+	.page-numbers {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		height: 40px;
+		border-radius: var(--theme-border-radius, 4px);
+		border: 2px solid transparent;
+
+		&.current {
+			color: var(--theme-text-active-color, #fff);
+			background: var(--theme-link-hover-color);
+		}
+
+		&:not(.dots) {
+			&:hover {
+				border-color: var(--theme-link-hover-color);
+			}
+		}
+	}
+
+	.prev, .next {
+		font-size: 12px;
+		text-transform: uppercase;
+		padding: 0 17px;
+		white-space: nowrap;
+		border-color: var(--theme-border-color);
+	}
+
+	.prev {
+		grid-column: 1;
+		justify-self: start;
+	}
+
+	.next {
+		grid-column: 3;
+		justify-self: end;
+	}
+}
+
+
+// simple type
+[data-pagination="simple"] > div {
+	grid-column: 2;
+	text-align: center;
+	margin: -5px;
+
+	.page-numbers {
+		flex: 0 0 41px;
+		width: 41px;
+		margin: 5px;
+	}
+}
+
+
+// load more & infinite type
+[data-pagination="load_more"],
+[data-pagination="infinite_scroll"] {
+	justify-content: center;
+
+	.page-numbers {
+		display: none;
+	}
+
+	.ct-load-more-helper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		min-width: var(--theme-button-min-height, 45px);
+		min-height: var(--theme-button-min-height, 45px);
+
+		.ct-ajax-loader {
+			opacity: 0;
+		}
+
+		&.ct-loading {
+			.ct-ajax-loader {
+				opacity: 1;
+			}
+
+			.ct-load-more {
+				opacity: 0;
+			}
+		}
+	}
+
+	.ct-load-more {
+		z-index: 2;
+		opacity: 1;
+	}
+
+	.ct-last-page-text {
+		display: none;
+	}
+
+	&.ct-last-page {
+		.ct-load-more, .ct-ajax-loader {
+			display: none;
+		}
+
+		.ct-last-page-text {
+			display: flex;
+			opacity: 0.7;
+		}
+	}
+}

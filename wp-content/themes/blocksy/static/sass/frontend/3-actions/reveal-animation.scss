@@ -1,0 +1,27 @@
+@media (prefers-reduced-motion: no-preference) {
+	[data-reveal] {
+		transition-property: opacity, transform;
+		transition-duration: 1.5s;
+		transition-timing-function: cubic-bezier(0.2, 1, 0.2, 1);
+
+		&[data-reveal*='no'] {
+			opacity: 0.01; // fixes links double tap on Chrome iOS
+		}
+
+		&[data-reveal*='yes'] {
+			opacity: 1;
+		}
+
+		&[data-reveal*='bottom'] {
+			transform: translateY(100px);
+		}
+	}
+
+	[class*='entries'] {
+		@for $i from 2 through 12 {
+			article[data-reveal*='#{$i}'] {
+				transition-delay: #{($i - 1) * 0.3}s;
+			}
+		}
+	}
+}

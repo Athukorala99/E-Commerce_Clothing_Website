@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocksy/post-template",
+	"parent": "blocksy/query",
+	"title": "Post Template",
+	"category": "theme",
+	"description": "Contains the block elements used to render a post, like the title, date, featured image, content or excerpt, and more.",
+	"textdomain": "default",
+	"supports": {
+		"reusable": false,
+		"html": false,
+		"layout": true,
+		"spacing": {
+			"blockGap": {
+				"__experimentalDefault": "1.25em"
+			},
+			"__experimentalDefaultControls": {
+				"blockGap": true
+			}
+		}
+	},
+
+	"usesContext": [
+		"post_type",
+		"limit",
+		"order",
+		"orderby",
+		"orderby_custom",
+		"offset",
+		"postId",
+		"postType",
+		"has_pagination",
+		"include_term_ids",
+		"exclude_term_ids",
+		"sticky_posts"
+	]
+}

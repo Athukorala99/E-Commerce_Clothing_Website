@@ -1,0 +1,64 @@
+[class*="ct-attachment"] {
+
+	.thumbnail {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+
+		img {
+			max-width: 100%;
+			border-radius: var(--ui-border-radius, 3px);
+		}
+
+		p {
+			max-width: 100%;
+			margin: 0;
+			font-style: italic;
+			font-size: 12px;
+			word-wrap: break-word;
+		}
+	}
+}
+
+
+// simple attachment
+.ct-attachment {
+
+	&:not([data-type="no-frame"]) .thumbnail {
+		min-height: 50px;
+		padding: 8px;
+		box-sizing: border-box;
+		border: 1px dashed #c1c4ca;
+		border-radius: var(--ui-border-radius, 3px);
+	}
+
+	// small height
+	&[data-type="small"] {
+		.thumbnail {
+			justify-content: center;
+			
+			img {
+				min-height: 32px;
+				max-height: 100px;
+			}
+		}
+	}
+}
+
+
+// multi attachment
+.ct-thumbnails-list {
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(80px, 120px));
+	gap: 15px;
+	margin-bottom: 20px;
+
+	.thumbnail img {
+		aspect-ratio: 1/1;
+		object-fit: cover;
+		object-position: center center;
+	}
+}

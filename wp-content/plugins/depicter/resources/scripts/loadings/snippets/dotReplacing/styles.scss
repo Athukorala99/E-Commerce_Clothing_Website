@@ -1,0 +1,86 @@
+// Variables ---------------------------------------------------
+$size: 12px;
+$gap: 9px;
+$radius: 50%;
+$duration: 1500ms;
+$longMoveTiming: cubic-bezier(0.76, 0, 0.24, 1);
+$shortMoveTiming: cubic-bezier(0.25, 1, 0.5, 1);
+$move: 40px;
+$halfMove: 20px;
+$darkBackground: #050a0e;
+$lightBackground: #fff;
+
+// -------------------------------------------------------------
+
+.depicter-dot-replacing {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+
+   span {
+      display: inline-block;
+      width: $size;
+      height: $size;
+      margin-right: $gap;
+      border-radius: $radius;
+
+      &:last-of-type {
+         margin-right: 0;
+      }
+   }
+
+   &.depicter-loading-dark {
+      span {
+         background-color: $darkBackground;
+      }
+   }
+
+   &.depicter-loading-light {
+      span {
+         background-color: $lightBackground;
+      }
+   }
+
+   span {
+      animation: middleDotReplacing $duration infinite $shortMoveTiming;
+      will-change: transform;
+
+      &:first-of-type {
+         animation: firstDotReplacing $duration infinite $longMoveTiming;
+      }
+
+      &:last-of-type {
+         animation: lastDotReplacing $duration infinite $shortMoveTiming;
+      }
+   }
+
+   @keyframes firstDotReplacing {
+      from {
+         transform: translateX(0);
+      }
+      to {
+         transform: translateX($move);
+      }
+   }
+
+   @keyframes middleDotReplacing {
+      0%,
+      38.8% {
+         transform: translateX(0);
+      }
+      66%,
+      100% {
+         transform: translateX(-$halfMove);
+      }
+   }
+   @keyframes lastDotReplacing {
+      0%,
+      66% {
+         transform: translateX(0);
+      }
+      91.5%,
+      100% {
+         transform: translateX(-$halfMove);
+      }
+   }
+}

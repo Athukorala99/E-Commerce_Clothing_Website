@@ -1,0 +1,25 @@
+[data-footer*='reveal'] {
+	.site-main {
+		box-shadow: var(--footer-box-shadow);
+	}
+
+	.site-main,
+	#main-container {
+		background: inherit;
+	}
+
+	.site-main,
+	.ct-trending-block {
+		z-index: 1;
+	}
+
+	// it should have a higher z-index because of search results dropdown
+	#main-container > [data-block] {
+		z-index: 2;
+	}
+
+	.ct-footer {
+		position: var(--position);
+		bottom: var(--theme-frame-size, 0px);
+	}
+}

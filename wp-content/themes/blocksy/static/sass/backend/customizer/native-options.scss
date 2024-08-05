@@ -1,0 +1,110 @@
+$margin: 22px;
+
+#customize-controls {
+
+	.customize-section-description-container {
+		margin-bottom: $margin;
+	}
+
+
+	.customize-pane-child {
+
+		> .customize-control,
+		.customize-section-description {
+			box-sizing: border-box;
+			padding: var(--ui-padding, 0 14px);
+		}
+	}
+
+	// menus section
+	.customize-pane-child {
+
+		&.control-panel-nav_menus {
+
+			.customize-control-title {
+				margin-top: $margin;
+				padding: 0 26px;
+
+				+ li {
+					border-top: none;
+				}
+			}
+
+			h3.accordion-section-title {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 5px;
+				font-weight: 600;
+			}
+		}
+	}
+
+	#accordion-section-add_menu,
+	.customize-control-description {
+		padding: 0 26px;
+		margin-inline: 0;
+	}
+
+	#accordion-section-add_menu {
+		border-block: 1px solid #dcdcde;
+		padding-block: 30px;
+
+		p {
+			margin-top: 0;
+		}
+	}
+
+	#accordion-section-add_menu h3 {
+		text-align: start;
+	}
+
+
+	// widgets section
+	.control-panel-widgets {
+		.panel-meta {
+			margin-bottom: $margin !important;
+		}
+
+		.control-section-sidebar {
+			&:nth-child(2) {
+				margin-top: $margin;
+				border-top: none !important;
+			}
+
+			&[id*="widgets-ct-footer-sidebar"] {
+				display: none !important;
+			}
+		}
+	}
+
+	.control-section-sidebar {
+		.customize-section-title {
+			margin-bottom: $margin;
+		}
+
+		.customize-control {
+			--ui-padding: 0 8px;
+		}
+
+		.customize-section-description {
+			--ui-padding: 0 8px;
+			margin-bottom: 15px;
+		}
+	}
+
+
+	// custom css
+	#sub-accordion-section-custom_css {
+		.description {
+			--ui-padding: 12px 15px;
+		}
+
+		.customize-control-code_editor {
+			--ui-padding: 0;
+
+			.CodeMirror-lint-markers {
+				width: 19px;
+			}
+		}
+	}
+}

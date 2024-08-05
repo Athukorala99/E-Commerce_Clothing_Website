@@ -1,0 +1,25 @@
+.ct-responsive-controls {
+	display: flex;
+	align-items: center;
+	gap: 17px;
+	margin: 0;
+
+	li {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		color: #CFD1D2;
+
+		&.active {
+			color: var(--ui-accent-color);
+		}
+
+		&:not(.active) {
+			
+			&:hover {
+				color: #a5abaf;
+			}
+		}
+	}
+}

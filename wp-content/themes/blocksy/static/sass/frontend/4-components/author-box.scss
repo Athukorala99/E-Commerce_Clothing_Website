@@ -1,0 +1,142 @@
+@import '../1-helpers/mixins';
+@import '../1-helpers/functions';
+
+.author-box {
+	display: flex;
+	padding: var(--spacing, 40px);
+
+	@include media-breakpoint-down(sm) {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.ct-media-container {
+		flex: 0 0 60px;
+		width: 60px;
+		height: 60px;
+		border-radius: 100%;
+
+		&:is(a) {
+
+			svg,
+			&:before {
+				position: absolute;
+				inset: 0;
+				z-index: 2;
+				opacity: 0;
+				transition: opacity 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+							transform 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+			}
+
+			&:before {
+				content: '';
+				background: var(--theme-palette-color-1);
+			}
+
+			svg {
+				margin: auto;
+				fill: #fff;
+				transform: translateX(-10px);
+			}
+
+			&:hover {
+				
+				&:before {
+					opacity: 0.85;
+				}
+
+				svg {
+					opacity: 1;
+					transform: translateX(0);
+				}
+			}
+		}
+	}
+
+	&[data-type='type-1'] {
+		margin-top: 60px;
+		margin-bottom: 60px;
+		box-shadow: var(--theme-box-shadow);
+		border: var(--theme-border);
+		border-radius: var(--theme-border-radius, 0);
+
+		.ct-media-container {
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 20px;
+			}
+
+			@include media-breakpoint-up(md) {
+				margin-right: 25px;
+			}
+		}
+	}
+
+	&[data-type='type-2'] {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		position: relative;
+		padding-top: 50px;
+		margin-top: 90px;
+		border-bottom: 1px solid var(--theme-border-color, #e8ebf0);
+
+		&:not(:last-child) {
+			margin-bottom: 60px;
+		}
+
+		.ct-media-container {
+			position: absolute;
+			top: calc(-30px - 3px);
+		}
+
+		&:after,
+		&:before {
+			position: absolute;
+			content: '';
+			top: -1px;
+			width: calc(50% - 50px);
+			height: 1px;
+			background: var(--theme-border-color, #e8ebf0);
+		}
+
+		&:before {
+			left: 0;
+		}
+
+		&:after {
+			right: 0;
+		}
+	}
+
+	.author-box-name:is(p, div) {
+		margin-bottom: 20px;
+		color: var(--theme-heading-color);
+	}
+
+	.author-box-bio {
+		color: var(--theme-text-color);
+	}
+
+	.author-box-socials:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+	.ct-author-box-more {
+		font-size: 11px;
+		font-weight: 500;
+		text-transform: uppercase;
+		display: inline-flex;
+	}
+
+
+	// special case with related posts & comments
+	+ {
+		.ct-comments,
+		.ct-related-posts {
+			border-top: none;
+			margin-top: 0;
+			padding-top: 0;
+		}
+	}
+}

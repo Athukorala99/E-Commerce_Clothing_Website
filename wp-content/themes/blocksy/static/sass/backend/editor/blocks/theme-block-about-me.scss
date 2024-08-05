@@ -1,0 +1,28 @@
+@import '../../../../../static/sass/frontend/5-modules/blocks/about-me';
+
+// admin specific styles
+.ct-about-me-block {
+	cursor: default;
+
+	a {
+		pointer-events: none;
+		text-decoration: none;
+	}
+
+	.ct-media-container {
+		width: 100%;
+		display: inline-flex;
+
+		img {
+			height: auto;
+			width: inherit;
+			border-radius: inherit;
+			object-fit: cover;
+		}
+	}
+
+
+	.ct-about-me-name {
+		margin-top: 0;
+	}
+}

@@ -1,0 +1,23 @@
+article > .entry-content .wp-block-post-content.entry-content {
+	width: 100%;
+	max-width: 100%;
+}
+
+.wp-block-post-content {	
+	
+	> * {
+		margin-inline: var(--theme-default-editor, auto);
+
+		&:not(.alignfull) {
+			width: var(--theme-default-editor, var(--theme-block-width));
+		}
+
+		&:not(.alignwide):not(.alignfull) {
+			max-width: var(--theme-default-editor, var(--theme-block-max-width));
+		}
+	}
+
+	> .alignwide {
+		max-width: var(--theme-default-editor, var(--theme-block-wide-max-width));
+	}
+}

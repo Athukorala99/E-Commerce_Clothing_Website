@@ -1,0 +1,12 @@
+.ct-relation-group {
+
+	&[data-relation='AND'] {
+		padding: 10px;
+		margin-inline: -10px;
+		border-radius: 5px;
+		border: 1px solid var(--optionBorderColor);
+		box-shadow: inset 0px 0px 0px 1px transparent;
+		transition: border-color var(--condition-ui-transition, 0.1s ease),
+					box-shadow var(--condition-ui-transition, 0.1s ease);
+	}
+}

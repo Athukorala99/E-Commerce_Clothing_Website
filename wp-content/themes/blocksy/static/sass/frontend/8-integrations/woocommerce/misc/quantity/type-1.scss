@@ -1,0 +1,42 @@
+$arrows-width: 25%;
+
+.quantity[data-type="type-1"] {
+	width: var(--quantity-width, 100px);
+
+	input[type="number"] {
+		padding-block: 0px;
+		padding-inline-start: 5px;
+		padding-inline-end: calc(#{$arrows-width} + 3px);
+		border-width: 1px;
+		border-inline-end-width: 0;
+	}
+
+	.ct-increase, 
+	.ct-decrease {
+		inset-inline-end: 0;
+		border-radius: 0;
+		width: $arrows-width;
+		max-width: 25px;
+
+		&:before {
+			content: '\e911';
+			font-size: calc(var(--quantity-height, 55px) / 6.7);
+		}
+	}
+
+	.ct-increase {
+		top: 0;
+		height: calc(50% - 1px);
+		border-start-end-radius: var(--theme-form-field-border-radius, 3px);
+	}
+
+	.ct-decrease {
+		bottom: 0;
+		height: 50%;
+		border-end-end-radius: var(--theme-form-field-border-radius, 3px);
+
+		&:before {
+			transform: scale(1, -1);
+		}
+	}
+}

@@ -1,0 +1,94 @@
+// Variables ---------------------------------------------------
+$size: 12px;
+$gap: 9px;
+$radius: 50%;
+$duration: 1500ms;
+$timing: cubic-bezier(0.5, 0, 0.75, 0);
+$darkBackground: #050a0e;
+$lightBackground: #fff;
+
+// -------------------------------------------------------------
+
+.depicter-dot-flashing {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+
+   span {
+      display: inline-block;
+      width: $size;
+      height: $size;
+      margin-right: $gap;
+      border-radius: $radius;
+
+      &:last-of-type {
+         margin-right: 0;
+      }
+   }
+
+   &.depicter-loading-dark {
+      span {
+         background-color: $darkBackground;
+      }
+   }
+
+   &.depicter-loading-light {
+      span {
+         background-color: $lightBackground;
+      }
+   }
+
+   span {
+      will-change: opacity;
+      animation: middleDotFlashing $duration infinite $timing;
+
+      &:first-of-type {
+         animation: firstDotFlashing $duration infinite $timing;
+      }
+
+      &:last-of-type {
+         animation: lastDotFlashing $duration infinite $timing;
+      }
+   }
+
+   @keyframes firstDotFlashing {
+      0% {
+         opacity: 1;
+      }
+      33.3% {
+         opacity: 0.2;
+      }
+      66.6%,
+      100% {
+         opacity: 1;
+      }
+   }
+
+   @keyframes middleDotFlashing {
+      0%,
+      5% {
+         opacity: 1;
+      }
+      38.8% {
+         opacity: 0.2;
+      }
+      72.2%,
+      100% {
+         opacity: 1;
+      }
+   }
+
+   @keyframes lastDotFlashing {
+      0%,
+      23.3% {
+         opacity: 1;
+      }
+      56.6% {
+         opacity: 0.2;
+      }
+      90%,
+      100% {
+         opacity: 1;
+      }
+   }
+}

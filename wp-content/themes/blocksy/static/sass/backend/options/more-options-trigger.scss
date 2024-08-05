@@ -1,0 +1,65 @@
+.ct-more-options-trigger {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-inline-start: auto;
+
+	button {
+		color: #484f56;
+
+		&:hover {
+			color: var(--ui-accent-color);
+		}
+
+		svg {
+			transform: rotate(90deg);
+		}
+	}
+}
+
+
+// colors popover
+.ct-options-popover {
+	inset-inline-start: 8px !important;
+
+	.components-popover__content {
+		border-radius: 3px;
+		box-shadow: 0 0 0 1px var(--optionBorderColor), 
+					0 15px 15px rgba(0, 0, 0, 0.08);
+
+		.components-dropdown-menu__menu {
+
+			.components-menu-group {
+				border-color: var(--optionBorderColor);
+			}
+
+			.components-menu-item__button {
+				min-height: 32px;
+			}
+
+			.components-menu-item__item {
+				min-width: 100px;
+			}
+		}
+	}
+}
+
+.ct-more-options-trigger,
+.ct-options-popover {
+
+	.components-button {
+		--wp-components-color-accent: var(--ui-accent-color);
+	}
+}
+
+
+// post types copy options
+.customize-section-title {
+	position: relative;
+
+	.ct-customize-section-title-actions {
+		position: absolute;
+		top: calc(50% - 12px);
+		inset-inline-end: 14px;
+	}
+}

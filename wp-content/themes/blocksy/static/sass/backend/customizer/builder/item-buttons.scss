@@ -1,0 +1,59 @@
+.ct-btn-remove {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 25px;
+	height: 25px;
+	color: inherit;
+	padding: 0;
+	border: none;
+	cursor: pointer;
+	background: none;
+	transition: color 0.1s ease;
+
+	position: absolute;
+	inset-inline-end: 2px;
+
+	&:hover {
+		color: #dd4b39;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+// clone & remove
+.ct-available-items .ct-builder-items > * {
+	
+	.ct-clone-item,
+	.ct-remove-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 30px;
+		height: $builder-item-height;
+		cursor: pointer;
+		margin-left: auto;
+		margin-right: 10px;
+		opacity: 0.85;
+		transition: color 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+					opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.ct-clone-item {
+		&:hover {
+			color: var(--ui-accent-color);
+		}
+	}
+
+	.ct-remove-item {
+		&:hover {
+			color: #dd4b39;
+		}
+	}
+}

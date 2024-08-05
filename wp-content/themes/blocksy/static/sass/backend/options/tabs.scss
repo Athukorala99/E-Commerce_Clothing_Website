@@ -1,0 +1,77 @@
+.ct-tabs {
+	margin: var(--tabs-container-margin, 25px -12px 0 -12px);
+
+	> ul {
+		display: flex;
+		column-gap: 7px;
+		margin: var(--tabs-pills-margin, 0 14px);
+
+		> li {
+			flex: 1 1 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 13px;
+			font-weight: 500;
+			height: var(--tabs-pills-height, 42px);
+			max-width: var(--tabs-pills-max-width);
+			margin: 0;
+			padding: 0px 10px;
+			cursor: pointer;
+			border: 1px solid var(--optionBorderColor);
+			box-sizing: border-box;
+			color: var(--tabs-pills-inactive-color, #555);
+			background: var(--tabs-pills-inactive-background-color, #eaeaec);
+
+			&.active {
+				position: relative;
+				color: var(--tabs-pills-active-color, #3c4248);
+				background: var(--tabs-pills-active-background-color, #f0f0f1);
+
+				&:before, &:after {
+					position: absolute;
+					content: '';
+				}
+				
+				&:before {
+					position: absolute;
+					content: '';
+					height: 2px;
+					top: -2px;
+					inset-inline: -1px;
+					background: var(--ui-accent-color);
+				}
+
+				&:after {
+					inset-inline-start: 0;
+					bottom: -2px;
+					width: 100%;
+					height: 3px;
+					background: var(--tabs-pills-active-background-color, #f0f0f1);
+				}
+			}
+
+			&:not(.active) {
+				&:hover {
+					color: var(--tabs-pills-hover-color, #444);
+					background: var(--tabs-pills-hover-background-color, #fff);
+				}
+			}
+		}
+	}
+
+	> ul + .ct-current-tab {
+		margin-top: -1px;
+		border-top: 1px solid var(--optionBorderColor);
+	}
+
+	.ct-current-tab {
+		padding: var(--tabs-content-padding, 0 12px);
+	}
+
+	&:not(:last-child) {
+		> .ct-current-tab {
+			margin-bottom: 20px;
+		}
+	}
+}

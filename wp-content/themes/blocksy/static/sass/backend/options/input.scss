@@ -1,0 +1,47 @@
+[class^="ct-option"] {
+
+	input[type="text"],
+	input[type="number"] {
+		// --input-font-size: 12px;
+
+		height: var(--input-height, 30px) !important;
+		width: var(--input-width, 100%) !important;
+		margin: var(--margin, 0) !important;
+		padding: var(--padding, 3px 8px) !important;
+		min-height: initial;
+		font-size: var(--input-font-size, 12px) !important;
+		color: #555d66;
+		line-height: normal;
+		background-color: var(--background, #fff);
+		border: var(--borderWidth, 1px) solid var(--optionBorderColor, #ddd) !important;
+		border-radius: var(--ui-border-radius, 3px) !important;
+		box-shadow: 0 0 0 0 transparent;
+		transition: box-shadow 0.1s linear,
+					background 0.1s linear,
+					border-radius 0.1s linear,
+					border-color 0.1s linear;
+
+		&:hover,
+		&:focus {
+			--optionBorderColor: var(--ui-accent-color) !important;
+		}
+
+		&:focus {
+			box-shadow: 0 0 0 1px var(--ui-accent-color);
+		}
+
+		&::placeholder {
+			opacity: 0.5;
+		}
+	}
+
+	input[type="number"] {
+		-moz-appearance: textfield;
+		
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button {
+			margin: 0;
+			-webkit-appearance: none;
+		}
+	}
+}

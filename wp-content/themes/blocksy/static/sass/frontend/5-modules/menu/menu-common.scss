@@ -1,0 +1,29 @@
+nav[class*="menu"] {
+
+	.ct-menu-link {
+		color: var(--theme-link-initial-color);
+		--theme-icon-color: var(--theme-link-initial-color);
+	}
+
+	li:hover {
+		> .ct-menu-link,
+		> .ct-sub-menu-parent {
+			color: var(--theme-link-hover-color);
+
+			svg {
+				fill: var(--theme-icon-hover-color, var(--theme-link-hover-color));
+			}
+		}
+	}
+
+	li[class*="current-menu-"] {
+		> .ct-menu-link,
+		> .ct-sub-menu-parent {
+			color: var(--theme-link-active-color, var(--theme-link-hover-color));
+
+			svg {
+				fill: var(--theme-icon-active-color, var(--theme-icon-hover-color, var(--theme-link-active-color, var(--theme-link-hover-color))));
+			}
+		}
+	}
+}

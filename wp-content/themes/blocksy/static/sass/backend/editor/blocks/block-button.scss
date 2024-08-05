@@ -1,0 +1,50 @@
+.wpforms-submit,
+.wp-element-button,
+.wp-block-button__link,
+.ff-inherit-theme-style .ff-btn-submit {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: var(--theme-button-padding);
+	min-height: var(--theme-button-min-height);
+	border-radius: var(--theme-button-border-radius);
+	border: var(--theme-button-border);
+	transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+	// alignment
+	&.has-text-align-left {
+		justify-content: flex-start;
+	}
+	
+	&.has-text-align-right {
+		justify-content: flex-end;
+	}
+}
+
+// filled button
+.wpforms-submit,
+.wp-element-button,
+.wp-block-button__link,
+.ff-inherit-theme-style .ff-btn-submit {
+	color: var(--theme-button-text-initial-color);
+	background-color: var(--theme-button-background-initial-color);
+
+	&:hover {
+		color: var(--theme-button-text-hover-color);
+		background-color: var(--theme-button-background-hover-color);
+		border-color: var(--theme-button-border-hover-color);
+	}
+}
+
+// outlined button
+.wp-block-button.is-style-outline .wp-element-button {
+	padding: var(--theme-button-padding);
+	color: var(--theme-button-background-initial-color);
+	border-color: var(--theme-button-background-initial-color);
+
+	&:hover {
+		color: var(--theme-button-text-hover-color);
+		border-color: var(--theme-button-background-hover-color);
+		background-color: var(--theme-button-background-hover-color);
+	}
+}

@@ -1,0 +1,22 @@
+// customizer modal
+.ct-builder-conditions-modal {
+	--modal-width: 700px;
+
+	.ct-modal-scroll {
+		padding-block: 30px;
+		border-top: 1px solid var(--optionBorderColor);
+	}
+}
+
+// reset modal position
+.block-editor-page {
+
+	&.post-type-ct_size_guide,
+	&.post-type-ct_product_tab,
+	&.post-type-ct_content_block {
+
+		[data-reach-dialog-overlay] {
+			--modal-left: 0;
+		}
+	}
+}

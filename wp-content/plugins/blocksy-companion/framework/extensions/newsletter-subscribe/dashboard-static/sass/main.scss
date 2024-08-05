@@ -1,0 +1,49 @@
+.ct-newsletter-subscribe-options {
+	padding-top: 40px;
+	border-top: 1px dashed #eee;
+
+	.ct-newsletter-credentials {
+		display: grid;
+		grid-column-gap: 10px;
+
+		&[data-columns="3"] {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		&[data-columns="4"] {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		section {
+			display: flex;
+			flex-direction: column;
+			min-width: 0;
+		}
+
+		label {
+			display: block;
+			font-size: 12px;
+			font-weight: 500;
+			letter-spacing: 0.1px;
+			margin-bottom: 10px;
+		}
+
+		input {
+			--input-height: 35px;
+		}
+
+		.ct-select-input {
+
+			&.ct-no-results:after {
+				display: none;
+			}
+		}
+	}
+
+	.ct-option-description {
+		display: block;
+		opacity: 0.8;
+		color: inherit;
+		margin-bottom: 30px;
+	}
+}

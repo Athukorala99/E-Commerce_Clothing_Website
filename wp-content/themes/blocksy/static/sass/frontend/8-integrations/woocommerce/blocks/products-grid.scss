@@ -1,0 +1,23 @@
+// buttons
+.wc-block-grid__product-add-to-cart {
+
+	&.wp-block-button .wp-block-button__link {
+
+		&.loading {
+
+			&:after {
+				margin: 0;
+				width: 16px;
+				height: 16px;
+				animation: spin 1s linear infinite;
+			}
+		}
+	}
+}
+
+// onsale badge
+.wc-block-components-product-sale-badge {
+	color: var(--badge-text-color, #fff);
+	background: var(--badge-background-color, var(--theme-palette-color-1));
+	border: none;
+}

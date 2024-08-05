@@ -1,0 +1,110 @@
+.ct-tooltip {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 200;
+	min-height: 26px;
+	width: var(--tooltip-width, auto);
+	white-space: var(--tooltip-width, nowrap);
+	padding: 4px 8px;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: normal;
+	letter-spacing: initial;
+	text-transform: initial;
+	text-align: center;
+	color: #fff;
+	border-radius: 3px;
+	user-select: none;
+	pointer-events: none;
+	box-sizing: border-box;
+	background: rgba(54, 63, 66, 1);
+	-webkit-font-smoothing: antialiased;
+	-webkit-backface-visibility: hidden;
+
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+				transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+				visibility 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		box-sizing: border-box;
+	}
+}
+
+[data-tooltip] {
+	position: relative;
+
+	&:hover .ct-tooltip {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+// reaveal top 
+[data-tooltip="top"] {
+
+	.ct-tooltip {
+		top: 0;
+		transform: translateY(calc(-100% - 5px - var(--tooltip-initial-position, 3px)));
+		
+		&:before {
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: calc(5px + var(--tooltip-hover-position, 7px));
+			transform: translateY(100%);
+		}
+
+		&:after {
+			width: 10px;
+			height: 5px;
+			bottom: -4px;
+			inset-inline: 0;
+			margin-inline: auto;
+			border-inline: 5px solid transparent;
+			border-top: 5px solid rgba(54, 63, 66, 1);
+		}
+	}
+
+	&:hover .ct-tooltip {
+		transform: translateY(calc(-100% - 5px - var(--tooltip-hover-position, 7px)));
+	}
+}
+
+// reaveal left
+[data-tooltip="left"] {
+
+	.ct-tooltip {
+		inset-inline-start: 0;
+		transform: translateX(calc(-100% - 5px - var(--tooltip-initial-position, 3px)));
+
+		&:before {
+			top: 0;
+			inset-inline-end: 0;
+			height: 100%;
+			width: calc(5px + var(--tooltip-hover-position, 7px));
+			transform: translateX(100%);
+		}
+
+		&:after {
+			height: 10px;
+			wifth: 5px;
+			inset-inline-end: -4px;
+			inset-block: 0;
+			margin-block: auto;
+			border-block: 5px solid transparent;
+			border-inline-start: 5px solid rgba(54, 63, 66, 1);
+		}
+	}
+
+	&:hover .ct-tooltip {
+		transform: translateX(calc(-100% - 5px - var(--tooltip-hover-position, 7px)));
+	}
+}
+
+

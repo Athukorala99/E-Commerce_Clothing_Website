@@ -1,0 +1,9 @@
+<?php
+namespace {{namespace}};
+
+use TypeRocket\Models\Model;
+
+class {{model}} extends Model
+{
+    protected $resource = '{{id}}';
+}

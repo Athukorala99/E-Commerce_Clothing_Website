@@ -1,0 +1,51 @@
+#ct-dashboard {
+
+	.ct-cta-container,
+	.ct-support-container {
+		text-align: center;
+		border-radius: 3px;
+		background: #f5f7f9;
+
+		@media (max-width: 782px) {
+			padding: 10%;
+		}
+
+		@media (min-width: 783px) {
+			padding: 50px;
+		}
+
+		h2 {
+			margin-top: 0;
+		}
+
+		p {
+			display: block;
+			max-width: 600px;
+			margin: 0 auto 30px auto;
+		}
+
+		.ct-support-buttons {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+
+			.ct-button {
+				--ui-button-height: 42px;
+				--ui-button-padding: 20px;
+				--ui-button-font-size: 14px;
+			}
+		}
+	}
+
+	.ct-support-container {
+		margin-top: 100px;
+	}
+
+	.ct-cta-container {
+		margin-top: 50px;
+
+		b {
+			font-weight: 800;
+		}
+	}
+}

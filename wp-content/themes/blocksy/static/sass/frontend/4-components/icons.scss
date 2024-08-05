@@ -1,0 +1,83 @@
+.ct-icon,
+.ct-icon-container svg {
+	width: var(--theme-icon-size, 15px);
+	height: var(--theme-icon-size, 15px);
+	fill: var(--theme-icon-color, var(--theme-text-color));
+	transition: var(--theme-icon-transition, fill 0.12s cubic-bezier(.455,.03,.515,.955));
+}
+
+.ct-icon,
+.ct-icon-container {
+	position: relative;
+}
+
+.ct-icon-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+// icon position / pro - megamenu
+.ct-icon-container {
+	
+	&.ct-left {
+		margin-inline-end: 0.5em;
+	}
+
+	&.ct-right {
+		margin-inline-start: 0.5em;
+	}
+}
+
+
+// icon shape
+[data-icons-type*=":"] {
+
+	.ct-icon-container {
+		width: calc(var(--theme-icon-size, 15px) * 2.5);
+		height: calc(var(--theme-icon-size, 15px) * 2.5);
+		transition: background 0.12s cubic-bezier(.455,.03,.515,.955),
+					border-color 0.12s cubic-bezier(.455,.03,.515,.955);
+	}
+}
+
+[data-icons-type*="square"] .ct-icon-container {
+	border-radius: 2px;
+}
+
+[data-icons-type*="rounded"] .ct-icon-container {
+	border-radius: 100%;
+}
+
+[data-icons-type] > * {
+	transition: none;
+
+	&:hover svg {
+		fill: var(--theme-icon-hover-color, var(--theme-palette-color-2));
+	}
+}
+
+
+// icon shape color
+[data-icons-type*="solid"] {
+
+	.ct-icon-container {
+		background-color: var(--background-color);
+	}
+
+	> *:hover .ct-icon-container {
+		background-color: var(--background-hover-color);
+	}
+}
+
+[data-icons-type*="outline"] {
+	
+	.ct-icon-container {
+		border: 1px solid var(--background-color);
+	}
+
+	> *:hover .ct-icon-container {
+		border-color: var(--background-hover-color);
+	}
+}

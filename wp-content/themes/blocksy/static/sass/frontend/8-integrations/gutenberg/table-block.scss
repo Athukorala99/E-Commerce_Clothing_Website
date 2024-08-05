@@ -1,0 +1,15 @@
+.wp-block-table {
+
+	table {
+
+		&:not(.has-border-color) {
+			thead, tfoot, td, th {
+				border-color: var(--theme-table-border-color, var(--theme-border-color));
+			}
+		}
+	}
+
+	&.is-style-stripes {
+		border: 0;
+	}
+}

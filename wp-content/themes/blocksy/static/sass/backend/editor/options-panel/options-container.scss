@@ -1,0 +1,65 @@
+.ct-components-panel {
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100% - 47px);
+	background: #fcfcfc;
+}
+
+#ct-page-options {
+
+	> .ct-options-container {
+		padding: 0 12px 30px 12px;
+		transition: 180ms transform cubic-bezier(0.645, 0.045, 0.355, 1);
+	}
+}
+
+// Options
+#ct-page-options {
+	--optionBorderColor: #e2e4e7;
+
+	--tabs-pills-active-background-color: #fcfcfc;
+	--tabs-pills-inactive-background-color: #f1f1f1;
+
+	// radio buttons
+	[data-spacing='custom'] {
+		padding: 0 3px;
+	}
+
+	// panel
+	.ct-panel.ct-click-allowed:hover:before {
+		background: #f7f7f7;
+	}
+
+	.customize-panel-actions {
+		align-items: center;
+		background: #f3f4f5;
+		border-bottom-color: #e2e4e7;
+
+		button {
+			width: 47px;
+			height: 47px;
+			background: #f3f4f5;
+			border-inline-start: none;
+
+			&:before {
+				font-size: 16px;
+			}
+
+			&:hover {
+				color: #0073aa;
+			}
+		}
+
+		h3 {
+			font-size: 13px !important;
+			font-weight: 600;
+		}
+	}
+
+	.ct-customizer-panel {
+		background: #fcfcfc;
+		border-top: none;
+		border-bottom: none;
+		overflow: initial;
+	}
+}

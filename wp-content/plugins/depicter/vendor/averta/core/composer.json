@@ -1,0 +1,31 @@
+{
+    "name": "averta/core",
+    "description": "Averta PHP Toolkit.",
+    "keywords": ["toolkit", "averta", "php"],
+    "license": "GPL-3.0-or-later",
+    "homepage": "https://averta.net",
+    "authors": [
+        {
+            "name": "Averta",
+            "homepage": "https://averta.net",
+            "role": "Creator"
+        }
+    ],
+    "support": {
+        "docs": "https://averta.net"
+    },
+    "require" : {
+        "php": ">=5.6",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "psr/simple-cache":"^1"
+    },
+    "require-dev": {
+        "composer/installers": "^1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Averta\\Core\\": "src/"
+        }
+    }
+}

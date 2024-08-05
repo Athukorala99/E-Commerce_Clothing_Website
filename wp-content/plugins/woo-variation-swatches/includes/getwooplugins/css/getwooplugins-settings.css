@@ -1,0 +1,890 @@
+.select2-results__option--highlighted {
+    --wp-admin-theme-color                : #007CBA;
+    --wp-admin-theme-color--rgb           : 0, 124, 186;
+    --wp-admin-theme-color-darker-10      : #006BA1;
+    --wp-admin-theme-color-darker-10--rgb : 0, 107, 161;
+    --wp-admin-theme-color-darker-20      : #005A87;
+    --wp-admin-theme-color-darker-20--rgb : 0, 90, 135;
+    --wp-admin-border-width-focus         : 2px
+    }
+
+@media (-webkit-min-device-pixel-ratio : 2), (min-resolution : 192dpi) {
+    .select2-results__option--highlighted {
+        --wp-admin-border-width-focus : 1.5px;
+        }
+    }
+
+[data-gwp_dependency]:not(.dependency-show) {
+    display : none !important;
+    }
+
+.getwooplugins-settings-wrapper h2 {
+    font-size     : 1.3em;
+    margin-bottom : 10px;
+    }
+
+.getwooplugins-settings-wrapper nav.getwooplugins-nav-tab-wrapper {
+    margin : 1.5em 0 1em;
+    }
+
+.getwooplugins-settings-content-wrapper.has-sidebar {
+    display : flex;
+    }
+
+.getwooplugins-settings-content-wrapper.has-sidebar .getwooplugins-settings-main {
+    width : 80%;
+    }
+
+.getwooplugins-settings-sidebar {
+    background-color : #FFFFFF;
+    display          : inline-block;
+    width            : 20%;
+    margin           : 0 10px;
+    border-radius    : 2px;
+    box-shadow       : 0 0 0 1px rgb(0 0 0 / 7%), 0 1px 1px rgb(0 0 0 / 4%);
+    box-sizing       : border-box;
+    padding          : 10px 20px;
+    }
+
+.getwooplugins-recommended-plugins-tab {
+    box-sizing : border-box;
+    padding    : 2px 0;
+    }
+
+@media screen and (max-width : 960px) {
+    .getwooplugins-settings-content-wrapper.has-sidebar .getwooplugins-settings-main {
+        width : 100%;
+        }
+
+    .getwooplugins-settings-sidebar {
+        display : none;
+        }
+    }
+
+@media screen and (max-width : 782px) {
+    .getwooplugins-admin-form-table td {
+        margin-bottom : auto;
+        padding       : 10px 20px;
+        }
+
+    .getwooplugins-nav-tab-wrapper .nav-tab {
+        margin : 2px 0;
+        }
+    }
+
+.gwp-go-pro-action-link > a {
+    font-weight    : bold;
+    text-transform : capitalize;
+    color          : var(--wc-red);
+    text-shadow    : 1px 1px 1px #EEEEEE;
+    }
+
+.gwp-setting-input-suffix {
+    /*margin: 4px;*/
+    display : inline-block;
+    }
+
+.getwooplugins-admin-form-table {
+    margin        : 0;
+    position      : relative;
+    table-layout  : fixed;
+    margin-top    : 15px;
+    background    : #FFFFFF;
+    border-radius : 2px;
+    box-shadow    : 0 0 0 1px rgba(0, 0, 0, 0.07), 0 1px 1px rgba(0, 0, 0, 0.04);
+    }
+
+.getwooplugins-admin-form-table .forminp-radio ul {
+    margin : 0
+    }
+
+.getwooplugins-admin-form-table .forminp-radio ul li {
+    line-height : 1.4em
+    }
+
+.getwooplugins-admin-form-table input[type=email],
+.getwooplugins-admin-form-table input[type=number],
+.getwooplugins-admin-form-table input[type=text] {
+    height : auto
+    }
+
+.getwooplugins-admin-form-table textarea.input-text {
+    height    : 100%;
+    min-width : 150px;
+    display   : block
+    }
+
+.getwooplugins-admin-form-table input.regular-input,
+.getwooplugins-admin-form-table input[type=date],
+.getwooplugins-admin-form-table input[type=datetime-local],
+.getwooplugins-admin-form-table input[type=datetime],
+.getwooplugins-admin-form-table input[type=email],
+.getwooplugins-admin-form-table input[type=number],
+.getwooplugins-admin-form-table input[type=password],
+.getwooplugins-admin-form-table input[type=tel],
+.getwooplugins-admin-form-table input[type=text],
+.getwooplugins-admin-form-table input[type=time],
+.getwooplugins-admin-form-table input[type=url],
+.getwooplugins-admin-form-table input[type=week],
+.getwooplugins-admin-form-table textarea {
+    width          : 400px;
+    margin         : 0;
+    padding        : 3px 6px;
+    box-sizing     : border-box;
+    vertical-align : top
+    }
+
+.getwooplugins-admin-form-table input[type=date],
+.getwooplugins-admin-form-table input[type=datetime-local],
+.getwooplugins-admin-form-table input[type=tel],
+.getwooplugins-admin-form-table input[type=time],
+.getwooplugins-admin-form-table input[type=week] {
+    width : 200px
+    }
+
+.getwooplugins-admin-form-table select {
+    width          : 400px;
+    margin         : 0;
+    box-sizing     : border-box;
+    line-height    : 32px;
+    vertical-align : top
+    }
+
+.getwooplugins-admin-form-table input[size] {
+    width : auto !important
+    }
+
+
+.getwooplugins-admin-form-table textarea.wide-input {
+    width : 100%
+    }
+
+.getwooplugins-admin-form-table .getwooplugins-help-tip {
+    padding        : 0;
+    margin         : 0 0 0 5px !important;
+    vertical-align : middle;
+    cursor         : help;
+    line-height    : 1
+    }
+
+
+.getwooplugins-help-tip {
+    color          : #666666;
+    display        : inline-block;
+    font-size      : 1.1em;
+    font-style     : normal;
+    height         : 16px;
+    line-height    : 16px;
+    position       : relative;
+    vertical-align : middle;
+    width          : 16px;
+    margin         : 0 0 0 5px !important;
+    }
+
+.getwooplugins-help-tip::after {
+    font-family            : dashicons;
+    speak                  : never;
+    font-weight            : 400;
+    font-variant           : normal;
+    text-transform         : none;
+    line-height            : 1;
+    -webkit-font-smoothing : antialiased;
+    margin                 : 0;
+    text-indent            : 0;
+    position               : absolute;
+    top                    : 0;
+    left                   : 0;
+    width                  : 100%;
+    height                 : 100%;
+    text-align             : center;
+    content                : "\f348";
+    cursor                 : help;
+    }
+
+/***/
+
+#tiptip_holder {
+    display  : none;
+    z-index  : 8675309;
+    position : absolute;
+    top      : 0;
+    left     : 0
+    }
+
+#tiptip_holder.tip_top {
+    padding-bottom : 5px
+    }
+
+#tiptip_holder.tip_top #tiptip_arrow_inner {
+    margin-top       : -7px;
+    margin-left      : -6px;
+    border-top-color : #333333
+    }
+
+#tiptip_holder.tip_bottom {
+    padding-top : 5px
+    }
+
+#tiptip_holder.tip_bottom #tiptip_arrow_inner {
+    margin-top          : -5px;
+    margin-left         : -6px;
+    border-bottom-color : #333333
+    }
+
+#tiptip_holder.tip_right {
+    padding-left : 5px
+    }
+
+#tiptip_holder.tip_right #tiptip_arrow_inner {
+    margin-top         : -6px;
+    margin-left        : -5px;
+    border-right-color : #333333
+    }
+
+#tiptip_holder.tip_left {
+    padding-right : 5px
+    }
+
+#tiptip_holder.tip_left #tiptip_arrow_inner {
+    margin-top        : -6px;
+    margin-left       : -7px;
+    border-left-color : #333333
+    }
+
+#tiptip_content, .chart-tooltip, .wc_error_tip {
+    color         : #FFFFFF;
+    font-size     : .8em;
+    max-width     : 150px;
+    background    : #333333;
+    text-align    : center;
+    border-radius : 3px;
+    padding       : .618em 1em;
+    box-shadow    : 0 1px 3px rgba(0, 0, 0, .2)
+    }
+
+#tiptip_content code, .chart-tooltip code, .wc_error_tip code {
+    padding    : 1px;
+    background : #888888
+    }
+
+#tiptip_arrow, #tiptip_arrow_inner {
+    position     : absolute;
+    border-color : transparent;
+    border-style : solid;
+    border-width : 6px;
+    height       : 0;
+    width        : 0
+    }
+
+/***/
+
+h2 .getwooplugins-help-tip {
+    margin-top  : -5px;
+    margin-left : .25em
+    }
+
+.getwooplugins-admin-form-table tr:nth-child(even) {
+    background : #FCFCFC;
+    }
+
+.getwooplugins-admin-form-table .input-wrapper {
+    display        : flex;
+    flex-wrap      : nowrap;
+    flex-direction : row;
+    }
+
+.getwooplugins-admin-form-table .input-wrapper.has-suffix input {
+    border                     : 1px solid #8C8F94;
+    border-right               : 0;
+    border-top-right-radius    : 0;
+    border-bottom-right-radius : 0;
+    }
+
+.rtl .getwooplugins-admin-form-table .input-wrapper.has-suffix input {
+    border                    : 1px solid #8C8F94;
+    border-radius             : 4px;
+    border-left               : 0;
+    border-top-left-radius    : 0;
+    border-bottom-left-radius : 0;
+    }
+
+.getwooplugins-admin-form-table .input-wrapper.has-prefix input {
+    border-left               : 0;
+    border-top-left-radius    : 0;
+    border-bottom-left-radius : 0;
+    }
+
+.rtl .getwooplugins-admin-form-table .input-wrapper.has-prefix input {
+    border-right               : 0;
+    border-top-right-radius    : 0;
+    border-bottom-right-radius : 0;
+    }
+
+.getwooplugins-admin-form-table .icon-holder {
+    padding : 4px 0;
+    }
+
+.getwooplugins-admin-form-table .input-wrapper.has-suffix .gwp-setting-input-suffix {
+    box-shadow                : 0 0 0 transparent;
+    border-radius             : 4px;
+    border                    : 1px solid #8C8F94;
+    background-color          : #DCDCDE;
+    color                     : #2C3338;
+    padding                   : 0 8px;
+    line-height               : 2;
+    border-top-left-radius    : 0;
+    border-bottom-left-radius : 0;
+    }
+
+
+.rtl .getwooplugins-admin-form-table .input-wrapper.has-suffix .gwp-setting-input-suffix {
+    border-radius              : 4px;
+    border-top-right-radius    : 0;
+    border-bottom-right-radius : 0;
+    }
+
+
+.getwooplugins-admin-form-table .input-wrapper.has-prefix .gwp-setting-input-prefix {
+    box-shadow                 : 0 0 0 transparent;
+    border-radius              : 4px;
+    border                     : 1px solid #8C8F94;
+    background-color           : #DCDCDE;
+    color                      : #2C3338;
+    padding                    : 0 8px;
+    line-height                : 2;
+    border-top-right-radius    : 0;
+    border-bottom-right-radius : 0;
+    }
+
+
+.rtl .getwooplugins-admin-form-table .input-wrapper.has-prefix .gwp-setting-input-prefix {
+    border-radius             : 4px;
+    border-top-left-radius    : 0;
+    border-bottom-left-radius : 0;
+    }
+
+.getwooplugins-admin-form-table tr {
+    border-bottom  : 1px solid #EEEEEE;
+    display        : block;
+    vertical-align : top;
+    }
+
+.getwooplugins-admin-form-table tr:last-child {
+    border : 0;
+    }
+
+.getwooplugins-admin-form-table td .description {
+    font-style : italic;
+    }
+
+.getwooplugins-admin-form-table th {
+    padding : 20px 10px 20px 20px;
+    }
+
+.getwooplugins-admin-form-table .is-pro th {
+    pointer-events : none;
+    }
+
+.getwooplugins-admin-form-table .is-pro td {
+    opacity        : 0.6;
+    pointer-events : none;
+    }
+
+.getwooplugins-admin-form-table .is-new th label::after,
+.getwooplugins-admin-form-table .is-classic th label::after {
+    content                    : "";
+    position                   : absolute;
+    left                       : -20px;
+    right                      : auto;
+    top                        : -20px;
+    color                      : #FFFFFF;
+    font-size                  : 8px;
+    font-weight                : normal;
+    text-transform             : uppercase;
+    padding                    : 5px;
+    line-height                : 1;
+    border-bottom-right-radius : 5px;
+    }
+
+.rtl .getwooplugins-admin-form-table .is-new th label::after,
+.rtl .getwooplugins-admin-form-table .is-classic th label::after {
+    right : -10px;
+    left  : auto;
+    border-bottom-left-radius : 5px;
+    border-bottom-right-radius : 0;
+    }
+
+/*.getwooplugins-admin-form-table .is-pro th label::before {
+    content    : 'PRO';
+    background : #F44336;
+    }*/
+
+
+.getwooplugins-admin-form-table .is-pro th .pro-modal,
+.getwooplugins-admin-form-table .help-preview th .help-modal {
+
+    pointer-events  : all;
+    text-decoration : none;
+    right           : 0;
+    top             : 18px;
+    padding         : 1px;
+    position        : absolute;
+    font-family     : dashicons;
+    display         : inline-block;
+    line-height     : 1;
+    font-weight     : 400;
+    font-style      : normal;
+    width           : 22px;
+    height          : 22px;
+    font-size       : 22px;
+    vertical-align  : top;
+    text-align      : center;
+    }
+
+.rtl .getwooplugins-admin-form-table .is-pro th .pro-modal,
+.rtl .getwooplugins-admin-form-table .help-preview th .help-modal {
+    right : auto;
+    left  : 0;
+    }
+
+
+.getwooplugins-admin-form-table .woocommerce-help-tip::after {
+    content : "\f348";
+    /*content : "\f14c";*/
+    /*content : "\f348";*/
+    }
+
+.getwooplugins-admin-form-table .is-pro th .pro-modal {
+    color : #D63639;
+    }
+
+.getwooplugins-admin-form-table .help-preview th .help-modal {
+    color : #666666;
+    }
+
+.getwooplugins-admin-form-table .is-pro th .pro-modal::after {
+    content : "\f160";
+    cursor  : pointer;
+    }
+
+.getwooplugins-admin-form-table .help-preview th .help-modal::after {
+    content : "\f223";
+    cursor  : pointer;
+    /*content : "\f504";*/
+    }
+
+
+.getwooplugins-admin-form-table .help-preview.has-tooltip-html th .help-modal {
+    right : 18px;
+    top   : 18px;
+    }
+
+
+.getwooplugins-admin-form-table .is-new th label::after {
+    content    : 'NEW';
+    background : #2196F3;
+    }
+
+.getwooplugins-admin-form-table .is-classic th label::after {
+    content    : 'Classic';
+    background : #666666;
+    }
+
+/*.getwooplugins-admin-form-table .is-new.help-preview th label::after {
+    right : 24px;
+    }
+
+.getwooplugins-admin-form-table .is-new.is-pro th label::after {
+    display : none;
+    }*/
+
+
+.form-table.getwooplugins-admin-form-table th {
+    width : 250px;
+    }
+
+/**
+  * GWP Backbone modal dialog
+  */
+
+.gwp-backbone-modal * {
+    box-sizing : border-box;
+    }
+
+.gwp-backbone-modal .gwp-backbone-modal-content {
+    position   : fixed;
+    background : #FFFFFF;
+    z-index    : 100000;
+    left       : 50%;
+    top        : 50%;
+    transform  : translate(-50%, -50%);
+    max-width  : 100%;
+    min-width  : 300px;
+    }
+
+.gwp-backbone-modal .gwp-backbone-modal-content article {
+    overflow : visible;
+    }
+
+.gwp-backbone-modal .gwp-backbone-modal-content article video {
+    /* override other styles to make responsive */
+    width   : 100% !important;
+    height  : auto !important;
+    display : block;
+    }
+
+.gwp-backbone-modal .gwp-backbone-modal-content article .video-wrapper {
+    position       : relative;
+    padding-bottom : 56.25%; /* 16:9 */
+    height         : 0;
+    }
+
+.gwp-backbone-modal .gwp-backbone-modal-content article .video-wrapper iframe {
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    width    : 100%;
+    height   : 100%;
+    }
+
+.gwp-backbone-modal .gwp-backbone-modal-content {
+    width : 40%;
+    }
+
+.gwp-backbone-modal .gwp-dialog-form-body h2 {
+    font-weight : 700;
+    font-size   : 15px;
+    color       : #495157;
+    margin      : 0 0 20px 0;
+    }
+
+.gwp-backbone-modal footer {
+    margin-top : 30px;
+    overflow   : hidden;
+    clear      : both;
+    }
+
+
+@media screen and (max-width : 782px) {
+    .gwp-backbone-modal .gwp-backbone-modal-content {
+        width     : 100%;
+        height    : 100%;
+        min-width : 100%;
+        }
+    }
+
+.gwp-backbone-modal-backdrop {
+    position   : fixed;
+    top        : 0;
+    left       : 0;
+    right      : 0;
+    bottom     : 0;
+    min-height : 360px;
+    background : #000000;
+    opacity    : 0.7;
+    z-index    : 99900;
+    }
+
+.gwp-backbone-modal-main {
+    padding-bottom : 55px;
+    }
+
+.gwp-backbone-modal-main header,
+.gwp-backbone-modal-main article {
+    display  : block;
+    position : relative;
+    }
+
+.gwp-backbone-modal-main .gwp-backbone-modal-header {
+    height        : auto;
+    background    : #FCFCFC;
+    padding       : 1em 1.5em;
+    border-bottom : 1px solid #DDDDDD;
+    }
+
+.gwp-backbone-modal-main .gwp-backbone-modal-header h1 {
+    margin         : 0;
+    color          : #495157;
+    font-weight    : 700;
+    font-size      : 14px;
+    background     : transparent;
+    line-height    : 2em;
+    text-transform : uppercase;
+    border         : 0;
+    }
+
+.gwp-backbone-modal-main .gwp-backbone-modal-header .modal-close-link {
+    cursor           : pointer;
+    color            : #777777;
+    height           : 54px;
+    width            : 54px;
+    padding          : 0;
+    position         : absolute;
+    top              : 0;
+    right            : 0;
+    text-align       : center;
+    border           : 0;
+    border-left      : 1px solid #DDDDDD;
+    background-color : transparent;
+    transition       : color 0.1s ease-in-out, background 0.1s ease-in-out;
+    }
+
+.rtl .gwp-backbone-modal-main .gwp-backbone-modal-header .modal-close-link {
+    right        : auto;
+    left         : 0;
+    border-right : 1px solid #DDDDDD;
+    }
+
+.gwp-backbone-modal-main .gwp-backbone-modal-header .modal-close-link::before {
+    font        : normal 22px/50px "dashicons" !important;
+    color       : #666666;
+    display     : block;
+    content     : "\F335";
+    font-weight : 300;
+    }
+
+.gwp-backbone-modal-main .gwp-backbone-modal-header .modal-close-link:hover,
+.gwp-backbone-modal-main .gwp-backbone-modal-header .modal-close-link:focus {
+    background   : #DDDDDD;
+    border-color : #CCCCCC;
+    color        : #000000;
+    }
+
+.gwp-backbone-modal-main .gwp-backbone-modal-header .modal-close-link:focus {
+    outline : none;
+    }
+
+.gwp-backbone-modal-main article {
+    padding : 0;
+    margin  : 0;
+    }
+
+.gwp-backbone-modal-main article p {
+    margin : 1.5em 0;
+    }
+
+.gwp-backbone-modal-main article p:first-child {
+    margin-top : 0;
+    }
+
+.gwp-backbone-modal-main article p:last-child {
+    margin-bottom : 0;
+    }
+
+.gwp-backbone-modal-main article .pagination {
+    padding    : 10px 0 0;
+    text-align : center;
+    }
+
+.gwp-backbone-modal-main article table.widefat {
+    margin     : 0;
+    width      : 100%;
+    border     : 0;
+    box-shadow : none;
+    }
+
+.gwp-backbone-modal-main article table.widefat thead th {
+    padding    : 0 1em 1em 1em;
+    text-align : left;
+    }
+
+.gwp-backbone-modal-main article table.widefat thead th:first-child {
+    padding-left : 0;
+    }
+
+.gwp-backbone-modal-main article table.widefat thead th:last-child {
+    padding-right : 0;
+    text-align    : right;
+    }
+
+.gwp-backbone-modal-main article table.widefat tbody td,
+.gwp-backbone-modal-main article table.widefat tbody th {
+    padding        : 1em;
+    text-align     : left;
+    vertical-align : middle;
+    }
+
+.gwp-backbone-modal-main article table.widefat tbody td:first-child,
+.gwp-backbone-modal-main article table.widefat tbody th:first-child {
+    padding-left : 0;
+    }
+
+.gwp-backbone-modal-main article table.widefat tbody td:last-child,
+.gwp-backbone-modal-main article table.widefat tbody th:last-child {
+    padding-right : 0;
+    text-align    : right;
+    }
+
+.gwp-backbone-modal-main article table.widefat tbody td select,
+.gwp-backbone-modal-main article table.widefat tbody td .select2-container,
+.gwp-backbone-modal-main article table.widefat tbody th select,
+.gwp-backbone-modal-main article table.widefat tbody th .select2-container {
+    width : 100%;
+    }
+
+.gwp-backbone-modal-main footer {
+    position   : absolute;
+    left       : 0;
+    right      : 0;
+    bottom     : 0;
+    z-index    : 100;
+    padding    : 1em 1.5em;
+    background : #FCFCFC;
+    border-top : 1px solid #DFDFDF;
+    box-shadow : 0 -4px 4px -4px rgba(0, 0, 0, 0.1);
+    }
+
+.gwp-backbone-modal-main footer .inner {
+    text-align  : right;
+    line-height : 23px;
+    }
+
+.rtl .gwp-backbone-modal-main footer .inner {
+    text-align : left;
+    }
+
+.gwp-backbone-modal-main footer .inner .button {
+    margin-bottom : 0;
+    }
+
+.gwp-backbone-modal-main footer .inner .gwp-action-button-group {
+    display : inline-block;
+    float   : left;
+    }
+
+.rtl .gwp-backbone-modal-main footer .inner .gwp-action-button-group {
+    float : right;
+    }
+
+.gwp-backbone-modal-main footer .inner .button.button-large {
+    margin-left : 10px;
+    padding     : 0 10px !important;
+    line-height : 28px;
+    height      : auto;
+    display     : inline-block;
+    }
+
+.rtl .gwp-backbone-modal-main footer .inner .button.button-large {
+    margin-right : 10px;
+    }
+
+/** FEEDBACK */
+.gwp-backbone-modal.gwp-deactive-feedback-dialog article {
+    padding  : 1.5em;
+    overflow : auto;
+    }
+
+.gwp-backbone-modal .gwp-feedback-dialog-form-body h2 {
+    font-weight : 700;
+    font-size   : 15px;
+    color       : #495157;
+    margin      : 0 0 20px 0;
+    }
+
+.gwp-backbone-modal .gwp-feedback-dialog-form-body .feedback-dialog-form-body .feedback-dialog-input-wrapper {
+    line-height   : 1.3;
+    overflow      : hidden;
+    margin-bottom : 15px;
+    }
+
+.gwp-backbone-modal .gwp-feedback-dialog-form-body .feedback-dialog-form-body .feedback-dialog-input {
+    float      : left;
+    margin     : 0 10px 0 0;
+    box-shadow : none;
+    }
+
+.rtl .gwp-backbone-modal .gwp-feedback-dialog-form-body .feedback-dialog-form-body .feedback-dialog-input {
+    float  : right;
+    margin : 0 0 0 10px;
+    }
+
+.gwp-backbone-modal .gwp-feedback-dialog-form-body .feedback-dialog-form-body .feedback-text {
+    margin           : 10px 0 0 25px;
+    padding          : 5px;
+    font-size        : 13px;
+    box-shadow       : none;
+    background-color : #FFFFFF;
+    width            : 92%;
+    display          : none;
+    }
+
+.rtl .gwp-backbone-modal .gwp-feedback-dialog-form-body .feedback-dialog-form-body .feedback-text {
+    margin : 10px 25px 0 0;
+    }
+
+.gwp-backbone-modal .gwp-feedback-dialog-form-body .feedback-dialog-form-body .feedback-alert {
+    color            : #0273A9;
+    background-color : #FFFFFF;
+    font-weight      : 600;
+    }
+
+.gwp-backbone-modal .gwp-feedback-dialog-form-body .feedback-dialog-form-body .feedback-dialog-label {
+    display   : block;
+    font-size : 13px;
+    color     : #6D7882;
+    }
+
+.gwp-backbone-modal footer {
+    margin-top : 30px;
+    overflow   : hidden;
+    clear      : both;
+    }
+
+.gwp-backbone-modal footer .feedback-dialog-form-button-send {
+    background-color : #56BFD4;
+    border-radius    : 3px;
+    color            : #FFFFFF;
+    line-height      : 1;
+    padding          : 12px 20px;
+    font-size        : 13px;
+    height           : 40px;
+    border           : 0;
+    box-shadow       : none;
+    text-shadow      : none;
+    float            : left;
+    }
+
+.rtl .gwp-backbone-modal footer .feedback-dialog-form-button-send {
+    float : right;
+    }
+
+.gwp-backbone-modal footer .feedback-dialog-form-button-send:hover {
+    background : #389DB1;
+    }
+
+.gwp-backbone-modal footer .feedback-dialog-form-button-send:active {
+    -webkit-transform : translateY(0);
+    transform         : translateY(0);
+    }
+
+.gwp-backbone-modal footer .feedback-dialog-form-button-skip {
+    font-size       : 12px;
+    color           : #A4AFB7;
+    background      : none;
+    float           : right;
+    width           : auto;
+    cursor          : pointer;
+    padding         : 10px 0;
+    outline         : 0;
+    text-decoration : none;
+    }
+
+.rtl .gwp-backbone-modal footer .feedback-dialog-form-button-skip {
+    float : left;
+    }
+
+.gwp-backbone-modal footer .feedback-dialog-form-button-skip:focus {
+    box-shadow : none;
+    }
+
+.gwp-backbone-modal footer .feedback-dialog-form-button-skip:hover {
+    text-decoration : underline;
+    }
+
+.gwp-action-button-group .spinner {
+    margin : 10px;
+    }
+
+.gwp-action-button-group .spinner.visible {
+    visibility : visible;
+    }

@@ -1,0 +1,19 @@
+.ct-ajax-loader {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	margin: auto;
+	display: flex;
+	border-radius: 100%;
+	width: var(--loader-size, 20px);
+	height: var(--loader-size, 20px);
+	color: var(--loader-color, #c5cbd0);
+
+	&[data-type="boxed"] {
+		padding: 8px;
+		background: #fff;
+		box-sizing: content-box;
+
+		--loader-color: var(--theme-text-color);
+	}
+}

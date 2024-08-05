@@ -1,0 +1,371 @@
+[data-tr-conditions]:not(.tr-show-conditional) {
+    display: none !important;
+}
+
+/* Inputs
+----------------------------------------------------------------------- */
+.tr-form-fields {
+    border: 1px solid $gray_border;
+    border-radius: 4px;
+
+    + .tr-form-action {
+        padding: 20px 0;
+    }
+}
+
+#typerocket-admin-page .tr-form-fields {
+    margin-top: 20px;
+}
+
+/* Input Errors
+----------------------------------------------------------------------- */
+
+.tr-field-has-error {
+    background: #ffeeed;
+}
+
+.tr-field-error {
+    display: block;
+    color: $error;
+    font-size: 12px;
+    padding-left: 1px;
+    padding-bottom: 4px;
+}
+
+/* Inputs
+----------------------------------------------------------------------- */
+.tr-control-section, div.tr-control-section {
+    input[type=date],
+    input[type=datetime-local],
+    input[type=datetime],
+    input[type=email],
+    input[type=month],
+    input[type=number],
+    input[type=password],
+    input[type=search],
+    input[type=tel],
+    input[type=text]:not(.tr-component-nameable-input),
+    input[type=time],
+    input[type=url],
+    input[type=week],
+    .tr-input-textexpand,
+    textarea {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 8px;
+        margin: 0;
+    }
+
+    .tr-input-textexpand {
+        box-shadow: 0 0 0 transparent;
+        border-radius: 4px;
+        border: 1px solid #7e8993;
+        background-color: #fff;
+        color: #32373c;
+        padding: 2px 8px;
+        line-height: 1.6;
+        font-size: 14px;
+
+        &:focus {
+            border-color: var(--tr-profile-color);
+            box-shadow: 0 0 0 1px var(--tr-profile-color);
+        }
+    }
+
+    .tr-component-nameable-input {
+       width: 100%;
+        border: none;
+        border-left: 3px solid var(--tr-profile-color);
+        border-radius: 0;
+    }
+
+    select {
+        margin: 0 0 5px;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        min-height: 30px;
+    }
+
+    textarea {
+        padding: 8px;
+        min-height: 120px;
+    }
+}
+
+.tr-text-input {
+    display: flex;
+
+    .with-after {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .with-before {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .before, .after {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        padding: 0 5px;
+        border: 1px solid #7e8993;
+        background: #f1f1f1;
+    }
+
+    .before {
+        border-radius: 4px 0 0 4px;
+        border-right: none;
+    }
+
+    .after {
+        border-radius: 0 4px 4px 0;
+        border-left: none;
+    }
+}
+
+.tr-checkboxes {
+    margin: 6px 0 0;
+
+    li {
+        padding: 0;
+        display: block;
+        margin-bottom: 6px;
+    }
+}
+
+.tr-form-field-help p,
+.tr-field-help-top {
+    color: $gray;
+    font-style: italic;
+    margin: 4px 0 0;
+    font-size: 13px;
+}
+
+.tr-field-help-top {
+    margin: 0 0 4px 0;
+}
+
+/* Radio Images
+----------------------------------------------------------------------- */
+.tr-radio-images {
+    margin: 0;
+    display: flex;
+    flex-flow: wrap;
+
+    [type=radio] {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    label {
+        display: inline-block;
+        padding: 0 8px 0 0;
+    }
+
+    label:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    &.tr-radio-images-square {
+        [type=radio] + span > img {
+            width: 42px;
+            height: 42px;
+        }
+    }
+
+    img {
+        cursor: pointer;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 1px;
+        box-sizing: border-box;
+
+        &:hover, &:focus {
+            box-shadow: 0 0 0 3px $gray;
+        }
+    }
+
+    label:focus img,
+    [type=radio]:checked + span > img {
+        box-shadow: 0 0 0 3px $blue;
+        box-shadow: 0 0 0 3px var(--tr-profile-color);
+    }
+}
+
+/* Sections
+----------------------------------------------------------------------- */
+.tr-control-section,
+.tr-control-row
+{
+    padding: 10px 12px;
+    position: relative;
+}
+
+.tr-divide + .tr-divide {
+    box-shadow: inset 0 1px 0 0 $gray_border;
+}
+
+.tr-tabbed-box .tr-tab-layout-content > {
+    .tr-divide {
+        box-shadow: none !important;
+    }
+}
+
+.tr-control-row {
+    display: flex;
+    flex-wrap: wrap;
+
+    div.tr-control-section {
+        flex: 1;
+        box-sizing: border-box;
+        padding: 0 5px;
+        box-shadow: none !important;
+    }
+
+    > div {
+        &:first-of-type { padding-left: 0 }
+        &:last-of-type { padding-right: 0 }
+    }
+
+    .tr-control-row-column {
+        flex: 1;
+        box-sizing: border-box;
+        padding: 0 5px;
+        &:first-child { padding-left: 0 }
+        &:last-child { padding-right: 0 }
+
+        .tr-control-section {
+            padding: 5px 0;
+            &:first-of-type { padding-top: 0 }
+            &:last-of-type { padding-bottom: 0 }
+        }
+    }
+}
+
+div.tr-control-label {
+    color: $gray_dark;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    height: auto;
+    width: auto;
+    padding-left: 1px;
+    padding-bottom: 4px;
+
+    label {
+        line-height: 1.4em;
+        padding: 0;
+    }
+}
+
+.tr-field-control-title {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    flex: 0 0 100%;
+    display: block;
+    color: $gray_dark;
+    padding-bottom: 8px;
+}
+
+// keep outer focus from flashing
+.tr-label, .tr-label-thin {
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.typerocket-elements-fields-textexpand .tr-label {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+/* Dark Mode
+----------------------------------------------------------------------- */
+.tr-input-dark {
+    select {
+        background-color: #000;
+        color: #eee;
+    }
+}
+
+/* Exception Nesting
+----------------------------------------------------------------------- */
+#post-body-content > .typerocket-container >,
+#edittag > .typerocket-container >,
+#addtag > .typerocket-container >
+{
+    .tr-control-row, .tr-control-section, .tr-tabbed-top {
+        box-shadow: none !important;
+        padding: 10px 0;
+    }
+}
+
+/* Maxlength
+----------------------------------------------------------------------- */
+.tr-maxlength {
+    margin-top: 3px;
+    margin-bottom: 6px;
+    color: $gray;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.tr-maxlength span {
+    color: $blue;
+    color: var(--tr-profile-color);
+    font-weight: bold;
+}
+
+/* Frames, Meta Boxes and Repeaters
+----------------------------------------------------------------------- */
+.tr-frame-fields,
+.tr-repeater-inputs,
+.postbox-container .typerocket-container {
+    .tr-control-section + .tr-tabbed-top  {
+        margin-top: 9px;
+        padding-top: 0;
+
+        &:after {
+            padding: 0 10px;
+            margin: 0px -5px;
+        }
+    }
+
+    [class^=tr-control-row] + .tr-tabbed-top  {
+        margin-top: 9px;
+        padding-top: 1px;
+
+        &:after {
+            padding: 0 10px;
+            margin: 0px -5px;
+        }
+    }
+
+    .tr-tabbed-top + .tr-control-section {
+        padding-top: 12px;
+
+        &:after {
+            margin: 0px -5px;
+        }
+    }
+
+    .tr-tabbed-top + [class^=tr-control-row] {
+        padding-top: 9px;
+
+        &:after {
+            margin: 0px -5px;
+        }
+    }
+}

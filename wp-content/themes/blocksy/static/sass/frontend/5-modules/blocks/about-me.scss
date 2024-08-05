@@ -1,0 +1,68 @@
+.ct-about-me-block {
+	color: var(--theme-block-text-color, var(--theme-text-color));
+	--theme-link-initial-color: var(--theme-block-text-color, var(--theme-text-color));
+
+	figure {
+		margin-bottom: 15px;
+
+		&[data-size="small"] {
+			max-width: 60px;
+		}
+
+		&[data-size="medium"] {
+			max-width: 150px;
+		}
+
+		&[data-size="large"] {
+			max-width: 300px;
+		}
+
+		&[data-shape="square"] {
+			border-radius: 2px;
+		}
+
+		&[data-shape="rounded"] {
+			border-radius: 100%;
+		}
+	}
+
+	.ct-about-me-name {
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+
+		span {
+			font-weight: 700;
+		}
+
+		a {
+			display: block;
+			font-size: 13px;
+			font-weight: normal;
+		}
+	}
+
+	.ct-about-me-text {
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+	}
+
+	// alignment
+	&[data-alignment="center"] {
+		text-align: center;
+
+		.ct-social-box {
+			justify-content: center;
+		}
+	}
+
+	&[data-alignment="right"] {
+		text-align: right;
+
+		.ct-social-box {
+			justify-content: flex-end;
+		}
+	}
+}

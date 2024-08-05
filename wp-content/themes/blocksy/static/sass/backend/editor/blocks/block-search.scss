@@ -1,0 +1,27 @@
+.wp-block-search {
+
+	// .wp-block-search__input {
+	// 	height: var(--theme-form-field-height, 40px);
+	// 	background-color: transparent;
+	// 	border-color: var(--theme-form-field-border-initial-color);
+	// }
+
+	.wp-element-button {
+		min-height: auto;
+		border: none;
+		padding: 5px 20px;
+	}
+
+	// button inside
+	&.wp-block-search__button-inside {
+
+		.wp-block-search__inside-wrapper {
+			border-radius: var(--theme-form-field-border-radius, 3px);
+			border-color: var(--theme-form-field-border-initial-color);
+
+			.wp-block-search__input {
+				border: none;
+			}
+		}
+	}
+}

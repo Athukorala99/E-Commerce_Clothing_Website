@@ -1,0 +1,7 @@
+article > .entry-content {
+	
+	> table,
+	> iframe {
+		--theme-block-width: var(--theme-container-width);
+	}
+}

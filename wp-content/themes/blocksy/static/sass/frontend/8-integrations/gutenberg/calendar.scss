@@ -1,0 +1,23 @@
+:where(.wp-block-calendar table:not(.has-background) th) {
+
+	background: var(--theme-form-field-border-initial-color);
+}
+
+.wp-block-calendar {
+
+	table {
+
+		caption {
+			font-weight: 500;
+			padding: 0;
+			margin-bottom: 0.7rem;
+		}
+
+		&:where(:not(.has-text-color)) {
+
+			td, th {
+				border-color: var(--theme-form-field-border-initial-color);
+			}
+		}
+	}
+}

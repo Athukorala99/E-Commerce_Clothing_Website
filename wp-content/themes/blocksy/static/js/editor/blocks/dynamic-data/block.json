@@ -1,0 +1,166 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocksy/dynamic-data",
+	"category": "blocksy-blocks",
+	"attributes": {
+		"tagName": {
+			"type": "string",
+			"default": "div"
+		},
+
+		"field": {
+			"type": "string",
+			"default": "wp:title"
+		},
+
+		"before": {
+			"type": "string",
+			"default": ""
+		},
+
+		"after": {
+			"type": "string",
+			"default": ""
+		},
+
+		"fallback": {
+			"type": "string",
+			"default": ""
+		},
+
+		"align": {
+			"type": "string"
+		},
+
+		"imageAlign": {
+			"type": "string"
+		},
+
+		"aspectRatio": {
+			"type": "string",
+			"default": "auto"
+		},
+
+		"width": {
+			"type": "string"
+		},
+
+		"height": {
+			"type": "string"
+		},
+
+		"sizeSlug": {
+			"type": "string"
+		},
+
+		"alt_text": {
+			"type": "string",
+			"default": ""
+		},
+
+		"avatar_size": {
+			"type": "number",
+			"default": 96
+		},
+
+		"avatarIsLink": {
+			"type": "boolean",
+			"default": false
+		},
+
+		"avatarLinkTarget": {
+			"type": "string",
+			"default": "_self"
+		},
+
+		"featuredIsLink": {
+			"type": "boolean",
+			"default": false
+		},
+
+		"featuredLinkTarget": {
+			"type": "string",
+			"default": "_self"
+		},
+
+		"taxonomy": {
+			"type": "string",
+			"default": ""
+		},
+
+		"lightbox": {
+			"type": "string",
+			"default": "no"
+		},
+
+		"videoThumbnail": {
+			"type": "string",
+			"default": "no"
+		},
+
+		"image_hover_effect": {
+			"type": "string",
+			"default": "none"
+		},
+
+		"termClass": {
+			"type": "string",
+			"default": ""
+		},
+
+		"termAccentColor": {
+			"type": "string",
+			"default": "yes"
+		}
+	},
+	"supports": {
+		"className": false,
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"__experimentalDefaultControls": {
+				"margin": false,
+				"padding": false
+			}
+		},
+
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"width": true,
+			"__experimentalDefaultControls": {
+				"color": true,
+				"radius": true,
+				"width": true
+			},
+			"__experimentalSelector": "img, .block-editor-media-placeholder, .wp-block-post-featured-image__overlay",
+			"__experimentalSkipSerialization": true
+		},
+
+		"color": {
+			"gradients": true,
+			"link": true,
+			"__experimentalDefaultControls": {
+				"text": true,
+				"background": true,
+				"link": true
+			}
+		},
+
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontFamily": true,
+			"__experimentalTextDecoration": true,
+			"__experimentalFontStyle": true,
+			"__experimentalFontWeight": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalTextTransform": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		}
+	},
+	"usesContext": ["postId", "postType", "queryId"]
+}

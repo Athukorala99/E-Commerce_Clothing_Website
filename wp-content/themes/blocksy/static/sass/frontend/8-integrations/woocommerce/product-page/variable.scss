@@ -1,0 +1,41 @@
+form.variations_form {
+
+	table.variations {
+		margin-bottom: 1.5em;
+
+		tr {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			&:not(:last-child) {
+				margin-bottom: 1.5em;
+			}
+		}
+
+		th, td {
+			padding: 0;
+			text-align: initial;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 0;
+			font-weight: 500;
+		}
+
+		select {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+
+	.single_variation {
+		display: none;
+	}
+
+	.single_variation,
+	.wc-no-matching-variations {
+		margin-bottom: 1.5em;
+	}
+}

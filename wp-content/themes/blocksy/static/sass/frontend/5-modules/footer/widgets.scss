@@ -1,0 +1,11 @@
+.ct-footer {
+	.ct-widget {
+		color: var(--theme-text-color);
+		margin: var(--margin);
+		--theme-link-initial-color: var(--theme-text-color);
+		
+		&:not(:first-child) {
+			margin-top: var(--widgets-gap, 40px);
+		}
+	}
+}

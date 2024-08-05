@@ -1,0 +1,73 @@
+.ct-option-spacing {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 75px;
+	grid-column-gap: 4px;
+
+	&.custom {
+		grid-template-columns: 1fr 75px;
+	}
+
+	> span {
+
+		input {
+
+			&.inactive {
+				color: rgba(50, 55, 60, 0.5);
+				pointer-events: none;
+				background: rgba(255, 255, 255, 0.8);
+			}
+
+			&:focus {
+				
+				+ small {
+					opacity: 0.7;
+				}
+			}
+		}
+
+		&:not(:only-of-type) input {
+			text-align: center;
+		}
+
+		small {
+			display: block;
+			margin-top: 5px;
+			font-size: 9px;
+			font-weight: 500;
+			line-height: normal;
+			text-align: center;
+			text-transform: uppercase;
+			opacity: 0.45;
+			overflow-wrap: anywhere;
+		}
+	}
+
+	.ct-link-unlink-toggle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		cursor: pointer;
+		color: inherit;
+		transition: color 0.1s ease;
+
+		&:hover {
+			color: var(--ui-accent-color);
+		}
+	}
+}
+
+// align option heading when spacing option is inline
+.ct-option-spacing-wrapper[data-design="inline"] {
+	padding-bottom: 16px; // small -> height 11px + margin-top 5px
+
+	.ct-option-spacing > span {
+		position: relative;
+
+		small {
+			position: absolute;
+			inset-inline: 0;
+			top: var(--input-height, 30px);
+		}
+	}
+}

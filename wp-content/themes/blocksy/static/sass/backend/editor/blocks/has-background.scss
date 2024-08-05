@@ -1,0 +1,7 @@
+.has-background {
+
+	&:is(p, .wp-block-group) {
+		padding: 30px;
+		box-sizing: border-box;
+	}
+}

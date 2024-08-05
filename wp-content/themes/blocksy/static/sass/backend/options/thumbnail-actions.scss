@@ -1,0 +1,128 @@
+[class*="ct-attachment"],
+.editor-post-featured-image__container,
+.woocommerce-admin-page #set-post-thumbnail,
+.woocommerce-admin-page #product_images_container {
+
+	ul.actions {
+		display: flex !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		position: absolute;
+		top: var(--actions-spacing, 10px) !important;
+		inset-inline-end: var(--actions-spacing, 10px) !important;
+		overflow: hidden;
+		border-radius: 3px;
+		background: #fff;
+		opacity: 0;
+		box-shadow: inset 0px 0px 0px 1px var(--optionBorderColor, #ddd), 
+					0 2px 5px rgba(0, 0, 0, 0.02);
+
+		li {
+			display: flex;
+			align-items: center;
+			position: relative;
+			z-index: 1;
+			margin: 0 !important;
+			margin-inline-start: -1px !important;
+			float: none !important;
+
+			> * {
+				display: flex !important;
+				align-items: center;
+				justify-content: center;
+				width: 30px !important;
+				height: 28px !important;
+				font-size: 0 !important;
+				padding: 0;
+				border: none;
+				border-radius: 0;
+				min-height: initial;
+				text-decoration: none;
+				background: transparent;
+				color: var(--ui-accent-color);
+
+				&:before {
+					font-family: 'dashicons';
+					font-size: 14px;
+					line-height: initial !important;
+					color: inherit !important;
+					position: initial !important;
+					background: transparent !important;
+				}
+
+				&:hover {
+					color: #fff;
+					background: var(--ui-accent-color);
+				}
+
+				&:focus {
+					box-shadow: none;
+				}
+			}
+
+			&:not(:last-child):after {
+				position: absolute;
+				content: '';
+				z-index: -1;
+				width: 1px;
+				height: 50%;
+				inset-inline-end: 0;
+				background: var(--optionBorderColor, #ddd);
+			}
+		}
+
+		.edit-button {
+			&:before {
+				content: "\f464";
+			}
+		}
+
+		.delete,
+		.remove-button {
+			&:before {
+				content: "\f335" !important;
+			}
+		}
+
+		.ct-media-video-modal-trigger {
+
+			.ct-loader-path {
+				visibility: hidden;
+			}
+
+			&.loading {
+
+				.ct-play-path {
+					visibility: hidden;
+				}
+
+				.ct-loader-path {
+					visibility: visible;
+				}				
+			}
+		}
+	}
+}
+
+
+
+[class*="ct-attachment"] .thumbnail,
+.editor-post-featured-image__container,
+.woocommerce-admin-page #set-post-thumbnail,
+.woocommerce-admin-page #product_images_container ul li {
+
+	&:hover {
+
+		ul.actions {
+			opacity: 1;
+		}
+	}
+}
+
+.woocommerce-admin-page #set-post-thumbnail {
+	position: relative;
+}
+
+.woocommerce-admin-page #product_images_container ul.actions {
+	--actions-spacing: 5px;
+}

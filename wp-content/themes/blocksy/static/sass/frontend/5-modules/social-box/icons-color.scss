@@ -1,0 +1,27 @@
+// official colors
+[data-color='official'] {
+
+	.ct-icon-container {
+		--theme-icon-color: var(--official-color);
+		--theme-icon-hover-color: var(--official-color);
+		transition: opacity 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+		&:hover{
+			opacity: 0.7;
+		}
+	}
+
+	.ct-label {
+		color: var(--official-color);
+	}
+
+	&[data-icons-type*='solid'] .ct-icon-container {
+		--theme-icon-color: #fff;
+		--theme-icon-hover-color: #fff;
+		background-color: var(--official-color);
+	}
+
+	&[data-icons-type*='outline'] .ct-icon-container {
+		border: 1px solid var(--official-color);
+	}
+}

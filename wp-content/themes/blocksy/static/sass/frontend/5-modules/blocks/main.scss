@@ -1,0 +1,20 @@
+@import 'search';
+@import 'gallery';
+@import 'contact-info';
+@import 'dynamic-data';
+
+
+.ct-widget {
+
+	ul {
+		--theme-list-indent: 0;
+		--theme-list-style-type: none;
+	}
+
+	li {
+		
+		ul, ol {
+			--theme-list-indent: 25px;
+		}
+	}
+}

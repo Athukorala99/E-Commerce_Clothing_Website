@@ -1,0 +1,21 @@
+.entry-button {
+	gap: 0.5em;
+	font-size: 15px;
+	align-self: var(--horizontal-alignment, flex-start);
+
+	&:not([class*="ct-button"]) {
+		display: flex;
+		align-items: center;
+	}
+
+	&[class*="ct-button"] {
+		min-height: 40px;
+		padding: 5px 15px;
+		--theme-button-shadow: none;
+		--theme-button-transform: none;
+	}
+}
+
+.entries:not([data-cards="cover"]) .entry-button {
+	margin-top: auto;
+}

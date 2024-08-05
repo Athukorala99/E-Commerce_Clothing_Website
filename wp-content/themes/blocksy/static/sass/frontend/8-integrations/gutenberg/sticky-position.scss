@@ -1,0 +1,6 @@
+.wp-block-group {
+
+	&.is-position-sticky {
+		top: calc(var(--wp-block-top-offset, 0px) + var(--admin-bar, 0px) + var(--theme-frame-size, 0px) + var(--header-sticky-height, 0px) * var(--sticky-shrink, 100) / 100);
+	}
+}

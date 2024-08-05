@@ -1,0 +1,220 @@
+@import '../../frontend/common-frontend/functions';
+@import '../../frontend/common-frontend/mixins';
+
+// account modal
+#account-modal {
+	background-color: rgba(18, 21, 25, 0.6);
+
+	.ct-panel-content {
+		padding: 35px;
+	}
+}
+
+.ct-account-modal {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+	font-size: 14px;
+	color: var(--theme-text-color);
+	background-color: #fff;
+	--theme-link-initial-color: var(--theme-text-color);
+
+	@include media-breakpoint-down(xs) {
+		max-width: 88vw;
+	}
+
+	@include media-breakpoint-up(sm) {
+		max-width: 480px;
+	}
+
+	border-radius: 3px;
+	box-shadow: var(--theme-box-shadow, 0px 0px 70px rgba(0, 0, 0, 0.35));
+	--theme-content-spacing: 1em;
+}
+
+// account content
+.ct-account-modal {
+	> ul {
+		display: flex;
+
+		li {
+			width: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			height: 60px;
+			font-size: 12px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.03em;
+			cursor: pointer;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			transition: opacity 0.1s ease, background 0.1s ease;
+
+			&.active {
+				border-bottom-color: transparent;
+			}
+
+			&:not(.active) {
+				opacity: 0.5;
+				background: rgba(0, 0, 0, 0.04);
+
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+
+			&:first-child {
+				border-right: 1px solid rgba(0, 0, 0, 0.1);
+			}
+		}
+	}
+
+	.ct-account-forms {
+		overflow-y: auto;
+
+		@include media-breakpoint-down(xs) {
+			padding: 40px 30px;
+		}
+
+		@include media-breakpoint-up(sm) {
+			padding: 60px 70px;
+		}
+
+		> *:not(.active) {
+			display: none;
+		}
+	}
+
+	form > * {
+		--theme-content-spacing: 20px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	label {
+		display: block;
+		font-size: 14px;
+	}
+
+	.button,
+	.ct-button {
+		width: 100%;
+	}
+
+	.ct-button {
+		gap: 10px;
+
+		&:not(.ct-loading) .ct-button-loader {
+			display: none;
+		}
+	}
+
+	.col-2 {
+		display: flex;
+		justify-content: space-between;
+
+		@include media-breakpoint-down (sm) {
+			flex-direction: column;
+			row-gap: 10px;
+		}
+	}
+
+	#reg_passmail,
+	.ct-back-to-login {
+		text-align: center;
+	}
+
+	.ct-back-to-login {
+		display: block;
+		margin-top: 20px;
+	}
+
+	.login-remember {
+		span {
+			display: flex;
+		}
+
+		input {
+			--top: 3px;
+		}
+	}
+
+	// form notifications
+	[class*='ct-form-notification'] {
+		margin-bottom: 25px;
+		border-radius: 3px;
+		padding: 10px 15px;
+		background: rgba(0, 0, 0, 0.04);
+
+		a {
+			color: inherit;
+
+			&.showlogin {
+				font-size: inherit;
+				font-weight: inherit;
+				padding: 0;
+				border: none;
+				min-height: initial;
+				background: transparent;
+			}
+		}
+	}
+
+	.ct-form-notification-error {
+		color: rgba(255, 255, 255, 0.95);
+		background: rgba(218, 0, 28, 0.7);
+	}
+
+	[class*='ct-form-notification'],
+	.woocommerce-privacy-policy-text {
+
+		a:not(:hover) {
+			text-decoration: underline;
+		}
+	}
+
+	// shake animation
+	@media (prefers-reduced-motion: no-preference) {
+		&.ct-error {
+			animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+			transform: translate3d(0, 0, 0);
+			backface-visibility: hidden;
+			perspective: 1000px;
+		}
+	}
+}
+
+// captcha plugins integration
+.ct-account-modal {
+	div.g-recaptcha,
+	.anr_captcha_field {
+		margin: var(--theme-content-spacing) 0 !important;
+	}
+}
+
+// wordfence integration
+#wfls-prompt-overlay-blocksy {
+	margin-bottom: var(--theme-content-spacing);
+
+	#wfls-prompt-wrapper input + label {
+		margin-top: var(--theme-content-spacing);
+	}
+
+	~ *:not(.login-submit) {
+		display: none;
+	}
+}
+
+// two factor plugin integrationo
+.ct-account-modal {
+
+	[name="validate_2fa_form"] + [name="loginform"] {
+		display: none;
+	}
+}

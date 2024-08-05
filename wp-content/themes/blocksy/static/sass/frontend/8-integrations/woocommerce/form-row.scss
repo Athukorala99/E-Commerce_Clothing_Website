@@ -1,0 +1,51 @@
+.form-row {
+	
+	label {
+		display: block;
+		font-weight: 500;
+	}
+	
+	.required {
+		color: red;
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	textarea {
+		display: block;
+	}
+
+	select {
+		width: 100%;
+	}
+
+	&:before, &:after {
+		content: '';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.form-row-wide {
+	clear: both;
+}
+
+
+@include media-breakpoint-up (md) {
+	.form-row-first,
+	.form-row-last {
+		width: 48%;
+		overflow: visible;
+	}
+
+	.form-row-first {
+		float: left;
+	}
+
+	.form-row-last {
+		float: right;
+	}
+}

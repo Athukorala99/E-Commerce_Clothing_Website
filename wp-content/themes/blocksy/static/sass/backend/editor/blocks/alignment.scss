@@ -1,0 +1,18 @@
+.is-root-container {
+
+	// full width blocks
+	> .alignfull {
+		margin-inline: var(--has-wide, -#{$sides_spacing});
+	}
+
+	> .wp-block {
+
+		&.alignleft {
+			margin-inline-start: calc( ( 100% - #{'min(var(--theme-block-max-width), 100%)'} ) / 2 );
+		}
+
+		&.alignright {
+			margin-inline-end: calc( ( 100% - #{'min(var(--theme-block-max-width), 100%)'} ) / 2 );
+		}
+	}
+}

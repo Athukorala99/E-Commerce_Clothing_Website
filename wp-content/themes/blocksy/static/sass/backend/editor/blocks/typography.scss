@@ -1,0 +1,48 @@
+:root {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+
+	&,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	pre,
+	code,
+	figcaption,
+	.entry-meta,
+	.ct-search-box,
+	.ct-breadcrumbs,
+	.wp-block-quote,
+	.wp-block-pullquote {
+		font-family: var(--theme-font-family);
+		font-size: var(--theme-font-size);
+		font-weight: var(--theme-font-weight);
+		font-style: var(--theme-font-style, inherit);
+		line-height: var(--theme-line-height);
+		letter-spacing: var(--theme-letter-spacing);
+		text-transform: var(--theme-text-transform);
+		text-decoration: var(--theme-text-decoration);
+	}
+
+	// buttons
+	.wp-element-button {
+		font-family: var(--theme-button-font-family, var(--theme-font-family));
+		font-size: var(--theme-button-font-size);
+		font-weight: var(--theme-button-font-weight);
+		font-style: var(--theme-button-font-style);
+		line-height: var(--theme-button-line-height);
+		letter-spacing: var(--theme-button-letter-spacing);
+		text-transform: var(--theme-button-text-transform);
+		text-decoration: var(--theme-button-text-decoration);
+	}
+
+	.wp-block-button[style*="font-weight"] {
+
+		.wp-element-button {
+			font-weight: inherit;
+		}
+	}
+}

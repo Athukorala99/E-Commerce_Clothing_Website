@@ -1,0 +1,13 @@
+ul, ol,
+ul li, ol li,
+h1, h2, h3, h4, h5, h6,
+.ct-widget p,
+.entry-excerpt *,
+.wp-block-columns,
+.ct-dynamic-data p,
+.woocommerce-variation-availability p {
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

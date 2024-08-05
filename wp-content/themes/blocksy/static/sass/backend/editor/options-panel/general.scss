@@ -1,0 +1,18 @@
+.blocksy-sidebar-active {
+	
+	.edit-post-sidebar {
+		height: 100%;
+	}
+}
+
+
+// sidebar & editor new width
+@media (min-width: 782px) {
+	body .edit-post-layout.is-sidebar-opened .edit-post-sidebar {
+		width: 320px !important;
+	}
+
+	body .edit-post-layout.is-sidebar-opened .edit-post-layout__content {
+		margin-right: 320px !important;
+	}
+}

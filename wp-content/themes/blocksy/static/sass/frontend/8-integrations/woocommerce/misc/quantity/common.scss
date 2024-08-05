@@ -1,0 +1,15 @@
+.shop_table {
+
+	.quantity {
+		font-size: 14px;
+		--quantity-height: 40px;
+	}
+
+	.quantity[data-type="type-1"] {
+		--quantity-width: 70px;
+	}
+
+	.quantity[data-type="type-2"] {
+		--quantity-width: 100px;
+	}
+}

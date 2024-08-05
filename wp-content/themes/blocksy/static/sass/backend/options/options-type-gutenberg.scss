@@ -1,0 +1,161 @@
+// .ct-control-gutenberg,
+.components-base-control {
+
+	--ui-accent-color: #1e1e1e;
+	--ui-border-radius: 2px;
+	--optionBorderColor: rgb(148, 148, 148);
+
+
+	// option label
+	.ct-control[data-design="block"] header {
+		margin-bottom: 8px !important;
+
+		label {
+			font-size: 11px;
+			line-height: 1.4;
+			text-transform: uppercase;
+		}
+	}
+
+
+	// ratio
+	.ct-ratio-predefined {
+
+		button {
+
+			span {
+				&:before {
+					border-color: var(--ui-accent-color);
+				}
+
+				&:after {
+					background: var(--ui-accent-color);
+				}
+			}
+
+			&:hover {
+
+				span {
+
+					&:before {
+						border-color: transparent;
+					}
+
+					&:after {
+						background: transparent;
+						border-color: var(--ui-accent-color);
+					}
+				}
+			}
+		}
+	}
+
+
+	// layers
+	.ct-layer-controls {
+
+		button,
+		.ct-layer-label {
+			color: rgb(117, 117, 117);
+		}
+	}
+
+	.ct-layer {
+		box-shadow: none;
+	}
+
+
+	// radio button
+	.ct-buttons-group {
+		gap: 2px;
+		padding: 2px;
+		border-radius: 2px;
+		border: 1px solid var(--optionBorderColor);
+
+		li {
+			margin: 0;
+			box-shadow: none;
+			border-radius: 2px;
+
+			&:not(.active) {
+				color: rgb(117, 117, 117);
+			}
+		}
+	}
+
+
+	// button
+	button.button {
+		background: var(--ui-accent-color);
+		border-color: var(--ui-accent-color);
+		border-radius: var(--ui-border-radius);
+	}
+
+	// input & select
+	.ct-select-input,
+	.ct-option-input {
+
+		input {
+			&:hover {
+				--ui-accent-color: rgb(148, 148, 148);
+			}
+
+			&:focus {
+				--ui-accent-color: var(--wp-admin-theme-color);
+			}
+		}
+	}
+
+	// tooltip
+	.ct-tooltip {
+		display: none;
+	}
+
+	// title
+	// &.ct-title {
+
+	// 	&:not(:first-child) {
+	// 		padding-top: 24px;
+	// 		border-top: 1px solid #e0e0e0;
+	// 	}
+	// }
+
+	// divider
+	&.ct-title,
+	&[class*="ct-divider"] {
+
+		&:before, &:after {
+			display: block;
+			width: 100%;
+			border-bottom: 1px solid #e0e0e0;
+		}
+	}
+
+	&.ct-title:not(:first-child),
+	&[class*="ct-divider-top"]:not(:first-child) {
+		&:before {
+			content: '';
+			margin-bottom: 24px;
+		}	
+	}
+
+	&[class*="ct-divider-bottom"]:not(:last-child) {
+		&:after {
+			content: '';
+			margin-top: 24px;
+		}	
+	}
+
+	&.ct-title,
+	&[class*=":full"] {
+		&:before, &:after {
+			width: calc(100% + 32px);
+			margin: 0 -16px;
+		}
+	}
+}
+
+
+
+
+

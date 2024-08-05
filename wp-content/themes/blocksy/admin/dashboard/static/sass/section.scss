@@ -1,0 +1,16 @@
+#ct-dashboard {
+
+	> section {
+		max-width: 1200px;
+		min-height: 400px;
+		margin: 0 auto;
+		position: relative;
+
+		> div {
+			width: 100%;
+			padding-top: 60px;
+			padding: 70px 30px;
+			box-sizing: border-box;
+		}
+	}
+}

@@ -1,0 +1,73 @@
+.wp-block-search__input,
+.ff-inherit-theme-style .ff-el-form-control,
+.ct-newsletter-subscribe-block input[type="text"],
+.ct-newsletter-subscribe-block input[type="email"] {
+	margin: 0;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	height: var(--theme-form-field-height, 40px);
+	padding: var(--has-classic-forms, var(--theme-form-field-padding, 0 12px));
+
+	font-size: var(--theme-form-font-size, 16px);
+	color: var(--theme-form-text-initial-color, var(--theme-text-color));
+
+	border-width: var(--theme-form-field-border-width, 1px);
+	border-style: var(--theme-form-field-border-style, solid);
+	border-color: var(--theme-form-field-border-initial-color);
+
+	border-radius: var(--has-classic-forms, var(--theme-form-field-border-radius, 3px));
+	background-color: var(--has-classic-forms, var(--theme-form-field-background-initial-color));
+	transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+	&::placeholder {
+		opacity: 0.6;
+		color: inherit;
+	}
+	
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		border-color: var(--theme-form-field-border-focus-color);
+		background-color: var(--has-classic-forms, var(--theme-form-field-background-focus-color));
+	}
+}
+
+
+// textarea
+.ff-inherit-theme-style textarea {
+	--theme-form-field-height: auto;
+	--theme-form-field-padding: 12px;
+}
+
+// checkbox & radiobox
+.ff-inherit-theme-style input[type="radio"],
+.ff-inherit-theme-style input[type="checkbox"],
+.ct-newsletter-subscribe-block input[type="checkbox"] {
+	appearance: none;
+	width: 16px;
+	height: 16px;
+	margin: 0;
+	margin-inline-end: 0.7em;
+	box-shadow: none;
+	background: transparent;
+	border: var(--form-selection-control-border-width, var(--theme-form-field-border-width, 1px)) solid var(--theme-form-selection-field-initial-color);
+}
+
+
+// labels
+.ff-inherit-theme-style .ff-el-input--label label {
+	font-size: 15px;
+}
+
+
+// select
+.ff-inherit-theme-style select,
+.ct-search-form .ct-fake-select-container select {
+	appearance: none;
+	padding-inline-end: 25px;
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='13' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5.379L20.621 2.5 10.5 12.621.379 2.5 2.5.379l8 8z' fill='%2currentColor' fill-rule='nonzero'/%3E%3C/svg%3E");
+    background-repeat: no-repeat, repeat;
+    background-size: 8px auto, 100%;
+    background-position: right 10px top 50%, 0 0;
+}

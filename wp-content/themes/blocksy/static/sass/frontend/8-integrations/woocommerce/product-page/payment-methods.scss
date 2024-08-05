@@ -1,0 +1,16 @@
+.ct-payment-methods {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1em;
+	padding: 15px 30px 20px 30px;
+
+	legend {
+		margin: 0 auto;
+	}
+
+	&[data-color='custom'] {
+		--theme-icon-color-2: #fff;
+	}
+}

@@ -1,0 +1,48 @@
+.wc-block-price-filter {
+
+	.wc-block-price-filter__range-input-wrapper:before {
+		opacity: initial;
+		background: var(--theme-form-field-border-initial-color);
+	}
+
+	.wc-block-components-price-slider__range-input-progress {
+		--range-color: var(--theme-palette-color-1);
+	}
+
+	.wc-block-price-filter__range-input {
+
+		// chrome
+		&::-webkit-slider-thumb {
+			border-color: var(--theme-palette-color-1);
+		}
+
+		&:hover::-webkit-slider-thumb,
+		&:focus::-webkit-slider-thumb {
+			background: #fff;
+			border-color: var(--theme-palette-color-1);
+		}
+
+		// moz
+		&::-moz-range-thumb {
+			border-color: var(--theme-palette-color-1);	
+		}
+
+		&:hover::-moz-range-thumb,
+		&:focus::-moz-range-thumb {
+			background: #fff;
+			border-color: var(--theme-palette-color-1);
+		}
+	}
+
+	.wc-block-form-text-input {
+		font-size: 13px;
+		text-align: center;
+		max-width: 70px !important;
+		border-radius: var(--has-classic-forms, var(--theme-form-field-border-radius, 3px)) !important;
+		border: var(--theme-form-field-border-width, 1px) solid var(--theme-form-field-border-initial-color) !important;
+
+		&:focus {
+			border-color: var(--theme-form-field-border-focus-color) !important;
+		}
+	}
+}

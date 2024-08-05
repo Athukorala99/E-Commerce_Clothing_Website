@@ -1,0 +1,12 @@
+@import '../../../../../static/sass/frontend/5-modules/blocks/share-box';
+
+.wp-block-blocksy-share-box {
+
+	a { 
+		pointer-events: none;
+	}
+
+	.ct-icon-container {
+		box-sizing: border-box;
+	}
+}

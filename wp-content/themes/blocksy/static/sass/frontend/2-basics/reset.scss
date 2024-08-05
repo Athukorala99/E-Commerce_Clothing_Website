@@ -1,0 +1,265 @@
+html {
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	overflow-wrap: break-word;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+ol,
+ul,
+li,
+tr,
+th,
+td,
+dl,
+ins,
+sub,
+sup,
+big,
+cite,
+code,
+form,
+small,
+label,
+table,
+figure,
+button,
+legend,
+strike,
+address,
+caption,
+fieldset,
+blockquote {
+	margin: 0;
+	padding: 0;
+	border: none;
+	
+	font-size: inherit;
+	text-align: inherit;
+	line-height: inherit;
+}
+
+
+input,
+select,
+textarea {
+	margin: 0;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+small {
+	font-size: 80%;
+}
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	opacity: 0.5;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+hr {
+	height: 1px;
+	border: none;
+}
+
+mark {
+	color: inherit;
+	font-weight: 600;
+	background: transparent;
+}
+
+a {
+	transition: var(--theme-transition);
+}
+
+// focus
+a,
+button {
+	&:focus {
+		transition: none;
+		outline-width: 0;
+	}
+
+	&:focus-visible {
+		outline-width: 2px;
+		outline-offset: var(--outline-offset, 3px);
+		outline-color: var(--theme-palette-color-2);
+	}
+}
+
+// Media -------------------------------------
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+figure,
+iframe,
+textarea {
+	display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+}
+
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+}
+
+svg > * {
+	transition: none;
+}
+
+// Lists -------------------------------------
+ul {
+	list-style-type: var(--theme-list-style-type, disc);
+}
+
+ol {
+	list-style-type: var(--theme-list-style-type, decimal);
+}
+
+// Code --------------------------------------
+code,
+kbd,
+samp {
+	padding: 3px 6px;
+}
+
+code,
+kbd,
+samp,
+pre {
+	tab-size: 4;
+	border-radius: 2px;
+	background: var(--theme-palette-color-6);
+
+	&:focus {
+		outline: none;
+	}
+}
+
+pre {
+	overflow: auto;
+	padding: 15px 20px;
+
+	code {
+		padding: 0;
+		background: transparent;
+	}
+}
+
+// Tables ------------------------------------
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+	width: 100%;
+	max-width: 100%;
+}
+
+table,
+th,
+td {
+	font-size: var(--theme-table-font-size);
+	border-width: var(--theme-table-border-width, 1px);
+	border-style: var(--theme-table-border-style, solid);
+	border-color: var(--theme-table-border-color, var(--theme-border-color));
+}
+
+th,
+td {
+	padding: var(--theme-table-padding, 0.7em 1em);
+}
+
+th {
+	font-weight: 600;
+}
+
+caption {
+	font-weight: 600;
+	padding: 0.7rem;
+}
+
+// Definition List ---------------------------
+dl {
+	--theme-description-list-indent: 1.5em;
+	--theme-description-list-spacing: 0.5em;
+
+	> *:last-child {
+		margin-bottom: 0;
+	}
+}
+
+dt {
+	font-weight: 600;
+}
+
+dd {
+	margin-top: calc(var(--theme-description-list-spacing) / 2);
+	margin-left: var(--theme-description-list-indent);
+	margin-bottom: calc(var(--theme-description-list-spacing) * 2);
+
+	p {
+		--theme-content-spacing: var(--theme-description-list-spacing);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

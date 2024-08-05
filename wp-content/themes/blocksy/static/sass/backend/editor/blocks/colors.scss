@@ -1,0 +1,107 @@
+:root {
+	color: var(--theme-text-color);
+
+	// link color
+	a {
+		color: var(--theme-link-initial-color);
+
+		&:hover {
+			color: var(--theme-link-hover-color);
+		}
+	}
+
+	// heading color
+	.editor-post-title__input {
+		color: var(--theme-headings-color);
+	}
+
+	h1 {
+		color: var(--theme-heading-color, var(--theme-heading-1-color, var(--theme-headings-color)));
+	}
+
+	h2 {
+		color: var(--theme-heading-color, var(--theme-heading-2-color, var(--theme-headings-color)));
+	}
+
+	h3 {
+		color: var(--theme-heading-color, var(--theme-heading-3-color, var(--theme-headings-color)));
+	}
+
+	h4 {
+		color: var(--theme-heading-color, var(--theme-heading-4-color, var(--theme-headings-color)));
+	}
+
+	h5 {
+		color: var(--theme-heading-color, var(--theme-heading-5-color, var(--theme-headings-color)));
+	}
+
+	h6 {
+		color: var(--theme-heading-color, var(--theme-heading-6-color, var(--theme-headings-color)));
+	}
+}
+
+// editor color palettes
+.has-palette-color-1-color {
+	color: var(--theme-palette-color-1);
+}
+
+.has-palette-color-2-color {
+	color: var(--theme-palette-color-2);
+}
+
+.has-palette-color-3-color {
+	color: var(--theme-palette-color-3);
+}
+
+.has-palette-color-4-color {
+	color: var(--theme-palette-color-4);
+}
+
+.has-palette-color-5-color {
+	color: var(--theme-palette-color-5);
+}
+
+.has-palette-color-6-color {
+	color: var(--theme-palette-color-6);
+}
+
+.has-palette-color-7-color {
+	color: var(--theme-palette-color-7);
+}
+
+.has-palette-color-8-color {
+	color: var(--theme-palette-color-8);
+}
+
+// background color
+.has-palette-color-1-background-color {
+	background-color: var(--theme-palette-color-1);
+}
+
+.has-palette-color-2-background-color {
+	background-color: var(--theme-palette-color-2);
+}
+
+.has-palette-color-3-background-color {
+	background-color: var(--theme-palette-color-3);
+}
+
+.has-palette-color-4-background-color {
+	background-color: var(--theme-palette-color-4);
+}
+
+.has-palette-color-5-background-color {
+	background-color: var(--theme-palette-color-5);
+}
+
+.has-palette-color-6-background-color {
+	background-color: var(--theme-palette-color-6);
+}
+
+.has-palette-color-7-background-color {
+	background-color: var(--theme-palette-color-7);
+}
+
+.has-palette-color-8-background-color {
+	background-color: var(--theme-palette-color-8);
+}

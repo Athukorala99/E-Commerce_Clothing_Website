@@ -1,0 +1,29 @@
+.ct-header-cta {
+
+	a {
+		gap: 0.5em;
+	}
+
+	// button size
+	[data-size="small"] {
+		--theme-button-min-height: 34px;
+		--theme-button-padding: 3px 15px;
+		--theme-button-font-size: 13px;
+	}
+
+	[data-size="medium"] {
+		--theme-button-min-height: 42px;
+		--theme-button-padding: 3px 20px;
+	}
+
+	[data-size="large"] {
+		--theme-button-min-height: 50px;
+		--theme-button-padding: 3px 30px;
+		--theme-button-font-size: 16px;
+	}
+
+	// button icon
+	.ct-icon {
+		--theme-icon-color: currentColor;
+	}
+}

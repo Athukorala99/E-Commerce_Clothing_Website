@@ -1,0 +1,18 @@
+.ct-demo-child {
+
+	.ct-checkboxes-container {
+		max-width: 80%;
+		margin-inline: auto;
+	}
+
+	a {
+		display: block;
+		color: #687c93;
+		text-decoration: none;
+		margin-top: 20px;
+
+		&:hover {
+			color: #0073aa;
+		}
+	}
+}

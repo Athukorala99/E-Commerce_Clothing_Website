@@ -1,0 +1,46 @@
+.has-hover-effect img {
+	transition: opacity 0.5s ease,
+				transform 0.5s ease;
+}
+
+[data-hover="zoom-in"] {
+
+	@media (hover: hover) {
+		> *:hover .has-hover-effect img {
+			transform: scale(1.1);
+		}
+	}
+}
+
+[data-hover="zoom-out"] {
+	.has-hover-effect img {
+		transform: scale(1.1);
+	}
+
+	@media (hover: hover) {
+		> *:hover .has-hover-effect img {
+			transform: scale(1.0);
+		}
+	}
+}
+
+[data-hover="swap"] {
+	.ct-swap {
+		position: absolute;
+		inset: 0;
+		opacity: 0;
+	}
+
+	@media (hover: hover) {
+		.has-hover-effect:hover {
+
+			.ct-swap {
+				opacity: 1;
+
+				+ img {
+					opacity: 0;
+				}
+			}
+		}
+	}
+}

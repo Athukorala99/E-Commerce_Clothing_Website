@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<ruleset name="Fluent Standard">
+    <description>WordPress Coding Standard that we use in Fluent Team.</description>
+        <rule ref="WordPress">
+            <exclude name="WordPress.Files.FileName"/>
+            <exclude name="WordPress.PHP.DisallowShortTernary"/>
+            <exclude name="WordPress.WhiteSpace.OperatorSpacing"/>
+            <exclude name="WordPress.WP.EnqueuedResourceParameters"/>
+            <exclude name="WordPress.Arrays.ArrayDeclarationSpacing"/>
+            <exclude name="WordPress.WhiteSpace.CastStructureSpacing"/>
+            <exclude name="WordPress.WhiteSpace.ControlStructureSpacing"/>
+            <exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions"/>
+            <exclude name="WordPress.NamingConventions.ValidFunctionName"/>
+            <exclude name="WordPress.NamingConventions.ValidVariableName"/>
+            
+            <exclude name="PEAR.Functions.FunctionCallSignature"/>
+
+            <exclude name="Squiz.Commenting"/>
+            <exclude name="Squiz.PHP.DisallowMultipleAssignments"/>
+            <exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing"/>
+            
+            <exclude name="Generic.Classes.OpeningBraceSameLine"/>
+            <exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
+            <exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+            <exclude name="Generic.Formatting.MultipleStatementAlignment"/>
+            <exclude name="Generic.WhiteSpace.ArbitraryParenthesesSpacing"/>
+            <exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
+        </rule>
+
+        <rule ref="WordPress.Security.EscapeOutput">
+            <properties>
+                <property name="customEscapingFunctions" type="array">
+                    <element value="fluentform_kses_js"/>
+                    <element value="fluentformSanitizeCSS"/>
+                    <element value="fluentform_sanitize_html"/>
+                </property>
+            </properties>
+        </rule>
+
+        <rule ref="Generic.WhiteSpace.ScopeIndent">
+            <properties>
+                <property name="indent" value="4"/>
+                <property name="tabIndent" value="false"/>
+            </properties>
+        </rule>
+        
+        <rule ref="Generic.WhiteSpace.DisallowTabIndent" />
+
+        <!-- We allow empty catch statements -->
+        <rule ref="Generic.CodeAnalysis.EmptyStatement.DetectedCATCH">
+            <severity>0</severity>
+        </rule>
+</ruleset>

@@ -1,0 +1,136 @@
+@import '../../1-helpers/mixins';
+@import '../../1-helpers/functions';
+
+
+// search results
+.ct-search-results {
+	position: var(--search-dropdown-position, absolute);
+	overflow: clip;
+	top: -15px;
+	inset-inline: -15px;
+	padding-top: calc(var(--theme-form-field-height, 40px) + 14px);
+	border-radius: var(--has-classic-forms, var(--theme-form-field-border-radius, 3px));
+	background: var(--search-dropdown-background, #fff);
+	box-shadow: var(--search-dropdown-box-shadow, 0px 50px 70px 0px var(--search-dropdown-box-shadow-color, rgba(210, 213, 218, 0.4)));
+
+	a {
+		display: flex;
+		align-items: center;
+		gap: var(--items-spacing, 15px);
+		padding: var(--items-padding, 16px);
+
+		&:not(:last-child) {
+			border-bottom: var(--items-divider, 1px dashed rgba(0, 0, 0, 0.05));
+		}
+
+		.ct-media-container {
+			flex: 0 0 var(--search-image-size, 45px);
+			max-width: var(--search-image-size, 45px);
+			align-self: flex-start;
+			border-radius: 2px;
+		}
+
+		.product-search-meta {
+			display: flex;
+			align-items: center;
+			margin-top: 4px;
+
+			small {
+				font-size: 80%;
+				color: inherit;
+
+				del {
+					font-size: inherit;
+				}
+
+				&:not(:last-child):after {
+					content: '-';
+					margin-inline: 5px;
+				}
+			}
+		}
+	}
+}
+
+// search results modal only
+#search-modal {
+
+	.ct-search-results {
+		display: grid;
+		grid-column-gap: 30px;
+		grid-row-gap: 30px;
+		padding-top: 0;
+		border-radius: 0;
+
+		--search-dropdown-position: static;
+		--search-dropdown-box-shadow: none;
+		--search-dropdown-background: transparent;
+		
+		--items-padding: 0;
+		--items-divider: none;
+		--items-spacing: 5%;
+
+		@include media-breakpoint-up(md) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.ct-media-container {
+
+			@include media-breakpoint-down(sm) {
+				--search-image-size: 15%;
+			}
+
+			@include media-breakpoint-up(md) {
+				--search-image-size: 20%;
+			}
+		}
+
+		// show more button
+		.ct-search-more {
+			grid-column: 1/-1;
+			justify-content: center;
+		}
+	}
+}
+
+
+// searching state
+.ct-searching {
+	
+	.ct-search-button-content {
+		opacity: 0;
+	}
+
+	.ct-ajax-loader {
+		opacity: 1;
+	}
+}
+
+
+// results reveal animation
+.ct-search-results {
+
+	&.ct-slide,
+	&.ct-fade-leave,
+	&.ct-fade-leave-active,
+	&.ct-fade-enter,
+	&.ct-fade-enter-active {
+		transition: height 0.2s ease, opacity 0.2s ease;
+	}
+
+	&.ct-fade-enter {
+		opacity: 0;
+	}
+
+	&.ct-fade-enter-active {
+		opacity: 1;
+	}
+
+	&.ct-fade-leave {
+		opacity: 1;
+	}
+
+	&.ct-fade-leave-active {
+		opacity: 0;
+	}
+}

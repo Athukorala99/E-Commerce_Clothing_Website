@@ -1,0 +1,51 @@
+.ct-image-tab {
+
+	> * {
+		padding: var(--cpm-pv) var(--cpm-ph);
+		--options-vertical-spacing: 0;
+
+		&:not(:last-child) {
+			border-bottom: 1px dashed #eee;
+		}
+	}
+
+	.ct-color-picker-modal {
+		position: relative;
+		margin-inline: calc(var(--cpm-ph) * -1);
+		border-radius: 0;
+		opacity: 1 !important;
+		transform: none !important;
+		transition: none !important;
+	}
+}
+
+.ct-patterns-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 15px;
+	margin: 0;
+
+	li {
+		margin: 0;
+		padding: 2px;
+		cursor: pointer;
+		min-height: 71.6px;
+		border-radius: 3px;
+		box-sizing: border-box;
+		border: 2px solid #e0e0e0;
+
+		img {
+			display: block;
+			max-width: 100%;
+		}
+
+		&:hover {
+			border-color: #d1d2d2;
+		}
+
+		&.active {
+			border-color: var(--ui-accent-color);
+			box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+		}
+	}
+}

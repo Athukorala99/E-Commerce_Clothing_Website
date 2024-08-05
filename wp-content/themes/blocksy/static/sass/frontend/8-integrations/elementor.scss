@@ -1,0 +1,71 @@
+.entry-content > .elementor {
+	--theme-default-editor: var(--false);
+}
+
+// .ct-elementor-default-template .site-main,
+.ct-elementor-default-template {
+
+
+	// old elementor row and columns (not flex box)
+	.elementor-top-section:not(.ct-section-stretched):not(.elementor-sticky) {
+		margin-left: var(--has-wide, auto);
+		margin-right: var(--has-wide, auto);
+		width: var(--theme-block-width, var(--theme-container-width));
+		max-width: var(--theme-block-max-width, var(--theme-normal-container-max-width));
+	}
+
+	.elementor-section-boxed > .elementor-container {
+		width: var(--theme-block-width, var(--theme-container-width));
+		max-width: var(--theme-block-max-width, var(--theme-normal-container-max-width));
+	}
+
+
+	// flex container (beta version - older than 3.8.0)
+	// maybe remove later
+	.e-container {
+		--container-max-width: #{'min(var(--theme-block-max-width, var(--theme-normal-container-max-width)), var(--theme-container-width-base))'};
+	}
+
+	// elementor 3.8.0 container changes
+	.e-con {
+		--container-max-width: var(--theme-block-max-width, var(--theme-normal-container-max-width));
+
+		> .e-con-inner {
+			width: var(--theme-block-width, var(--theme-container-width));
+		}
+	}
+}
+
+// disable last child spacing
+.elementor-widget-text-editor {
+
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+// forms
+.elementor-select-wrapper select {
+	background-image: none;
+}
+
+// seach form
+.elementor-search-form__input {
+	--theme-form-field-height: auto;
+}
+
+.elementor-search-form__submit {
+	--theme-button-shadow: none;
+	--theme-button-transform: none;
+}
+
+// fix for Improved CSS Loading option
+// this option is adding a <style> tag and the heading thinks it is not the first child already
+.elementor-widget-container style + {
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: 0;
+	}
+}

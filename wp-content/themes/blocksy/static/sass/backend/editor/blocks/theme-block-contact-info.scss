@@ -1,0 +1,21 @@
+@import '../../../../../static/sass/frontend/4-components/icons';
+@import '../../../../../static/sass/frontend/5-modules/social-box/main';
+@import '../../../../../static/sass/frontend/5-modules/blocks/contact-info';
+
+.ct-contact-info-block {
+	cursor: default;
+
+	a {
+		pointer-events: none;
+		text-decoration: none;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	.ct-icon-container {
+		box-sizing: border-box;
+	}
+}

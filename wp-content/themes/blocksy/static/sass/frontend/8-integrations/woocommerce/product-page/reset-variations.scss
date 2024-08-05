@@ -1,0 +1,21 @@
+.entry-summary-items {
+
+	table.variations {
+		
+		td {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+	}
+}
+
+table.variations {
+
+	.reset_variations {
+		visibility: hidden;
+		font-size: 14px;
+		--theme-link-initial-color: var(--theme-text-color);
+	}
+}

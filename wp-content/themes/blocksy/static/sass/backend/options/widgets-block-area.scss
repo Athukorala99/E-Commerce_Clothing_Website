@@ -1,0 +1,46 @@
+.ct-option-widget-area {
+	min-height: 150px;
+	padding: 0 12px 40px 12px;
+	margin: 15px -12px -30px -12px;
+	background-color: #fff;
+
+	> .customize-pane-child {
+		display: flex !important;
+		flex-direction: column;
+		position: relative !important;
+		padding: 0 !important;
+		margin-top: 25px !important;
+		border-bottom: none !important;
+		overflow: initial !important;
+
+		.customize-control {
+			--ui-padding: 0 8px;
+		}
+
+		.customize-control-sidebar_widgets {
+			order: 100;
+		}
+	}
+
+	// loading block widget screen
+	&.ct-loading {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: transparent;
+	}
+
+	.block-editor-writing-flow {
+		margin-inline: 14px;
+	}
+}
+
+
+// block widgets options panel
+.ct-options-container {
+
+	.block-editor-block-inspector {
+		color: #3c434a;
+		background: #fff;
+	}
+}

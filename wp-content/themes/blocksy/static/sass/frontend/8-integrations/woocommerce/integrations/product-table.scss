@@ -1,0 +1,34 @@
+.wc-product-table .product {
+
+	.ct-cart-actions {
+		display: inline-block;
+
+		.added_to_cart,
+		.single_add_to_cart_button {
+			width: initial;
+			min-height: initial;
+		}
+	}
+
+	.quantity {
+		--quantity-height: 34px;
+
+		input.qty {
+			max-width: initial !important;
+		}
+	}
+
+	.quantity[data-type="type-1"] {
+		--quantity-width: 70px;
+	}
+
+	.quantity[data-type="type-2"] {
+		--quantity-width: 80px;
+	}
+
+	// variation select
+	.cart select {
+		height: 34px !important;
+		padding-inline-end: 25px !important;
+	}
+}

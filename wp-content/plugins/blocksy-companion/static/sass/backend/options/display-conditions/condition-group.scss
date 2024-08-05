@@ -1,0 +1,97 @@
+.ct-condition-group {
+	position: relative;
+	display: grid;
+	grid-template-columns: var(--grid-template-columns);
+	align-items: center;
+	gap: 7px;
+	padding: 6px;
+	padding-inline-end: 35px;
+	border-radius: 5px;
+	background: rgba(240, 240, 240, 0.5);
+	border: 1px solid rgba(240, 240, 240, 0.5);
+	box-shadow: inset 0px 0px 0px 1px transparent;
+	transition: border-color var(--condition-ui-transition, 0.1s ease),
+				box-shadow var(--condition-ui-transition, 0.1s ease);
+
+	&.ct-cols-2 {
+		--grid-template-columns: 110px 1fr;
+
+		.ct-select-input {
+			&:nth-child(2) {
+				&:before {
+					content: 'ref-width';
+				}
+			}
+		}
+	}
+
+	&.ct-cols-3 {
+		--grid-template-columns: 110px 1fr 1fr;
+
+		.ct-select-input {
+			&:nth-child(2){
+				&:before {
+					content: 'ref-width:right';
+				}
+			}
+
+			&:nth-child(3) {
+				&:before {
+					content: 'ref-width:left';
+				}
+			}
+
+			&.ct-dropdown-normal-width {
+				&:before {
+					content: 'ref-width';
+				}
+			}
+		}
+	}
+}
+
+.ct-condition-type {
+	span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: calc(50% - 9px);
+		inset-inline-start: 6px;
+		width: 18px;
+		height: 18px;
+		background: #eee;
+		border-radius: 2px;
+	}
+
+	&.ct-select-input input {
+		padding-inline-end: 8px;
+		padding-inline-start: 30px;
+	}
+}
+
+
+[class*="ct-remove-condition"] {
+	position: absolute;
+	inset-inline-end: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 35px;
+	height: 35px;
+	padding: 0;
+	opacity: 0.5;
+	border: none;
+	cursor: pointer;
+	appearance: none;
+	background: transparent;
+
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+		opacity: 1;
+		color: #a00;
+	}
+}

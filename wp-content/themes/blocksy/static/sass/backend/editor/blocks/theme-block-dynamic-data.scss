@@ -1,0 +1,110 @@
+@import '../../../../../static/sass/frontend/4-components/star-rating';
+
+// image placeholder
+.ct-dynamic-data-placeholder {
+	height: 100%;
+	min-height: 200px;
+	position: relative;
+	box-sizing: border-box;
+
+	&:before, &:after {
+		position: absolute;
+		inset: 0;
+		content: '';
+		pointer-events: none;
+	}
+
+	&:before {
+		opacity: 0.02;
+		background: currentColor;
+	}
+
+	&:after {
+		opacity: 0.25;
+		border: 1px dashed currentColor;
+	}
+
+	.components-placeholder__illustration {
+		stroke-dasharray: 3;
+	}
+}
+
+// dynamic data
+.ct-dynamic-data {
+
+	a {
+		pointer-events: none;
+		text-decoration: none;
+		--theme-link-initial-color: initial;
+	}
+
+	// woo sale price defaults
+	.sale-price {
+		display: inline-flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		column-gap: 5px;
+
+		del {
+			order: 2;
+			font-size: 80%;
+		}
+
+		ins {
+			text-decoration: none;
+		}
+	}
+}
+
+// dynamic media
+.ct-dynamic-media {
+	overflow: hidden;
+	position: relative;
+	box-sizing: border-box;
+
+	img {
+		width: 100%;
+	}
+
+	// hover effect
+	&[data-hover] img {
+		transition: transform 0.5s ease;
+	}
+
+	&[data-hover="zoom-in"] {
+
+		&:hover img {
+			transform: scale(1.1);
+		}
+	}
+
+	&[data-hover="zoom-out"] {
+
+		img {
+			transform: scale(1.1);
+		}
+
+		&:hover img {
+			transform: scale(1.0);
+		}
+	}
+
+	// video indicator
+	.ct-video-indicator {
+		position: absolute;
+		inset: 0;
+		z-index: 3;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		transition: opacity 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+					visibility 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+		svg {
+			border-radius: 100%;
+			transition: transform 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.menu,
+.entry-meta,
+.ct-account-modal > ul,
+.ct-language-switcher ul,
+[class*=ct-contact-info] ul,
+.products,
+.commentlist,
+.ct-comments ol,
+.ct-comments ul,
+.mobile-menu ul,
+.woocommerce-tabs > ul,
+.wc-item-meta,
+.ct-header-account ul,
+.ct-product-additional-info ul,
+.woocommerce-pagination .page-numbers,
+.wc-block-review-list,
+.woocommerce-mini-cart,
+.woocommerce-MyAccount-navigation ul,
+.wp-block-latest-comments,
+.ct-filter-widget,
+.ct-compare-bar ul,
+.ct-product-hero ul {
+	margin-bottom: 0;
+
+	--theme-list-indent: 0;
+	--theme-list-style-type: none;
+}

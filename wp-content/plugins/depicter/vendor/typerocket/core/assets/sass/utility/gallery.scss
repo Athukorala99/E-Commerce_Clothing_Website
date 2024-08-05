@@ -1,0 +1,73 @@
+/* Gallery
+----------------------------------------------------------------------- */
+.tr-gallery-list {
+    margin: 5px -5px 0;
+
+    .tr-image-picker-placeholder img {
+        cursor: move;
+    }
+
+    .ui-sortable-helper a {
+        display: none;
+    }
+}
+
+.tr-gallery-item {
+    margin: 5px;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: solid 1px transparent; // fixes sorting spacing placeholder bug
+
+    &:focus {
+        outline: none;
+        border: solid 1px var(--tr-profile-color);
+        box-shadow: 0 0 4px #0073aa;
+        box-shadow: 0 0 4px var(--tr-profile-color);
+    }
+
+    img {
+        margin: 0;
+        display: block;
+        cursor: move;
+    }
+
+    &:not(:hover) a:not(:focus):not(:active) {
+        @include visually-hidden;
+    }
+}
+
+.tr-gallery-remove, .tr-image-edit {
+    color: #fff;
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    z-index: 3;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 25px;
+    background: rgba(11, 11, 11, 0.69);
+    backdrop-filter: blur(2px);
+    box-shadow: none;
+    display: block;
+
+    &:hover, &:focus {
+        color: #fff;
+        background: $delete_hover;
+        cursor: pointer;
+    }
+}
+
+.tr-image-edit {
+    .tr-gallery-item & {
+        left: 40px;
+    }
+
+    &:hover, &:focus {
+        background: $wp_link;
+        background: var(--tr-profile-color, $wp_link);
+    }
+}

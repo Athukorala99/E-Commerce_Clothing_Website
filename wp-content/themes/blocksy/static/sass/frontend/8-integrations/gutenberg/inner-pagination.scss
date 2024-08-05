@@ -1,0 +1,42 @@
+.page-links,
+.woocommerce-pagination > .page-numbers {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px;
+	font-size: 13px;
+	font-weight: 500;
+	border-top: 1px solid var(--theme-border-color);
+	padding-top: calc(var(--theme-content-spacing) + 1.5em);
+	margin-top: calc(var(--theme-content-spacing) + 1.5em);
+
+	a,
+	.current,
+	.post-pages-label {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 38px;
+		min-width: 38px;
+		padding: 0 10px;
+		border-radius: 3px;
+		border: 1px solid var(--theme-border-color);
+	}
+
+	.current {
+		color: #fff;
+		background: var(--theme-palette-color-1);
+
+		--theme-border-color: var(--theme-palette-color-1);
+	}
+
+	a {
+		--theme-link-initial-color: var(--theme-text-color);
+
+		&:hover {
+			box-shadow: 0px 0px 0px 1px var(--theme-palette-color-1);
+
+			--theme-border-color: var(--theme-palette-color-1);
+		}
+	}
+}

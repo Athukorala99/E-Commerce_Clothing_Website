@@ -1,0 +1,60 @@
+$buttons-type-1:
+	'.button',
+	'.ct-button',
+	'.entry-tags a',
+	'.added_to_cart',
+	'[type="submit"]',
+	'.wp-element-button',
+	'.wp-block-button__link',
+
+	// special buttons
+	'a.showlogin',
+	'a.restore-item',
+	'button.regform-button',
+	'button[class*="ajax"]',
+	
+	// integrations
+	'.forminator-ui[data-design="none"] .forminator-button',
+	'.fluentform .ff-el-group button.ff-btn',
+;
+
+#{$buttons-type-1} {
+	position: relative;
+	color: var(--theme-button-text-initial-color);
+	border: var(--theme-button-border);
+	background-color: var(--theme-button-background-initial-color);
+
+	&:hover {
+		color: var(--theme-button-text-hover-color);
+		border-color: var(--theme-button-border-hover-color);
+		background-color: var(--theme-button-background-hover-color);
+	}
+
+	@media (hover: hover) {
+		@supports (filter: blur()) {
+			&:before {
+				display: var(--theme-button-shadow, block);
+				position: absolute;
+				z-index: -1;
+				content: '';
+				inset-inline: 10px;
+				inset-block: 12px 0;
+				opacity: 0;
+				border-radius: inherit;
+				background: inherit;
+				transition: opacity 0.2s ease;
+				filter: blur(11px);
+			}
+
+			&:hover {
+				@media (prefers-reduced-motion: no-preference) {
+					transform: var(--theme-button-transform, translate3d(0, -3px, 0));
+
+					&:before {
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+	}
+}

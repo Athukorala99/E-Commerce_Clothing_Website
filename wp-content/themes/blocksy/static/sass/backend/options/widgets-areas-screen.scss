@@ -1,0 +1,10 @@
+.edit-widgets-main-block-list {
+
+	> .wp-block {
+		margin-bottom: 20px;
+
+		&:first-child {
+			margin-top: 20px;
+		}
+	}
+}

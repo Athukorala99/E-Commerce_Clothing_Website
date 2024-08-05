@@ -1,0 +1,27 @@
+$light: #ffffff;
+$accent: #157EFB;
+
+$background: #2E2F31;
+$background_light: lighten($background, 4%);
+
+$color_background_light: lighten($background, 40%);
+
+$border: lighten($background, 10%);
+
+
+@import 'mode-switch';
+@import 'dark-mode-ui';
+@import 'dark-mode-ui-menus';
+@import 'dark-mode-ui-options';
+@import 'dark-mode-ui-themes';
+
+
+.ct-dark-mode {
+	--ui-accent-color: #157EFB;
+	--optionBorderColor: #{$border};
+}
+
+// disable transitions
+.ct-disable-transitions * {
+	transition: none !important;
+}

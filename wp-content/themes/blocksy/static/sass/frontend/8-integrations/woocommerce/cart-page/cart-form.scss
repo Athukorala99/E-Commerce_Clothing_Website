@@ -1,0 +1,32 @@
+.ct-woocommerce-cart-form {
+	display: grid;
+
+	@include media-breakpoint-down (md) {
+		grid-row-gap: 50px;
+	}
+
+	@include media-breakpoint-up (lg) {
+		grid-template-columns: 2fr 1fr;
+		grid-column-gap: 50px;
+	}
+
+	.woocommerce-cart-form table {
+		
+		@include media-breakpoint-up (md) {
+
+			&:first-child {
+				margin-top: 7px;
+			}
+		}
+	}
+}
+
+// cart form + checkout form
+.woocommerce-checkout .ct-woocommerce-cart-form {
+	grid-template-columns: initial;
+}
+
+// hide "update cart" button
+.ct-cart-auto-update .actions button[name='update_cart'] {
+	display: none;
+}

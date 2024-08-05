@@ -1,0 +1,27 @@
+label.wc-pao-addon-name {
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.wc-pao-addon {
+	margin-top: 20px;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+div.product-addon-totals {
+
+	strong {
+		font-weight: 600;
+	}
+}
+
+.wc-pao-addon-image-swatch.selected {
+	outline-color: var(--theme-palette-color-1);
+}
+
+.wc-points-rewards-product-message {
+	display: block;
+}

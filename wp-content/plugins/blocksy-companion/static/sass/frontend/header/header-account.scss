@@ -1,0 +1,109 @@
+.ct-header-account {
+	position: relative;
+
+	.ct-account-item {
+
+		.ct-media-container {
+			flex: 0 0 var(--avatar-size, 18px);
+			width: var(--avatar-size, 18px);
+			height: var(--avatar-size, 18px);
+			border-radius: 100%;
+		}
+
+		&:not([href]) {
+			cursor: pointer;
+			color: var(--theme-link-initial-color);
+			transition: var(--theme-transition);
+
+			&:hover {
+				color: var(--theme-link-hover-color);
+			}
+		}
+	}
+
+	> ul {
+		position: absolute;
+		top: 100%;
+		z-index: 15;
+		width: 250px;
+		font-size: 14px;
+		color: var(--theme-text-color);
+		padding: 20px;
+		margin-top: var(--dropdown-top-offset, 15px);
+		border-radius: var(--theme-border-radius);
+		background: var(--background-color, #fff);
+		box-shadow: var(--theme-box-shadow);
+		opacity: 0;
+		visibility: hidden;
+		transform: translate3d(0, 15px, 0);
+		transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+
+		&[data-placement='left'] {
+			right: var(--theme-submenu-inline-offset, -20px);
+		}
+
+		&[data-placement='right'] {
+			left: var(--theme-submenu-inline-offset, -20px);
+		}
+
+		li {
+			&:not(.ct-header-account-user-info) {
+				font-weight: 500;
+
+				a {
+					display: block;
+					padding: 3px 0;
+				}
+			}
+
+			&.ct-header-account-user-info {
+				display: flex;
+				align-items: center;
+				gap: 13px;
+
+				.ct-media-container {
+					max-width: 40px;
+					border-radius: 100%;
+				}
+
+				span {
+					display: flex;
+					flex-direction: column;
+				}
+			}
+
+			&.ct-dropdown-divider {
+				margin: 15px -20px;
+				border-bottom: var(--theme-border);
+			}
+		}
+
+		// drop-down bridge
+		&:before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: var(--dropdown-top-offset, 15px);
+			transform: translateY(-100%);
+		}
+	}
+
+	&:hover,
+	&:focus-within {
+		
+		> ul[data-placement] {
+			visibility: visible;
+			opacity: 1;
+			transform: translate3d(0, 0, 0);
+		}
+	}
+}
+
+// hide dropdown when inside offcanvas
+.ct-panel-content {
+	.ct-header-account > ul {
+		display: none;
+	}
+}

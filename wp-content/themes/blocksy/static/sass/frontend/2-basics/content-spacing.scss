@@ -1,0 +1,42 @@
+p {
+	margin-bottom: var(--theme-content-spacing);
+}
+
+ul, ol {
+	padding-inline-start: var(--theme-list-indent);
+	margin-bottom: var(--theme-content-spacing);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: calc(var(--has-theme-content-spacing, 1) * (0.3em + 10px));
+}
+
+.entry-content,
+.is-layout-flow,
+.is-layout-constrained {
+
+	> * {
+		margin-bottom: var(--theme-content-spacing);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: var(--theme-content-spacing);
+		margin-bottom: calc(var(--has-theme-content-spacing, 1) * (0.3em + 10px));
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+
+:where(.is-layout-flow) {
+
+	> * {
+		margin-block-start: 0;
+	}
+}

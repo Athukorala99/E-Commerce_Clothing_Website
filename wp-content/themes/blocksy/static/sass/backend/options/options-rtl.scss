@@ -1,0 +1,35 @@
+body.rtl {
+
+
+	// customizer panel
+	.ct-customizer-panel-option {
+		button {
+			&:after {
+				content: '\f341';
+			}
+		}
+
+		.ct-option-switch + button {
+			transform: translate3d(7px, 0, 0);
+		}
+	}
+
+	.ct-panel.ct-click-allowed .ct-customizer-panel-option button {
+		transform: translate3d(0, 0, 0);
+	}
+
+	.customize-panel-actions button {
+		&:before {
+			content: '\f345';
+		}
+	}
+
+
+	// switch
+	.ct-option-switch {
+
+		&.ct-active span {
+			transform: translate3d(-18px, 0, 0);
+		}
+	}
+}

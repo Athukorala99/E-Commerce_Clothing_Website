@@ -1,0 +1,17 @@
+.ct-social-box {
+	display: flex;
+	flex-direction: var(--items-direction, row);
+	flex-wrap: var(--wrap, wrap);
+	gap: var(--items-spacing, 15px);
+
+	a {
+		display: flex;
+		align-items: center;
+	}
+
+	// icons label
+	.ct-label {
+		margin-inline-start: 0.7em;
+		transition: color 0.12s cubic-bezier(.455,.03,.515,.955);
+	}
+}

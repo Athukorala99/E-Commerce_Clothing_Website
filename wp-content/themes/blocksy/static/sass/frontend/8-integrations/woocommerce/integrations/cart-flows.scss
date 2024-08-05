@@ -1,0 +1,27 @@
+// cartflows & wpfunels
+#wpfnl-checkout-form,
+#wcf-embed-checkout-form {
+
+	form.woocommerce-checkout {
+		grid-column-gap: initial;
+	}
+}
+
+
+// cartflows
+#wcf-embed-checkout-form {
+
+	#payment .payment_methods > li > label {
+		display: flex;
+	}
+
+	// checkbox
+	input[type="checkbox"],
+	input[type="checkbox"]:before {
+		position: initial;
+		top: initial;
+		height: initial;
+		border: initial;
+		transform: initial;
+	}
+}

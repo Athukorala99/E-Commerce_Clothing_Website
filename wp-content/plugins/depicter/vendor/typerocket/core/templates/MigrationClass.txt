@@ -1,0 +1,15 @@
+<?php
+use TypeRocket\Database\Migration;
+
+return new class($wpdb) extends Migration
+{
+    public function up()
+    {
+
+    }
+
+    public function down()
+    {
+
+    }
+};

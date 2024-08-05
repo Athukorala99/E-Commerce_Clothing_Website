@@ -1,0 +1,14 @@
+.term-blocksy-image-wrap,
+.term-blocksy-accent-color-wrap {
+	> th label {
+		position: relative;
+	}
+
+	> td > * {
+		max-width: 95%;
+	}
+}
+
+.term-blocksy-image-wrap .attachment-media-view {
+	text-align: right;
+}

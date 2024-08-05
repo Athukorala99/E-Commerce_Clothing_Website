@@ -1,0 +1,73 @@
+// widgets top
+.customize-control-widget_form .widget-top {
+	
+	.widget-title h3 {
+		padding: 13px 15px;
+	}
+
+	.widget-action {
+		padding: 8px;
+	}
+
+	.widget-reorder-nav span {
+		height: 39px;
+
+		&:before {
+			line-height: 39px;
+		}
+	}
+}
+
+
+// adjust Stackable UI in customizer widgets
+.customizer-panel-content {
+
+	.ugb-panel-tabs {
+		top: -1px !important;
+	}
+
+	.ugb-toggle-panel-body.is-opened .components-panel__body-title {
+		top: 80px !important;
+	}
+
+	.stk-navigation-view__wrapper {
+		width: 320px !important;
+		bottom: 0px !important;
+	}
+}
+
+
+// theme block widgets
+.wp-block-widget-area [data-type="blocksy/widgets-wrapper"] {
+	margin-bottom: 40px;
+}
+
+
+// Customizer -> Widgets (panel)
+#customize-controls .control-section-sidebar {
+
+	li.customize-control-sidebar_block_editor {
+		--ui-padding: 0;
+		margin-top: -7px;
+	}
+}
+
+
+.ct-customizer-panel {
+
+	.customize-widgets-layout__inspector {
+
+		.customize-section-description-container {
+			display: none;
+		}
+
+		> form {
+			margin: -12px;
+		}
+	}
+
+	&.ct-panel-second-level > div:last-child {
+		z-index: 10;
+		background: inherit;
+	}
+}

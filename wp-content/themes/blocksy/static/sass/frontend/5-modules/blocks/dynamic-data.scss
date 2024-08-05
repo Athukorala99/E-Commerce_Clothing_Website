@@ -1,0 +1,53 @@
+.ct-dynamic-data {
+
+	a {
+		--theme-link-initial-color: initial;
+	}
+}
+
+// dynamic media
+.ct-dynamic-media {
+	overflow: hidden;
+	position: relative;
+
+	@media (hover: hover) {
+
+		&[data-hover] img {
+			transition: transform 0.5s ease;
+		}
+
+		&[data-hover="zoom-in"] {
+
+			&:hover img {
+				transform: scale(1.1);
+			}
+		}
+
+		&[data-hover="zoom-out"] {
+
+			img {
+				transform: scale(1.1);
+			}
+
+			&:hover img {
+				transform: scale(1.0);
+			}
+		}
+	}
+
+	// border
+	&[style*="border-width"] {
+		border-style: solid;
+	}
+}
+
+
+// dynamic data layer
+.ct-dynamic-data-layer {
+	color: var(--theme-text-color);
+	--theme-link-initial-color: var(--theme-text-color);
+	
+	> span {
+		margin-inline-end: 5px;
+	}
+}

@@ -1,0 +1,40 @@
+.ct-condition-location {
+	display: grid;
+	grid-template-columns: 1fr 90px;
+	grid-column-gap: 10px;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+	--x-select-dropdown-width: calc(100% + 100px);
+}
+
+.ct-new-condition-location {
+	padding: var(--options-horizontal-spacing, 0 14px);
+	--options-vertical-spacing: 20px;
+
+	.ct-new-location {
+		position: relative;
+		--options-horizontal-spacing: 0;
+
+		.ct-control {
+			padding-bottom: 20px;
+			border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+
+			&[data-design="inline"] input {
+				text-align: center;
+				--input-width: 90px;
+			}
+		}
+
+		.ct-remove-condition-location {
+			top: 0;
+			inset-inline-end: -26px;
+			width: 26px;
+			height: 30px;
+		}
+	}
+
+	.button {
+		width: 100%;
+		margin-top: 20px;
+	}
+}

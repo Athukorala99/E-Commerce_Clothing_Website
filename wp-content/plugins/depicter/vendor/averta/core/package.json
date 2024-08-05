@@ -1,0 +1,16 @@
+{
+  "name": "averta-core",
+  "version": "1.1.7",
+  "description": "Averta PHP Toolkit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "averta",
+    "php",
+    "toolkit"
+  ],
+  "author": "averta",
+  "license": "ISC"
+}

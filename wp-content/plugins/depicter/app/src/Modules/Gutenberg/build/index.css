@@ -1,0 +1,4 @@
+.dep-widget-wrapper{align-items:center;box-shadow:0 1px 12px rgba(0,0,0,.314);display:flex;padding:10px}.dep-widget-wrapper img{width:60px}.components-panel__row.sliderBtns{justify-content:flex-start}
+body .wp-block-depicter-slider{max-width:1920px !important;border-top:18px solid transparent;border-bottom:28px solid transparent;margin-top:0 !important;margin-bottom:0 !important;}
+#dep-publish-slider-btn {margin-right:8px;}
+body.rtl #dep-publish-slider-btn {margin-left:8px;}

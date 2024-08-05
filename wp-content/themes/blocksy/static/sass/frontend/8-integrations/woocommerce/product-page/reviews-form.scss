@@ -1,0 +1,9 @@
+#review_form {
+	position: sticky;
+	top: 70px;
+
+	.comment-reply-title {
+		font-weight: 700;
+		color: var(--theme-headings-color);
+	}
+}

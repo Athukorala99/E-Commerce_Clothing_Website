@@ -1,0 +1,24 @@
+{
+  "name": "averta-wordpress",
+  "version": "1.0.8",
+  "description": "Averta WordPress Toolkit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/averta-lab/wordpress.git"
+  },
+  "keywords": [
+    "averta",
+    "PHP",
+    "wordpress"
+  ],
+  "author": "averta",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/averta-lab/wordpress/issues"
+  },
+  "homepage": "https://github.com/averta-lab/wordpress#readme"
+}

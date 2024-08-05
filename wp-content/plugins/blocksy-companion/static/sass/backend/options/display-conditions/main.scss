@@ -1,0 +1,60 @@
+@import 'modal';
+
+@import 'condition-group';
+@import 'condition-relation';
+@import 'relation-group';
+@import 'hovered-indication';
+
+.ct-display-conditions {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+	--condition-ui-transition: 0.15s ease;
+}
+
+.ct-conditions-actions {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&:not(:only-child) {
+		margin-top: 10px;
+		padding-top: 25px;
+		border-top: 1px dashed var(--optionBorderColor);
+	}
+
+	span {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-size: 13px;
+		font-weight: 500;
+	}
+}
+
+
+// condition info
+.ct-display-conditions {
+
+	.ct-option-input {
+		position: relative;
+
+		.ct-condition-info {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: calc(50% - 8px);
+			inset-inline-end: 7px;
+
+			svg {
+				fill: #cecece;
+			}
+
+			.ct-tooltip {
+				--tooltip-width: 160px;
+			}
+		}
+	}
+}

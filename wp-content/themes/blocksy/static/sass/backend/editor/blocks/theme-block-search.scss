@@ -1,0 +1,78 @@
+@import '../../../../../static/sass/frontend/5-modules/blocks/search';
+
+.ct-search-form {
+
+	input, select {
+		font-size: var(--theme-form-font-size, 16px);
+		padding: var(--has-classic-forms, var(--theme-form-field-padding, 0 12px));
+		color: var(--theme-form-text-initial-color, var(--theme-text-color));
+		border: var(--theme-form-field-border-width, 1px) var(--theme-form-field-border-style, solid) var(--theme-form-field-border-initial-color);
+		background-color: var(--has-classic-forms, var(--theme-form-field-background-initial-color));
+		border-radius: var(--has-classic-forms, var(--theme-form-field-border-radius, 3px));
+		transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+		&:focus {
+			outline: none;
+			box-shadow: none;
+			border-color: var(--theme-form-field-border-focus-color);
+		}
+	}
+
+	input {
+		width: 100%;
+		height: var(--theme-form-field-height, 40px);
+		margin: 0;
+	}
+
+	.ct-fake-select-container {
+		position: relative;
+
+		.ct-fake-select {
+			display: flex;
+			align-items: center;
+			position: relative;
+			z-index: 1;
+			height: 100%;
+			padding: var(--has-classic-forms, var(--theme-form-field-padding, 0 12px));
+			padding-inline-end: 25px;
+			font-size: 14px;
+			color: var(--theme-form-text-initial-color, var(--theme-text-color));
+		}
+
+		select {
+			// appearance: none;
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: var(--theme-form-field-height, 40px);
+			// padding-inline-end: 25px;
+			// background-image: url("data:image/svg+xml,%3Csvg width='21' height='13' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5.379L20.621 2.5 10.5 12.621.379 2.5 2.5.379l8 8z' fill='%2currentColor' fill-rule='nonzero'/%3E%3C/svg%3E");
+			// background-repeat: no-repeat, repeat;
+			// background-size: 8px auto, 100%;
+			// background-position: right 10px top 50%, 0 0;
+			border-start-start-radius: 0;
+			border-end-start-radius: 0;
+		}
+	}
+
+	.wp-element-button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		pointer-events: none;
+		box-sizing: border-box;
+
+		div {
+			display: flex;
+		}
+	}
+
+	// helpers
+	.rich-text {
+		white-space: nowrap !important;
+	}
+
+	&[data-updating="yes"] * {
+		transition: none !important;
+	}
+}

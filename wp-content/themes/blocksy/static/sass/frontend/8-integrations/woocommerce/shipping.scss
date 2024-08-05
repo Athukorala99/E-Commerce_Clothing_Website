@@ -1,0 +1,36 @@
+.woocommerce-shipping-totals {
+	--theme-table-text-align: start;
+
+	th {
+		display: none;
+	}
+
+	td {
+		padding-inline-start: 0;
+
+		&:before {
+			content: attr(data-title);
+			display: block;
+			font-weight: 600;
+			text-align: initial;
+			margin-bottom: 15px;
+		}
+	}
+	
+	form button {
+		width: 100%;
+	}
+
+	p:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+ul#shipping_method {
+	list-style: none;
+	padding-inline-start: 0;
+
+	li:not(:last-child) {
+		margin-bottom: 10px;
+	}
+}

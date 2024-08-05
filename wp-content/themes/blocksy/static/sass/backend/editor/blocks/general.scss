@@ -1,0 +1,18 @@
+:root {
+
+	// conditions
+	--true: initial;
+	--false: ;
+
+	// page structure (boxed/normal)
+	box-sizing: border-box;
+	border: var(--has-boxed, var(--theme-boxed-content-border));
+	padding: var(--has-boxed, var(--theme-boxed-content-spacing));
+	box-shadow: var(--has-boxed, var(--theme-boxed-content-box-shadow));
+	border-radius: var(--has-boxed, var(--theme-boxed-content-border-radius));
+
+	width: calc(100% - #{$sides_spacing * 2});
+	max-width: var(--has-boxed, var(--theme-block-max-width));
+	margin-inline: auto;
+	margin-block: var(--has-boxed, $sides_spacing);
+}

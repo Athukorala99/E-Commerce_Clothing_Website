@@ -1,0 +1,35 @@
+[class*="ct-contact-info"] {
+	--theme-link-initial-color: var(--theme-block-text-color, var(--theme-text-color));
+
+	ul {
+		display: flex;
+		flex-direction: var(--items-direction, row);
+		flex-wrap: wrap;
+		gap: var(--items-spacing, 15px);
+
+		align-items: var(--horizontal-alignment); // when placed in widget area
+		text-align: start; // when placed in widget area
+    	
+	}
+
+	li {
+		display: flex;
+		column-gap: 15px;
+		align-items: center;
+
+		&:hover a {
+			color: var(--theme-link-hover-color);
+		}
+	}
+
+	.contact-info {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		color: var(--theme-block-text-color, var(--theme-text-color));
+	}
+
+	.contact-title {
+		font-weight: 600;
+	}
+}

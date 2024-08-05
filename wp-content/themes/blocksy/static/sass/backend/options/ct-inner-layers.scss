@@ -1,0 +1,11 @@
+.ct-inner-layer {
+	--layer-height: 34px;
+
+	.ct-layer-label {
+		font-size: 11px;
+	}
+
+	.ct-layer-content > * {
+		--options-horizontal-spacing: 0 15px 17px 15px;
+	}
+}

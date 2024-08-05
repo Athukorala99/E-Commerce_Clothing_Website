@@ -1,0 +1,2724 @@
+# Copyright (C) 2022 Averta
+# This file is distributed under the GPL-2.0-only.
+msgid ""
+msgstr ""
+"Project-Id-Version: Depicter 1.1.8\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/depicter\n"
+"POT-Creation-Date: 2022-08-21 08:57:30+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2022-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: node-wp-i18n 1.2.6\n"
+
+#: app/requirement.php:31
+msgid ""
+"%1$s plugin requires PHP version %2$s but current version is %3$s. Please "
+"contact your host provider and ask them to upgrade PHP version."
+msgstr ""
+
+#: app/src/Controllers/Ajax/EditorAjaxController.php:83
+msgid ""
+"Media files cannot be published due to lack of proper file permissions for "
+"uploads directory."
+msgstr ""
+
+#: app/src/Controllers/Ajax/ExportAjaxController.php:22
+msgid "Document ID is required"
+msgstr ""
+
+#: app/src/Controllers/Ajax/ImportAjaxController.php:28
+#: app/src/WordPress/FileUploaderService.php:22
+msgid "Cannot upload the file, because max permitted file upload size is %s."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Depicter"
+msgstr ""
+
+#: app/src/DataSources/Products.php:375
+msgid "On backorder"
+msgstr ""
+
+#: app/src/DataSources/Products.php:377
+msgid "In stock"
+msgstr ""
+
+#: app/src/DataSources/Products.php:379
+msgid "Out of stock"
+msgstr ""
+
+#: app/src/Database/Repository/DocumentRepository.php:490
+#: app/src/Database/Repository/DocumentRepository.php:513
+msgid "Untitled Slider"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:11
+msgid "You don’t have any sliders yet"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:12
+msgid "Create Slider"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:13
+msgid "or"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:14
+msgid "import slider"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:15
+msgid "Name"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:16
+msgid "Slides"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:17
+msgid "Slug"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:18
+msgid "Last Modify"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:19
+msgid "Preview"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:20
+msgid "Edit"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:21
+msgid "Delete"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:22
+msgid "Duplicate"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:23
+msgid "No matching document found."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:24
+msgid "Sort by Name"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:25
+msgid "Sort by Date"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:26
+msgid "Sort by Slides"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:27
+msgid "Sort by Type"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:28
+msgid "What is legacy slider?"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:29
+msgid ""
+"sample text for text section and lorem is perfect for new world to pay a "
+"new deivce over etchnology. when hear the buzz of the little world among "
+"the stalks, and familiar with the countless indescribable forms of the "
+"insects and flies."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:30
+msgid "Install Legacy Slider"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:31
+msgid "Close"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:32
+msgid "Are you sure you want to delete selected slider(s)?"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:33
+msgid "Export"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:34
+msgid "Clear Selected"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:35
+msgid "Select All"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:36
+msgid "Import"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:37
+msgid "Search for slider …"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:38
+msgid "Custom Slider"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:39
+msgid "Post Slider"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:40
+msgid "Facebook Slider"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:41
+msgid "Instagram Slider"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:42
+msgid "Twitter Slider"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:43
+msgid "Flickr Slider"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:44
+msgid "WooCommerce"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:45
+msgid "Youtube Slider"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:46
+msgid "Back to sliders list"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:47
+msgid "Choose the new slider type"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:48
+msgid "Possession of my entire soul, like these sweet mornings of spring."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:49
+msgid ""
+"Possession of my entire soul, like these sweet mornings of spring into the "
+"new way of presentation."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:50
+msgid "Possession of my entire soul, like these sweet."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:51
+msgid "Blank Slider"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:52
+msgid "Are you sure you want to close?"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:53
+msgid "Importing Template"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:54
+msgid "Search for templates …"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:55
+msgid "Sorry, we couldn't find any items here."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:56
+msgid "Go to slide"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:57
+msgid "Scroll to"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:58
+msgid "by"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:59
+msgid "from"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:60
+msgid "WordPress elements"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:61
+msgid "WooCommerce elements"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:62
+msgid "Instagram elements"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:63
+msgid "Facebook elements"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:64
+msgid "Twitter elements"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:65
+msgid "Flickr elements"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:66
+msgid "Templates"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:67
+msgid "Photos"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:68
+msgid "Texts"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:69
+msgid "Videos"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:70
+msgid "Shapes and Vectors"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:71
+msgid "Buttons"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:72
+msgid "Controls"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:73
+msgid "Click Here"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:74
+msgid "Drag or click to create a button"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:75
+msgid "Controls set"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:76
+msgid "Navigation arrows"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:77
+msgid "Navigation bullets"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:78
+msgid "Line timer"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:79
+msgid "Slideshow play and pause"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:80
+msgid "Scroll down indicator"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:81
+msgid "Read More"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:82
+msgid "Featured Image"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:83
+msgid "Product Name"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:84
+msgid "Go to product page"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:85
+msgid "Description"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:86
+msgid "SKU"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:87
+msgid "Regular price"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:88
+msgid "Sale price"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:89
+msgid "In stock quantity"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:90
+msgid "Add to cart button"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:91
+#: app/src/WordPress/ContentTypesServiceProvider.php:91
+msgid "Category"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:92
+msgid "Tags"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:93
+msgid "Date on sale from"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:94
+msgid "Date on sale to"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:95
+msgid "Total sales"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:96
+msgid "Rating counts"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:97
+msgid "Average rating"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:98
+msgid "Review counts"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:99
+msgid "Author Name"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:100
+msgid "Go to author page"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:101
+msgid "Title"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:102
+msgid "Go to post page"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:103
+msgid "Excerpt"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:104
+#: app/src/Modules/WPBakery/module.php:30
+msgid "Content"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:105
+msgid "Date"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:106
+msgid "Read more button"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:107
+msgid "Stock Photos"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:108
+msgid "My Photos"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:109
+msgid "Upload or insert a photo"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:110
+msgid "Shapes"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:111
+msgid "Stock Vectors"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:112
+msgid "My Vectors"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:113
+msgid "Upload or insert a vector image"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:114
+msgid "Add Heading Text"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:115
+msgid "Add Subheading Text"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:116
+msgid "Add a body paragraph text"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:117
+msgid "Drag or click to add a text"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:118
+msgid "Combination styles"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:119
+msgid "YouTube"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:120
+msgid "Vimeo"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:121
+msgid "My Videos"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:122
+msgid "Upload or insert a video"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:123
+msgid "Embed video"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:124
+msgid "Stock videos"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:125
+msgid "Search..."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:126
+msgid "Insert"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:127
+msgid "Upload"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:128
+msgid "Copy to clipboard"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:129
+msgid "back to dashboard"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:130
+msgid "You can also find these settings in the options tab later."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:131
+msgid "Bring forward"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:132
+msgid "Bring to front"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:133
+msgid "Send backward"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:134
+msgid " Send to back"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:135
+msgid "Show on all slides"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:136
+msgid "Hide over this slide "
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:137
+msgid "Group"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:138
+msgid "Ungroup"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:139
+msgid "Lock"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:140
+msgid "Unlock"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:141
+msgid "Crop"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:142
+msgid "Set as slide background"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:143
+msgid "Reset crop"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:144
+msgid "Copy"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:145
+msgid "Paste"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:146
+msgid "Copy styles"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:147
+msgid "Paste styles"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:148
+msgid "Copy position"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:149
+msgid "Paste position"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:150
+msgid "Copy animation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:151
+msgid "Paste animation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:152
+msgid "Copy/Paste special"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:153
+msgid "Reset responsive positions"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:154
+msgid "Reset responsive sizes"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:155
+msgid "Reset responsive animations"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:156
+msgid "Responsive"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:157
+msgid "Select element"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:158
+msgid "Background Color"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:159
+msgid "Padding"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:160
+msgid "Corner Radius"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:161
+msgid "Opacity"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:162
+msgid "Blending mode"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:163
+msgid "Fill Color"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:164
+msgid "Stroke Color"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:165
+msgid "Stroke width"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:166
+msgid "Enable hover"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:167
+msgid "Background color"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:168
+msgid "Scale"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:169
+msgid "Enable hover animation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:170
+msgid "Use group hit area"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:171
+msgid "Element name"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:172
+msgid "Slide name is already exist please try another name"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:173
+msgid "Tag"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:174
+msgid "Link element"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:175
+msgid "Open in new tab"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:176
+msgid "Hide on mouse leaves the slider"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:177
+msgid "Custom style"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:178
+msgid "Use \"selector\" to apply style to this element. Example:"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:179
+msgid "Export Data"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:180
+msgid "X Position"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:181
+msgid "Y Position"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:182
+msgid "Custom positioning origin"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:183
+msgid "Enable this option if you need to change the positioning origin manually."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:184
+msgid "Custom origin"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:185
+msgid "Sets the origin point which the element positioning is applied."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:186
+msgid "Width"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:187
+msgid "Height"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:188
+msgid "Rotation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:189
+msgid "Flip"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:190
+msgid "Arrange"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:191
+msgid "Wrapping"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:192
+msgid "Responsive resize"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:193
+msgid ""
+"Resizes the element between two breakpoints responsively. Enabling this "
+"option helps you to prevent overlapping elements in the smaller screen "
+"sizes."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:194
+msgid "Reset position"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:195
+msgid "Design"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:196
+msgid "Position"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:197
+msgid "Arrow Color"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:198
+msgid "Options"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:199
+msgid "Hover"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:200
+msgid "Arrow color"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:201
+msgid "Animation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:202
+msgid "Action"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:203
+msgid "Active bullet color"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:204
+msgid "Bullets"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:205
+msgid "Bullet width"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:206
+msgid "Bullet height"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:207
+msgid "Space"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:208
+msgid "Bullet radius"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:209
+msgid "Typography"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:210
+msgid "Font Face"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:211
+msgid "Weight"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:212
+msgid "Size"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:213
+msgid "Color"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:214
+msgid "Line Height"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:215
+msgid "Letter space"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:216
+msgid "Alignment"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:217
+msgid "Direction"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:218
+msgid "Transform"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:219
+msgid "Decoration"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:220
+msgid "Text Wrapping"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:221
+msgid "hidden"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:222
+msgid "locked"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:223
+msgid "Source not found"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:224
+msgid "You need to add a YouTube video link through the right panel."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:225
+msgid "You need to add a Vimeo video link through the right panel."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:226
+msgid "You need to add a video link through the right panel."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:227
+msgid "video settings"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:228
+msgid "Embed Video URL"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:229
+msgid "Autoplay"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:230
+msgid ""
+"Disabling this option stops the video upon slide change. So that video "
+"starts from beginning next time."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:231
+msgid "Pause on slide changes"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:232
+msgid "Mute video"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:233
+msgid "Show player controls"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:234
+msgid "Limit related videos to the same channel"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:235
+msgid "Loading"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:236
+msgid "Image source not found."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:237
+msgid "Line color"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:238
+msgid "Thickness"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:239
+msgid "Icon color"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:240
+msgid "Enabling this option causes \"Video end\" action never triggers."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:241
+msgid "Enable loop playback"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:242
+msgid "Go to URL"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:243
+msgid "Show / Hide elements"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:244
+msgid "Slideshow Control"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:245
+msgid "Background Video Playback"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:246
+msgid "Action type"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:247
+msgid "Trigger"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:248
+msgid "Add Action"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:249
+msgid "Click"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:250
+msgid "Mouse In"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:251
+msgid "Mouse Out"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:252
+msgid "Video In"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:253
+msgid "Video Out"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:254
+msgid "Video Start"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:255
+msgid "Video Ended"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:256
+msgid "Video Paused"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:257
+msgid "Resume video"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:258
+msgid "Pause video"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:259
+msgid "Stop video"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:260
+msgid "Toggle video playback state"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:261
+msgid "Delay"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:262
+msgid "Show"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:263
+msgid "Hide"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:264
+msgid "Toggle visibility"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:265
+msgid "Select element(s)"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:266
+msgid "Next slide"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:267
+msgid "Previous slide"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:268
+msgid "Slide name"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:269
+msgid "Slide number"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:270
+msgid "Pick slide"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:271
+msgid "Select number"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:272
+msgid "Address"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:273
+msgid "After the slider"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:274
+msgid "To an HTML element"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:275
+msgid "CSS selector"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:276
+msgid "Pause slideshow"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:277
+msgid "Resume slideshow"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:278
+msgid "Restart slideshow"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:279
+msgid "Toggle slideshow state"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:280
+msgid "Origin"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:281
+msgid "Z Position"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:282
+msgid "Selected element does not have any animation."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:283
+msgid "Animation in options"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:284
+msgid "Animation out options"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:285
+msgid "Change animation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:286
+msgid "Wait for an action"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:287
+msgid ""
+"You can control animation by actions. For example, you set to start the "
+"animation when user click on another element."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:288
+msgid "Interactive animation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:289
+msgid ""
+"By enabling this option, the element animation controls by the slide "
+"transition, swiping or scrolling."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:290
+msgid "Duration"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:291
+msgid "Clear Animation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:292
+msgid "Preview Animation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:293
+msgid "Preview All Animation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:294
+msgid "Autostart animation out"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:295
+msgid "Element animation out starts right after the animation in ends."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:296
+msgid "Top"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:297
+msgid "Left"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:298
+msgid "Bottom"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:299
+msgid "Right"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:300
+msgid "Custom"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:301
+msgid "Movement"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:302
+msgid "Perspective point"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:303
+msgid "Fade animation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:304
+msgid "Animation timing"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:305
+msgid "Rotate"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:306
+msgid "Rotate X"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:307
+msgid "Rotate Y"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:308
+msgid "Skew X"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:309
+msgid "Skew Y"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:310
+msgid "Transform origin"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:311
+msgid "Animation in"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:312
+msgid "Animation out"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:313
+msgid "Apply"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:314
+msgid "Background blur"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:315
+msgid "Reset"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:316
+msgid "Blur"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:317
+msgid "Brightness"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:318
+msgid "Box shadow"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:319
+msgid "Shadow color"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:320
+msgid "Shadow Position"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:321
+msgid "Spread"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:322
+msgid "ADD"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:323
+msgid "Remove"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:324
+msgid "After DOM ready"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:325
+msgid "After slide init"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:326
+msgid "Document visibility changed"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:327
+msgid "Slide background video started"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:328
+msgid "Slide background video paused"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:329
+msgid "Slideshow timer started"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:330
+msgid "Slideshow timer paused"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:331
+msgid "Slideshow timer value changed"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:332
+msgid "Slideshow timer reset"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:333
+msgid "Responsive breakpoint changed"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:334
+msgid "Sliding change started"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:335
+msgid "Sliding change ended"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:336
+msgid "On swipe gesture start"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:337
+msgid "On swipe gesture update"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:338
+msgid "On swipe gesture ends"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:339
+msgid "All changes are published"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:340
+msgid "Last publish"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:341
+msgid "Publish changes"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:342
+msgid "You have unpublished changes"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:343
+msgid "Dynamic source"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:344
+msgid "The Origin is the point around which a position is applied"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:345
+msgid "Bring Forward"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:346
+msgid "Send Backward"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:347
+msgid "Bring to Front"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:348
+msgid "Send to Back"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:349
+msgid "Border"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:350
+msgid "Border Color"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:351
+msgid "Border style"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:352
+msgid "Border Size"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:353
+msgid "Ease"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:354
+msgid "Ease Type"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:355
+msgid "Flip Horizontal"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:356
+msgid "Flip Vertical"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:357
+msgid "Recently Used"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:358
+msgid "Fonts"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:359
+msgid "Hide over this slide"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:360
+msgid "Center"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:361
+msgid "Justify"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:362
+msgid "Filter"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:363
+msgid "Filter preset"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:364
+msgid "Contrast"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:365
+msgid "Saturation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:366
+msgid "Hue"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:367
+msgid "Cali"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:368
+msgid "Drama"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:369
+msgid "Edge"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:370
+msgid "Festive"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:371
+msgid "Grayscale"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:372
+msgid "Nordic"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:373
+msgid "Rosie"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:374
+msgid "Street"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:375
+msgid "The Blues"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:376
+msgid "Vintage"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:377
+msgid "Text Shadow"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:378
+msgid "Hide on"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:379
+msgid "Copy selected elements"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:380
+msgid "Paste element here"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:381
+msgid "Duplicate slide"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:382
+msgid "Remove slide"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:383
+msgid "Remove background"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:384
+msgid "Customize slide content size"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:385
+msgid "Slide content width"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:386
+msgid "Slide content height"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:387
+msgid "Slide class name"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:388
+msgid "This slide name is already exists. Please try another name."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:389
+msgid "Background image fill mode"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:390
+msgid "Background position"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:391
+msgid "Background video fill mode"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:392
+msgid "Color overlay"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:393
+msgid "Image alt"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:394
+msgid "Remove background image"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:395
+msgid "Loop video"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:396
+msgid "Go to next slide (at the end)"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:397
+msgid "Pause on slide change"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:398
+msgid "Remove background video"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:399
+msgid "Link slide"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:400
+msgid "Stop slideshow on this slide"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:401
+msgid "Slideshow Duration"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:402
+#: app/src/Modules/Beaver/module.php:59
+msgid "General"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:403
+msgid "Advanced"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:404
+msgid "Use \"selector\" to apply style to this section. Example:"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:405
+msgid "Dynamic background image source not found."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:406
+msgid "New Slide"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:407
+msgid "Close slides panel"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:408
+msgid "Open slides panel"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:409
+msgid "Slider class name"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:410
+msgid "Custom styles"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:411
+msgid "Use \"selector\" to apply style to the  slider. Example:"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:412
+msgid "Slider name"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:413
+msgid "The entered name is not valid."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:414
+msgid "Slider slug"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:415
+msgid "This slug is already exists. Please try another one."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:416
+msgid "Slider layout"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:417
+msgid "Fullscreen margin"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:418
+msgid ""
+"You can use this option to reserve space for other contents like the site "
+"menu to appear beside the slider."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:419
+msgid "Content side space"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:420
+msgid ""
+"Specifies the minimum space on left and right sides of content wrapper. "
+"This space appears when the screen size becomes smaller that the content "
+"wrapper width."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:421
+msgid "Auto height"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:422
+msgid "Slider height automatically changes based on the active slide."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:423
+msgid "Keep aspect ratio on resize"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:424
+msgid "Min Height"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:425
+msgid "Max Height"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:426
+msgid "Tablet content width"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:427
+msgid "Tablet content height"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:428
+msgid "Mobile content width"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:429
+msgid "Mobile content height"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:430
+msgid "Lazyload type"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:431
+msgid "Load slides one after another"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:432
+msgid "Load all slides concurrently"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:433
+msgid "Load nearby slides"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:434
+msgid "Number of nearby slides to load"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:435
+msgid "Loading symbol"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:436
+msgid "Swipe navigation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:437
+msgid "Mouse swipe gesture"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:438
+msgid "Touch swipe gesture"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:439
+msgid "Keyboard navigation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:440
+msgid "Mouse wheel navigation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:441
+msgid "Auto slideshow"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:442
+msgid "Pause on hover"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:443
+msgid "Pause at last slide"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:444
+msgid "Loop navigation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:445
+msgid "Random order slides"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:446
+msgid "RTL"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:447
+msgid "Start slider autoplay on appear"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:448
+msgid "Enable deeplink"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:449
+msgid "Deeplink name"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:450
+msgid "Type of permalink"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:451
+msgid "Sliding transition type"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:452
+msgid "Sliding direction"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:453
+msgid "Horizontal"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:454
+msgid "Vertical"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:455
+msgid "Space between slides"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:456
+msgid "Light effect"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:457
+msgid "Dolly effect"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:458
+msgid "Mask parallax effect"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:459
+msgid "Transform type"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:460
+msgid "Content wrapper size"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:461
+msgid "Responsive content sizes"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:462
+msgid "Hide slider responsively"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:463
+msgid "Navigation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:464
+msgid "Sliding animation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:465
+msgid "Sliding animation options"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:466
+msgid "Loading options"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:467
+msgid "Callbacks"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:468
+msgid "Back to Settings"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:469
+msgid ""
+"*We value your privacy and we never share your information with any third "
+"parties. Also, You will be able to unsubscribe from the list at anytime."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:470
+msgid "Thank you!"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:471
+msgid "You have subscribed to the newsletter successfully."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:472
+msgid "Stay Tuned"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:473
+msgid "Would like to be part of the early users special community?"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:474
+msgid ""
+"Subscribe to the newsletter to get access to templates, tutorials and "
+"unmissable offers before anyone else."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:475
+msgid "Your email address"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:476
+msgid "Subscribe"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:477
+msgid "Remind me later"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:478
+msgid "Click to rename"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:479
+msgid "Stop Animations"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:480
+msgid "Play Animations"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:481
+msgid "Invisible Hidden Elements"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:482
+msgid "Undo"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:483
+msgid "Redo"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:484
+msgid "Fit"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:485
+msgid "100%"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:486
+msgid "25%"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:487
+msgid "50%"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:488
+msgid "75%"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:489
+msgid "150%"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:490
+msgid "200%"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:491
+msgid "300%"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:492
+msgid "400%"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:493
+msgid "Feedback"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:494
+msgid "Shortcode"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:495
+msgid "Paste shortcode into your posts or pages"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:496
+msgid "PHP code"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:497
+msgid "Paste the PHP code into your theme’s file"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:498
+msgid "saved"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:499
+msgid "save"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:500
+msgid "All changes saved"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:501
+msgid "Saving changes..."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:502
+msgid "Back to WordPress"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:503
+msgid "You have some unsaved changes. Leaving site?"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:504
+msgid ""
+"Are you sure you want to restore to last published version? This may remove "
+"some of the changes."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:505
+msgid "We’re Sorry!"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:506
+msgid ""
+"Depicter faced a problem and crashed. We’ll restore your project when it "
+"reopens."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:507
+msgid "Tell us about this crash so we can fix it."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:508
+msgid "Details"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:509
+msgid "Add a description"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:510
+msgid "Allow us to contact you about this report"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:511
+msgid "Enter your email address here"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:512
+msgid "Your crash report will be submitted before you close or refresh."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:513
+msgid "Back to Dashboard"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:514
+msgid "Restore to Last Publish"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:515
+msgid "Restore Data"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:516
+msgid "This slug is already in use."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:517
+msgid "Activate your license"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:518
+msgid "Activate Envato Account"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:519
+msgid "OR"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:520
+msgid "Activate by Purchase Code (Manual)"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:521
+msgid "Need a Pro License? "
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:522
+msgid "Buy Now"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:523
+msgid "Element name is already exist please try another name"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:524
+msgid "Cancel"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:525
+msgid "Activate"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:526
+msgid "Awesome!"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:527
+msgid "You successfully activated your Master Slider Pro license."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:528
+msgid "Lets Start!"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:529
+msgid "Unlock Unlimited Possibilities"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:530
+msgid "- Premium media assets"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:531
+msgid "One time purchase and lifetime free updates.upgrade."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:532
+msgid "Upgrade to Master Slider Pro"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:533
+msgid "Restore Purchase"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:534
+msgid "How to upgrade after purchase."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:535
+msgid "Coming Soon"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:536
+msgid "Legacy Slider"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:537
+msgid "Not Activated"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:538
+msgid "Pro"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:539
+msgid "Documentation"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:540
+msgid "Newsletter subscription"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:541
+msgid "Publish"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:542
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:543
+msgid "Outset"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:544
+msgid "Inset"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:545
+msgid "Cover"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:546
+msgid "Contain"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:547
+msgid "Stretch"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:548
+msgid "Tile"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:549
+msgid "Fullwidth"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:550
+msgid "Fullscreen"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:551
+msgid "Boxed"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:552
+msgid "Underline"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:553
+msgid "Strike through"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:554
+msgid "Left to Right"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:555
+msgid "Right to Left"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:556
+msgid "Uppercase"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:557
+msgid "Capitalize"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:558
+msgid "Lowercase"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:559
+msgid "Normal"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:560
+msgid "Break Word"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:561
+msgid "Wrap"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:562
+msgid "No Wrap"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:563
+msgid "Recent colors"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:564
+msgid "Load assets on all pages"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:565
+msgid ""
+"By default, MasterSlider will load corresponding JavaScript files on "
+"demand. but if you need to load assets on all pages, check this option. "
+"(For example, if you plan to load Master Slider via Ajax, you need to check "
+"this option)"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:566
+msgid "Enable"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:567
+msgid "Enable cache to make MasterSlider even more faster!"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:568
+msgid "Clear Cache"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:569
+msgid "Cache refresh time"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:570
+msgid "Allow access"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:571
+msgid ""
+"Check the box to help us improve the MasterSlider plugin by allowing "
+"tracking of product usage stats. All data are stored securely and "
+"anonymously."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:572
+msgid "You license is activated"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:573
+msgid "Purchase code"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:574
+msgid "Deactivate License"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:575
+msgid "By deactivating your license all pro features become unavailable."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:576
+msgid "You may need to"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:577
+msgid "purchase another license here."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:578
+msgid "You may want to transfer your license,"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:579
+msgid "read more here."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:580
+msgid "You have not activated any license yet, to unlock all pro features"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:581
+msgid "Activate your license here"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:582
+msgid "Don’t have the pro license?"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:583
+msgid "Buy it here."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:584
+msgid "Settings"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:585
+msgid "Fade"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:586
+msgid "Move"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:587
+msgid "URL path style (/name/index/)"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:588
+msgid "Query String"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:589
+msgid "Hash"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:590
+msgid "Please provide us some details about your feature request."
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:591
+msgid "Send us feedback"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:592
+msgid "Choose a subject"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:593
+msgid "Related to"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:594
+msgid "Provide us the details"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:595
+msgid ""
+"Please include \\n"
+"- A description of the issue \\n"
+"- Steps to reproduce (if possible) \\n"
+"- What results are expected"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:596
+msgid "Email Address"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:597
+msgid "Send"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:598
+msgid "Support"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:599
+msgid "Back"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:600
+msgid "Replay"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:601
+msgid "Desktop"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:602
+msgid "Tablet"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:603
+msgid "Mobile"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:604
+msgid "Your sessions has been expired. please reload the page and try once again"
+msgstr ""
+
+#: app/src/Editor/EditorLocalization.php:605
+msgid "Reload"
+msgstr ""
+
+#: app/src/Front/Preview.php:34
+msgid "Depicter Preview"
+msgstr ""
+
+#: app/src/Front/Render.php:59
+msgid "Slider ID is required found."
+msgstr ""
+
+#: app/src/Front/Render.php:72
+msgid "Slider alias not found."
+msgstr ""
+
+#: app/src/Front/Render.php:78
+msgid "Slider is not published yet and saved as \"draft\""
+msgstr ""
+
+#: app/src/Media/Image/FileEdit.php:238
+msgid "File cannot be resized."
+msgstr ""
+
+#: app/src/Middleware/CapabilityMiddleware.php:38
+msgid "Sorry, insufficient permission!"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Make animated and interactive image slider, video slider, post slider and "
+"carousel which work smoothly across devices."
+msgstr ""
+
+#: app/src/Modules/Beaver/module.php:46 app/src/Modules/Beaver/module.php:66
+#: app/src/Modules/Elementor/SliderWidget.php:97
+#: app/src/Modules/Elementor/SliderWidget.php:130
+#: app/src/Modules/ModulesServiceProvider.php:75
+#: app/src/Modules/WPBakery/module.php:38
+#: app/src/Modules/WPBakery/module.php:53
+msgid "Select Slider"
+msgstr ""
+
+#: app/src/Modules/Beaver/module.php:62
+msgid "Depicter Settings"
+msgstr ""
+
+#: app/src/Modules/Elementor/SliderWidget.php:46
+msgid "Depicter Slider"
+msgstr ""
+
+#: app/src/Modules/Elementor/SliderWidget.php:123
+msgid "Slider"
+msgstr ""
+
+#: app/src/Modules/Elementor/SliderWidget.php:141
+msgid "Edit Slider"
+msgstr ""
+
+#: app/src/Modules/ModulesServiceProvider.php:106
+msgid "Slider ID required"
+msgstr ""
+
+#: app/src/Modules/WPBakery/module.php:31
+msgid "Make animated and interactive slider"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:53
+msgid "Projects"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:54
+msgid "Project"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:55
+msgid "Add New"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:56
+msgid "Add new Project"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:57
+msgid "View Project"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:58
+msgid "Edit Project"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:59
+msgid "New Project"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:60
+msgid "Search Projects"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:61
+msgid "No Sliders found"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:62
+msgid "No Sliders found in trash"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:90
+#: app/src/WordPress/ContentTypesServiceProvider.php:101
+msgid "Categories"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:92
+msgid "Search Categories"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:93
+msgid "All Categories"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:94
+msgid "Parent category"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:95
+msgid "Parent category:"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:96
+msgid "View category"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:97
+msgid "Edit category"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:98
+msgid "Update category"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:99
+msgid "Add New category"
+msgstr ""
+
+#: app/src/WordPress/ContentTypesServiceProvider.php:100
+msgid "New category Name"
+msgstr ""
+
+#: app/src/WordPress/DeactivationFeedbackService.php:43
+msgid "I no longer need the plugin"
+msgstr ""
+
+#: app/src/WordPress/DeactivationFeedbackService.php:48
+msgid "It broke my site"
+msgstr ""
+
+#: app/src/WordPress/DeactivationFeedbackService.php:53
+msgid "I found a better plugin or solution"
+msgstr ""
+
+#: app/src/WordPress/DeactivationFeedbackService.php:54
+msgid "Please share which plugin?"
+msgstr ""
+
+#: app/src/WordPress/DeactivationFeedbackService.php:58
+msgid "I couldn't get the plugin to work"
+msgstr ""
+
+#: app/src/WordPress/DeactivationFeedbackService.php:59
+msgid "How we can improve it?"
+msgstr ""
+
+#: app/src/WordPress/DeactivationFeedbackService.php:63
+msgid "It's a temporary deactivation"
+msgstr ""
+
+#: app/src/WordPress/DeactivationFeedbackService.php:68
+msgid "Other"
+msgstr ""
+
+#: app/src/WordPress/DeactivationFeedbackService.php:69
+msgid "What we can do better?"
+msgstr ""
+
+#: app/src/WordPress/FileUploaderService.php:32
+msgid "Cannot upload the file, uploading %s files are not allowed."
+msgstr ""
+
+#: app/src/WordPress/SystemCheckService.php:23
+msgid "Check to access depicter resources servers."
+msgstr ""
+
+#: app/src/WordPress/SystemCheckService.php:35
+#: app/src/WordPress/SystemCheckService.php:43
+msgid "Connecting to depicter resources servers passed successfully"
+msgstr ""
+
+#: app/src/WordPress/SystemCheckService.php:38
+msgid "Performance"
+msgstr ""
+
+#: app/src/WordPress/SystemCheckService.php:53
+#: app/src/WordPress/SystemCheckService.php:59
+msgid "Error while trying to connect to depicter resources servers"
+msgstr ""
+
+#: app/src/WordPress/SystemCheckService.php:70
+msgid "Error"
+msgstr ""
+
+#: app/src/WordPress/SystemCheckService.php:71
+msgid ""
+"Your site cannot communicate securely with depicter services. Contact your "
+"host provider and ask them to whitelist <code>depicter.com</code> to gain "
+"access to assets library"
+msgstr ""
+
+#: app/version.php:54
+#. Translators: %1$s = plugin or theme name; %2$s = minimum version number;
+#. %3$s = maximum version number; %4$s plugin or theme name; %5$s loaded
+#. version number.
+msgid ""
+"%1$s requires WP Emerge version >= %2$s and < %3$s but %4$s has already "
+"loaded version %5$s."
+msgstr ""
+
+#: views/admin/survey/feedback.php:23
+msgid "If you have a moment, please share why you are deactivating Depicter:"
+msgstr ""
+
+#: views/admin/survey/feedback.php:37
+msgid "Skip & Deactivate"
+msgstr ""
+
+#: views/admin/survey/feedback.php:38
+msgid "Submit & Deactivate"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://depicter.com"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Averta"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://averta.net"
+msgstr ""

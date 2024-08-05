@@ -1,0 +1,63 @@
+// for variable product case
+// place pp button under the dropdown select
+// because pp button has a big z-index
+.product-type-variable .wcppec-checkout-buttons {
+	position: relative;
+	z-index: 1;
+}
+
+.wcppec-checkout-buttons__separator,
+#wc-square-wallet-divider,
+#wcpay-payment-request-button-separator,
+#wc-stripe-payment-request-button-separator {
+	display: none !important;
+}
+
+// Square payment method adjustments
+div#wc-square-digital-wallet {
+	max-width: 100%;
+}
+
+div.wc-square-wallet-buttons {
+	width: 100%;
+}
+
+
+// stripe
+.payment_methods {
+
+	// special case for WooCommerce Subscriptions plugin when no payment methods are set
+	li {
+		.woocommerce-info {
+			display: block;
+		}
+	}
+
+	fieldset {
+
+		.wc-stripe-elements-field {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: initial;
+		}
+
+		.stripe-source-errors ul {
+			margin-top: 20px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.wc-proceed-to-checkout {
+	#wc-stripe-payment-request-wrapper {
+		margin-bottom: 15px;
+	}
+}
+
+#wc-stripe-payment-request-wrapper {
+	padding-top: 0 !important;
+}

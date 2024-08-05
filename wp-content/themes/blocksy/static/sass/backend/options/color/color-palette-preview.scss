@@ -1,0 +1,43 @@
+.ct-color-palette-preview {
+
+
+	.ct-color-picker-container {
+		flex-wrap: wrap;
+		justify-content: initial;
+	}
+
+	.ct-color-picker-single {
+		position: relative;
+
+		.ct-remove-color {
+			position: absolute;
+			z-index: 1;
+			top: -6px;
+			right: -6px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 15px;
+			height: 15px;
+			color: #fff;
+			opacity: 0;
+			cursor: pointer;
+			border-radius: 100%;
+			background: rgba(54, 63, 66, 1);
+			transition: 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+			svg {
+				width: 45%;
+				height: 45%;
+			}
+
+			&:hover {
+				background: rgba(34, 40, 42, 1);
+			}
+		}
+
+		&:hover .ct-remove-color {
+			opacity: 1;
+		}
+	}
+}

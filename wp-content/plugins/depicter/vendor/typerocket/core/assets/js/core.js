@@ -1,0 +1,20 @@
+import Booyah from './tooling/booyah.js';
+import trBuilder from './tooling/builder.js';
+import {tr_apply_repeater_callbacks, tr_hash} from './tooling/fn/tr-helpers.js';
+
+window.Booyah = Booyah;
+window.tr_apply_repeater_callbacks = tr_apply_repeater_callbacks;
+window.tr_hash = tr_hash;
+require('./tooling/util');
+require('./tooling/media-redactor');
+require('./tooling/typerocket');
+require('./tooling/dev');
+require('./tooling/http');
+require('./tooling/items');
+require('./tooling/search');
+require('./tooling/links');
+require('./tooling/matrix');
+require('./tooling/media');
+require('./tooling/seo');
+require('./tooling/toggle');
+trBuilder();

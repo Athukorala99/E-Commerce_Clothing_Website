@@ -1,0 +1,338 @@
+/* Builder
+----------------------------------------------------------------------- */
+.tr-builder-inputs {
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    border: 1px solid $gray_border;
+    float: left;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: all .4s;
+
+    &:after {
+        content:'';
+        display: block;
+        clear: both;
+        height: 0;
+    }
+
+    > {
+        h1, h2, h3, h4, h5, h6 {
+            &:first-child {
+                margin: 0;
+                transition: all .4s;
+                padding: 10px;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+                border-bottom: 1px solid $gray_border;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+.tr-builder {
+    position: relative;
+
+    &:after {
+        content:'';
+        display: block;
+        clear: both;
+        height: 0;
+    }
+
+    .tr-builder-add-button {
+        width: 100%;
+    }
+
+    .tr-builder-controls {
+        float: left;
+
+        .tr-components {
+            width: 120px;
+
+            li {
+                border: 1px solid $gray_border;
+                padding: 2px;
+                text-align: center;
+                position: relative;
+                background: #fff;
+                list-style: none;
+                margin: 10px 0;
+                min-height: 55px;
+                cursor: pointer;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                }
+
+                .tr-builder-component-title {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    opacity: .9;
+                    background: rgba(0, 0, 0, 0.8);
+                    padding: 5px;
+                    width: 100%;
+                    z-index: 10;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                    color: #fff;
+                }
+
+                &.active {
+                    border-color: #5b9dd9;
+                    border-color: var(--tr-profile-color);
+                    box-shadow: 0 0 3px 1px #ccc;
+                    outline: none;
+                }
+
+                &:focus, &:focus-within {
+                    box-shadow: 0 0 3px 1px #80b5e4;
+                    box-shadow: 0 0 3px 1px var(--tr-profile-color);
+                    outline: none;
+                }
+
+                &:not(:hover):not(:focus-within) a:not(:focus):not(:active) {
+                    @include visually-hidden;
+                }
+
+                &:hover, &:focus-within, &:focus, &.active {
+                    .tr-builder-component-title {
+                        display: block;
+                    }
+                }
+
+                span {
+                    display: none;
+                }
+
+                .remove, .clone {
+                    font-family: dashicons;
+                    speak: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    position: absolute;
+                    text-align: center;
+                    text-decoration: none;
+                    z-index: 11;
+                    box-shadow: none;
+                    display: block;
+                    border-radius: 25px;
+                    font-size: 16px;
+                    line-height: 16px;
+                    height: 20px;
+                    width: 20px;
+                    padding: 3px;
+                    vertical-align: middle;
+                    color: #fff;
+                    left: 5px;
+                    top: 5px;
+                    background: rgba(11, 11, 11, 0.69);
+                    backdrop-filter: blur(2px);
+
+                    &:hover, &:focus {
+                        background: $delete_hover;
+                        cursor: pointer;
+                    }
+
+                    /* Better Font Rendering =========== */
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+
+                    &:before {
+                        -webkit-font-smoothing: antialiased;
+                        font: normal 20px/1 'dashicons';
+                        content: "\f335";
+                    }
+
+                }
+
+                .clone {
+                    left: 38px;
+
+                    &:before {
+                        content: "\f316";
+                    }
+
+                    &:hover, &:focus {
+                        background: $wp_button_hover;
+                        background: var(--tr-profile-color);
+                        outline: none;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .tr-frame-fields {
+        margin-left:  135px;
+
+        .tr-item-cloned {
+
+        }
+    }
+
+    .tr-builder-select {
+        flex-flow: wrap;
+        display: none;
+        position: absolute;
+        border-radius: 3px;
+        z-index: 100001;
+        top: 35px;
+        left: 0;
+        padding: 5px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        max-width: 532px;
+        background: #eee;
+        border: solid 1px $gray_border;
+        box-shadow: 0 0 8px rgba(0,0,0,.3);
+
+        // top tick for triangle
+        &:before, &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -23px;
+            left: 45px;
+            z-index: 20;
+            border: solid 12px transparent;
+            border-bottom-color: #eee;
+        }
+
+        &:after {
+            top: -24px;
+            z-index: 19;
+            border-bottom-color: $gray_border;
+        }
+
+        .builder-select-divider {
+            width: 100%;
+            margin: 5px;
+            font-weight: 700;
+            font-size: 14px;
+        }
+    }
+}
+
+.tr-builder-select-option {
+    width: 120px;
+    vertical-align: top;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    border: 1px solid $gray_border;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+
+    &:focus {
+        box-shadow: 0 0 3px 1px #80b5e4;
+        box-shadow: 0 0 3px 1px var(--tr-profile-color);
+        outline: none;
+    }
+
+    span {
+        display: block;
+        margin-bottom: 3px;
+        color: #444;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    &:hover, &:focus {
+        span {
+            color: $wp_button_hover;
+            color: var(--tr-profile-color);
+        }
+    }
+}
+
+.tr-builder-select-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0;
+    z-index: 10000;
+}
+
+.builder-field-group {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.tr-cloned-item {
+    > .tr-builder-inputs {
+        border-color: #c2ddbf;
+        box-shadow: 0 1px 1px #d2f5b5;
+
+        > h1, h2, h3 {
+            &:first-child {
+                color: #2c4d29;
+                background: #d2f5b5;
+                border-color: inherit;
+            }
+        }
+    }
+}
+
+.tr-component-group-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    > div:first-child {
+        flex: 1
+    }
+}
+
+.tr-save-component-as-block-wrap {
+    text-align: right;
+    cursor: pointer;
+}
+
+.tr-save-component-as-block {
+    cursor: pointer;
+    all: unset;
+    cursor: pointer;
+}
+
+.tr-block-component-actions {
+    margin-top: 2px;
+}
+
+.tr-search-results .tr-search-results-hide {
+    display: none;
+}

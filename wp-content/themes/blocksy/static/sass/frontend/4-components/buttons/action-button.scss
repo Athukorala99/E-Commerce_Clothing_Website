@@ -1,0 +1,18 @@
+[data-button-state] {
+
+	.ct-button-loader {
+		display: none;
+	}
+}
+
+// loading state
+[data-button-state*="loading"] {
+
+	.ct-button-loader {
+		display: block;
+	}
+
+	svg:not(.ct-button-loader) {
+		display: none;
+	}
+}

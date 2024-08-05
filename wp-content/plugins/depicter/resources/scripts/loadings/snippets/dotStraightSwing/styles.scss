@@ -1,0 +1,91 @@
+// Variables ---------------------------------------------------
+$size: 12px;
+$gap: 0;
+$radius: 50%;
+$duration: 1400ms;
+$moveInTiming: cubic-bezier(0.5, 0, 0.75, 0);
+$moveOutTiming: cubic-bezier(0.25, 1, 0.5, 1);
+$darkBackground: #050a0e;
+$lightBackground: #fff;
+$move: 9px;
+// -------------------------------------------------------------
+
+.depicter-dot-straight-swing {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+
+   span {
+      display: inline-block;
+      width: $size;
+      height: $size;
+      margin-right: $gap;
+      border-radius: $radius;
+
+      &:last-of-type {
+         margin-right: 0;
+      }
+   }
+
+   &.depicter-loading-dark {
+      span {
+         background-color: $darkBackground;
+      }
+   }
+
+   &.depicter-loading-light {
+      span {
+         background-color: $lightBackground;
+      }
+   }
+
+   span {
+      will-change: transform;
+
+      &:first-of-type {
+         animation: firstDotStraightSwing $duration infinite;
+      }
+
+      &:last-of-type {
+         animation: lastDotStraightSwing $duration infinite;
+      }
+   }
+
+   @keyframes firstDotStraightSwing {
+      0% {
+         transform: translateX(-$move);
+         animation-timing-function: $moveInTiming;
+      }
+      33.3% {
+         transform: translateX(0);
+         animation-timing-function: linear;
+      }
+      62% {
+         transform: translateX(0);
+         animation-timing-function: $moveOutTiming;
+      }
+      100% {
+         transform: translateX(-$move);
+      }
+   }
+
+   @keyframes lastDotStraightSwing {
+      0% {
+         transform: translateX(0);
+         animation-timing-function: linear;
+      }
+      33% {
+         transform: translateX(0);
+         animation-timing-function: $moveOutTiming;
+      }
+      52% {
+         transform: translateX($move);
+         animation-timing-function: $moveInTiming;
+      }
+      70%,
+      100% {
+         transform: translateX(0);
+         animation-timing-function: linear;
+      }
+   }
+}

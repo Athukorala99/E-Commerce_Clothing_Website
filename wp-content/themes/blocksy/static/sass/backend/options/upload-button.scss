@@ -1,0 +1,22 @@
+.ct-attachment .ct-upload-button {
+	width: 100%;
+	min-height: 50px;
+	padding: 5px 0;
+	font-size: 13px;
+	color: inherit;
+	cursor: pointer;
+	box-shadow: none;
+	border: 1px dashed #c1c4ca;
+	background: rgba(0, 0, 0, 0.02);
+	border-radius: var(--ui-border-radius, 3px);
+
+	&.active,
+	&:hover {
+		background: #fbfbfc;
+		box-shadow: none;
+	}
+
+	&:active {
+		transform: none;
+	}
+}

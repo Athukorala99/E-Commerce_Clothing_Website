@@ -1,0 +1,19 @@
+.ct-product-additional-info {
+	
+	ul {
+
+		li {
+			display: flex;
+			align-items: center;
+			gap: 0.5em;
+
+			&:not(:last-child) {
+				margin-bottom: 0.3em;
+			}
+
+			svg {
+				fill: var(--theme-palette-color-1);
+			}
+		}
+	}
+}

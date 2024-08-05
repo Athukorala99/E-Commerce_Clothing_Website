@@ -1,0 +1,39 @@
+.hero-section {
+
+	.ct-author-name {
+
+		[class*="ct-media-container"] {
+			border-radius: 100%;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.author-box-socials {
+	--theme-icon-size: 12px;
+	--theme-icon-color: #fff;
+	
+	span {
+		display: inline-flex;
+		flex-wrap: wrap;
+		gap: 10px;
+
+		a {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 30px;
+			height: 30px;
+			border-radius: 100%;
+			background: var(--background-color, var(--theme-palette-color-1));
+
+			&:hover {
+				background: var(--background-hover-color, var(--theme-palette-color-2));
+
+				.ct-icon {
+					fill: var(--theme-icon-hover-color, #fff);	
+				}
+			}
+		}
+	}
+}

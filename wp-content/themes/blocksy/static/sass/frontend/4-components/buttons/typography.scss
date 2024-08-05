@@ -1,0 +1,10 @@
+#{$buttons-base} {
+	font-family: var(--theme-button-font-family, var(--theme-font-family));
+	font-size: var(--theme-button-font-size);
+	font-weight: var(--theme-button-font-weight);
+	font-style: var(--theme-button-font-style);
+	line-height: var(--theme-button-line-height);
+	letter-spacing: var(--theme-button-letter-spacing);
+	text-transform: var(--theme-button-text-transform);
+	text-decoration: var(--theme-button-text-decoration);
+}

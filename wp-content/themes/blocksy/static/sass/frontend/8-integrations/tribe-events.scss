@@ -1,0 +1,34 @@
+:root {
+	--tec-color-accent-primary: var(--theme-palette-color-1);
+}
+
+#main {
+
+	.tribe-common-l-container {
+		max-width: initial;
+	}
+
+	#tribe-events,
+	.tribe-events-l-container {
+		padding: 0;
+	}
+}
+
+.single-tribe_events {
+
+	.hero-section[data-type='type-1'] header.entry-header {
+		display: initial;
+	}
+}
+
+.tribe-common .tribe-common-c-btn,
+.tribe-events .tribe-common-c-btn.tribe-events-c-search__button {
+	color: var(--theme-button-text-initial-color);
+	background-color: var(--theme-button-background-initial-color);
+
+	&:hover,
+	&:focus {
+		color: var(--theme-button-text-hover-color);
+		background-color: var(--theme-button-background-hover-color);
+	}
+}

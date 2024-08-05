@@ -1,0 +1,78 @@
+$transition-duration: 0.25s;
+
+@import 'modal';
+@import 'panel';
+
+body[data-panel] {
+	padding-right: var(--scrollbar-width, 0px);
+}
+
+.ct-panel {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	z-index: 999999;
+	inset: var(--admin-bar, 0px) 0 0 0;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity $transition-duration ease-in-out, 
+				visibility $transition-duration ease-in-out;
+
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	.ct-panel-inner {
+		display: flex;
+		flex-direction: column;
+
+		@include media-breakpoint-down(sm) {
+			--panel-padding: 25px;
+		}
+	}
+}
+
+// panel actions
+.ct-panel-actions {
+	display: flex;
+	align-items: center;
+	padding-inline: var(--panel-padding, 35px);
+
+	@include media-breakpoint-down(sm) {
+		padding-top: 20px;
+	}
+
+	@include media-breakpoint-up(md) {
+		padding-top: 30px;
+	}
+
+	.ct-panel-heading {
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--theme-text-color);
+	}
+
+	.close-button {
+		margin-inline-start: auto;
+	}
+}
+
+// panel content
+.ct-panel-content {
+	flex: 1;
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: var(--vertical-alignment, flex-start);
+}
+
+.ct-panel-content-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: var(--horizontal-alignment, flex-start);
+	overflow-y: var(--overflow, auto);
+	padding: var(--panel-padding, 35px);
+}
